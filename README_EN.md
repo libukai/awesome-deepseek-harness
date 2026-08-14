@@ -185,6 +185,7 @@ The following projects provide standalone user interfaces, distribution formats,
 | [TinyWhale](https://github.com/aimierbear/TinyWhale) | macOS · Electron · Distribution fork | Directly forks `deepseek-ai/deepseek-harness` and adds a desktop shell; connects to an existing Web UI or launches a full `dsh web` Runtime, so it is not a plugin |
 | [Oh-DSH-Desktop](https://github.com/hust-open-atom-club/oh-dsh-desktop) | macOS · Electron | Extensible workbench bundling the DSH Runtime, Node.js, PTY, workspace tools, and a plugin-market preview |
 | [DSH Desktop](https://github.com/dataelement/dsh-desktop) | macOS / Windows · Electron | Cross-platform desktop client for managing local Harness instances, workspaces, random ports, Profiles, plugins, and sessions |
+| [DeepSeek Harness Desktop](https://github.com/Stxr/deepseek-harness-desktop) | macOS / Windows · Electrobun | Lightweight desktop shell that launches the official `dsh` Web Profile; bundles pinned Node.js, pnpm, and the full CLI while sharing `DSH_HOME` with the command line |
 | [dsh-launcher](https://github.com/Ruler4396/dsh-launcher) | Windows · WebView2 | Lightweight launcher with silent startup, a standalone window, portable packages, and MSI distribution |
 
 ### Terminal, Mobile, and Web Experiences

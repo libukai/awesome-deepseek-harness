@@ -184,6 +184,7 @@ dsh --profile web --dump-config
 | [TinyWhale](https://github.com/aimierbear/TinyWhale)                    | macOS · Electron · 发行版 Fork | 直接 Fork `deepseek-ai/deepseek-harness` 并增加独立桌面壳；连接已有 Web UI，或启动完整的 `dsh web` Runtime，不属于插件 |
 | [Oh-DSH-Desktop](https://github.com/hust-open-atom-club/oh-dsh-desktop) | macOS · Electron               | 打包 DSH Runtime、Node.js、PTY、工作区工具和插件市场预览的可扩展工作台                                                 |
 | [DSH Desktop](https://github.com/dataelement/dsh-desktop)               | macOS / Windows · Electron     | 管理本地 Harness、工作区、随机端口、Profile、插件和会话的跨平台桌面端                                                  |
+| [DeepSeek Harness Desktop](https://github.com/Stxr/deepseek-harness-desktop) | macOS / Windows · Electrobun | 启动官方 `dsh` Web Profile 的轻量桌面壳；内置固定版本的 Node.js、pnpm 与完整 CLI，并与命令行共享 `DSH_HOME` |
 | [dsh-launcher](https://github.com/Ruler4396/dsh-launcher)               | Windows · WebView2             | 提供静默启动、独立窗口、便携包和 MSI 的轻量启动器                                                                      |
 
 ### 终端、移动与 Web 体验
