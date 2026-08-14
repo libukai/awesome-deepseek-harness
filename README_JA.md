@@ -186,6 +186,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 | [Oh-DSH-Desktop](https://github.com/hust-open-atom-club/oh-dsh-desktop) | macOS · Electron | DSH Runtime、Node.js、PTY、ワークスペースツール、プラグインマーケットのプレビューを同梱した拡張可能なワークベンチ |
 | [DSH Desktop](https://github.com/dataelement/dsh-desktop) | macOS / Windows · Electron | ローカル Harness、ワークスペース、ランダムポート、Profile、プラグイン、Session を管理するクロスプラットフォームデスクトップクライアント |
 | [dsh-launcher](https://github.com/Ruler4396/dsh-launcher) | Windows · WebView2 | サイレント起動、独立ウィンドウ、ポータブルパッケージ、MSI を提供する軽量ランチャー |
+| [Harness Desktop](https://github.com/baiyuscc13724-max/deepseek-harness-desktop) | Windows · Electron · コミュニティ配布版 | 公式 DSH Web UI を直接実行し、簡体字中国語インストーラー、ポータブル版、SHA-256 検証付き更新、アップグレード後も保持されるテーマとカスタム背景を提供 |
 
 ### ターミナル・モバイル・Web 体験
 

@@ -185,6 +185,7 @@ dsh --profile web --dump-config
 | [Oh-DSH-Desktop](https://github.com/hust-open-atom-club/oh-dsh-desktop) | macOS · Electron               | 打包 DSH Runtime、Node.js、PTY、工作区工具和插件市场预览的可扩展工作台                                                 |
 | [DSH Desktop](https://github.com/dataelement/dsh-desktop)               | macOS / Windows · Electron     | 管理本地 Harness、工作区、随机端口、Profile、插件和会话的跨平台桌面端                                                  |
 | [dsh-launcher](https://github.com/Ruler4396/dsh-launcher)               | Windows · WebView2             | 提供静默启动、独立窗口、便携包和 MSI 的轻量启动器                                                                      |
+| [Harness Desktop](https://github.com/baiyuscc13724-max/deepseek-harness-desktop) | Windows · Electron · 社区发行版 | 直接运行官方 DSH Web UI，提供中文安装包、便携版、SHA-256 校验更新，以及升级后仍保留的主题与自定义背景                  |
 
 ### 终端、移动与 Web 体验
 
