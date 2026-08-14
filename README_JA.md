@@ -228,6 +228,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 
 - [dsh-browser](https://github.com/Lum1104/dsh-browser)：DSH から現在のブラウザページを直接操作できる Chrome サイドバー拡張。
 - [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)：画像 Q&A、長いスクリーンショットの OCR、UI 再現、Grounding、ピクセル比較。
+- [dsh-vision-router](https://github.com/ysr666/dsh-vision-router)：内蔵の無料ビジョンチェーンとピクセル級ビジョンツール。画像を貼るだけで動作し、Python 不要、ワンコマンドでインストール。
 - [dsh-computer-use](https://github.com/Anionex/dsh-computer-use)：Accessibility を優先し、古い観測を拒否し、アプリ・Session・操作単位で権限を管理するネイティブ macOS Computer Use Bundle。現在は初期 `0.1.0` で、ソースチェックアウトからインストールする必要がある。
 - [modlens](https://github.com/liustack/modlens)：画像の貼り付けとモデルルーティングによってテキスト専用モデルに視覚能力を与える。ワークスペース画像を独立したビジョンツールで処理する方式とは異なる選択肢。
 - [dsh-better-browser](https://github.com/titanwings/dsh-better-browser)：外部 Kimi WebBridge を通じてログイン状態を保持した実ブラウザを操作し、タスクごとにタブ Session を管理。WebBridge は別途インストールして実行する必要がある。
