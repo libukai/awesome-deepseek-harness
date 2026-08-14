@@ -185,6 +185,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 | [TinyWhale](https://github.com/aimierbear/TinyWhale) | macOS · Electron · ディストリビューション Fork | `deepseek-ai/deepseek-harness` を直接 Fork して独立デスクトップシェルを追加。既存 Web UI に接続するか、完全な `dsh web` Runtime を起動するため、プラグインではない |
 | [Oh-DSH-Desktop](https://github.com/hust-open-atom-club/oh-dsh-desktop) | macOS · Electron | DSH Runtime、Node.js、PTY、ワークスペースツール、プラグインマーケットのプレビューを同梱した拡張可能なワークベンチ |
 | [DSH Desktop](https://github.com/dataelement/dsh-desktop) | macOS / Windows · Electron | ローカル Harness、ワークスペース、ランダムポート、Profile、プラグイン、Session を管理するクロスプラットフォームデスクトップクライアント |
+| [DeepSeek Harness Desktop](https://github.com/Stxr/deepseek-harness-desktop) | macOS / Windows · Electrobun | 公式 `dsh` Web Profile を起動する軽量デスクトップシェル。固定版の Node.js、pnpm、完全な CLI を同梱し、コマンドラインと `DSH_HOME` を共有 |
 | [dsh-launcher](https://github.com/Ruler4396/dsh-launcher) | Windows · WebView2 | サイレント起動、独立ウィンドウ、ポータブルパッケージ、MSI を提供する軽量ランチャー |
 
 ### ターミナル・モバイル・Web 体験
