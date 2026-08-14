@@ -223,6 +223,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio): edits system-prompt fragments with a live preview.
 - [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind): rewinds conversations and workspace state through a persistent Change Ledger.
 - [dsh-compaction-instant](https://github.com/KitDoesIt/dsh-compaction-instant): replaces LLM summarization with deterministic compilation and restores compressed content through `recall` / `search`; replacing the built-in compactor requires an npm alias and is a deeper runtime modification.
+- [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import): imports chat histories from Claude Code, Codex, ChatGPT, Cursor, Gemini, Reasonix, and opencode into resumable DSH sessions.
 
 ### Browser, Vision, and Interface
 

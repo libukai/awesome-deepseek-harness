@@ -223,6 +223,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio)：システムプロンプト断片を編集し、リアルタイムプレビューを表示。
 - [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind)：永続的な Change Ledger に基づき、会話とワークスペース状態を巻き戻す。
 - [dsh-compaction-instant](https://github.com/KitDoesIt/dsh-compaction-instant)：LLM 要約を決定論的コンパイルに置き換え、`recall` / `search` で圧縮された内容を復元。内蔵 compactor の置換には npm alias が必要で、Runtime への比較的深い変更となる。
+- [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import)：Claude Code / Codex / ChatGPT / Cursor / Gemini / Reasonix / opencode のチャット履歴をインポートし、DSH で再開可能（resume）なセッションとして再構築する。
 
 ### ブラウザ・ビジョン・インターフェース
 
