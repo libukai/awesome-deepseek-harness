@@ -190,6 +190,7 @@ dsh --profile web --dump-config
 - [dsh-automation](https://github.com/titanwings/dsh-automation)：按计划在全新根 Agent 和 Session 中执行独立任务，保留定义修订、运行历史和明确的工作区与权限边界。
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator)：对 Agent 计划逐段批注并提交结构化反馈，提供草稿隔离、版本绑定和过期计划拒绝。
 - [dsh-record-replay](https://github.com/humblebanana/dsh-record-replay)：录制 macOS 桌面工作流并生成 Skill；当前依赖 Xcode Command Line Tools 和独立的 `open-record-replay` 本地源码副本。
+- [dsh-guardian](https://github.com/cdxiaodong/dsh-guardian)：Agent 安全护栏：拦截并审计所有工具调用，命中敏感操作就要求人工确认。
 
 ### 上下文、会话与输入
 
@@ -201,6 +202,7 @@ dsh --profile web --dump-config
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio)：编辑系统提示词片段并提供实时预览。
 - [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind)：基于持久 Change Ledger 回退对话和工作区状态。
 - [dsh-compaction-instant](https://github.com/KitDoesIt/dsh-compaction-instant)：以确定性编译替代 LLM 摘要，并通过 `recall` / `search` 恢复被压缩内容；替换内置压缩器时需要使用 npm alias，属于较深的运行时改造。
+- [dsh-llm-inspector](https://github.com/cdxiaodong/dsh-llm-inspector)：统一 LLM 请求/响应检查器：调 reasoning effort、外部思考(think)导出、流量与包分析。
 
 ### 浏览器、视觉与界面
 
