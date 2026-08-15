@@ -151,6 +151,7 @@ dsh --profile web --dump-config
 | [DeepSeek Harness 从零到一](https://yanhua1010.github.io/dsh-harness-tutorial/) | 中文教程与 Demo | 包含原理、源码拆解、8 个 Demo 和 `mini-harness` 教学项目；基于 `0.1.0-rc.6`    |
 | [Hello DSH](https://github.com/pingfanfan/hello-dsh/blob/main/README.zh.md)     | 插件入门与 Skill | 从终端安装讲到首个代码插件，附 22 个中文 Skill 示例、dry-run 与卸载流程；已在 `0.1.0-rc.6` 验证 |
 | [DeepSeek Harness：从开机到拆开](https://github.com/alchaincyf/deepseek-harness-orange-book) | 中文实测电子书 | 提供 PDF、EPUB 和 HTML，收录完整系统提示词、129 行默认启动清单与三份原始会话日志；写于发布后 24 小时内，内容可能随版本演进而变化 |
+| [DeepSeek Harness Handbook](https://github.com/sandbaseai/deepseek-harness-handbook) | 英文手册与多语言导航 | 从 Agent Runtime 视角覆盖架构、Web/Headless/Python SDK、MCP、Skills、Subagents、沙箱与真实故障排查；版本敏感内容注明上游 commit 和验证日期 |
 
 ### 社区讨论
 
