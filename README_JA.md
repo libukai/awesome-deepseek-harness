@@ -212,7 +212,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-better-browser](https://github.com/titanwings/dsh-better-browser)：外部 Kimi WebBridge を通じてログイン状態を保持した実ブラウザを操作し、タスクごとにタブ Session を管理。WebBridge は別途インストールして実行する必要がある。
 - [dsh-web-review](https://github.com/CanglongCl/dsh-web-review)：DSH 内で Web ページをプレビューし、要素を選択して selector、アクセシブル名、変更意図を送信。実際のフロントエンド変更 Eval スイートを含むが、現在リポジトリにライセンス表記はない。
 - [dsh-mcp-apps](https://github.com/sugarforever/dsh-mcp-apps)：DSH Web を MCP Apps Host にし、CSP と Permission Policy を備えた sandbox iframe で対話アプリを表示。MIT、`v0.1.1` だが新しいため初期段階。
-- [dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app)：open-mcp-apps を DSH に統合し、各 MCP アプリをサイドバー内の専用コンテナ（workspace + 会話 + App mode）にする。Agent ステータス行、チャット内インライン描画、App Store を備える。MIT、npm `@2nd1st/dsh-plugin-open-app` `0.1.1`、`dsh plugin add` 一回で導入できるが、新しいため初期段階。
+- [dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app)：open-mcp-apps を DSH に統合し、各 MCP アプリをサイドバー内の専用コンテナ（workspace + 会話 + App mode）にする。Agent ステータス行、チャット内インライン描画、App Store を備える。MIT、npm `@2nd1st/dsh-plugin-open-app` `0.1.2`、`dsh plugin --profile web add` 一回で導入できる（profile に `dsh-web-app` が必要）が、新しいため初期段階。
 - [dsh-genui](https://github.com/omdsh-dev/dsh-genui)：返信内にチャート、フォーム、Mermaid、3D Scene などを描画し、操作 Event をモデルへ返す。MIT、正式 Release はなく主に Git から導入するため初期段階。
 - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar)：ファイル、ターミナル、Git、Subagent、サードパーティ Tab を統合するサイドバーワークベンチ。
 - [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil)：DSH 内で OpenPencil デザインをプレビュー、編集。
