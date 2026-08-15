@@ -190,6 +190,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-automation](https://github.com/titanwings/dsh-automation): runs scheduled standalone tasks in fresh root Agents and Sessions, preserving definition revisions, run history, and explicit workspace and permission boundaries.
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator): annotates Agent plans section by section and submits structured feedback, with draft isolation, version binding, and stale-plan rejection.
 - [dsh-record-replay](https://github.com/humblebanana/dsh-record-replay): records macOS desktop workflows and generates Skills; currently requires Xcode Command Line Tools and a separate local `open-record-replay` source checkout.
+- [dsh-guardian](https://github.com/cdxiaodong/dsh-guardian): Agent security guardrail: intercepts and audits every tool call, requiring human confirmation on sensitive operations.
 
 ### Context, Sessions, and Input
 
@@ -201,6 +202,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio): edits system-prompt fragments with a live preview.
 - [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind): rewinds conversations and workspace state through a persistent Change Ledger.
 - [dsh-compaction-instant](https://github.com/KitDoesIt/dsh-compaction-instant): replaces LLM summarization with deterministic compilation and restores compressed content through `recall` / `search`; replacing the built-in compactor requires an npm alias and is a deeper runtime modification.
+- [dsh-llm-inspector](https://github.com/cdxiaodong/dsh-llm-inspector): Unified LLM request/response inspector: reasoning-effort tuning, external-think export, traffic & bundle analysis.
 
 ### Browser, Vision, and Interface
 
