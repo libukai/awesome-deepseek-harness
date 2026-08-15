@@ -249,6 +249,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool): creates and manages sandboxed JavaScript tools through a Monaco editor.
 - [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode): opens the current workspace directly in VS Code from the Web UI.
 - [dsh-movein](https://github.com/sjh9714/dsh-movein): moves Claude Code Skills, MCP servers, hooks, and global instructions into DSH with one command; dry-run by default, `CLAUDE.md` is read natively, and session history is out of scope. MIT, verified on DSH `0.1.0-rc.6`, still new and marked Early.
+- [dsh-passwords](https://github.com/slywalker2006/dsh-passwords): a login gateway (password door) for the DSH web UI with first-run setup, multi-user accounts, rate limiting, audit log, and automatic HTTPS (Let's Encrypt). BSD-3-Clause.
 
 ## Acknowledgements
 
