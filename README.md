@@ -201,6 +201,7 @@ dsh --profile web --dump-config
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio)：编辑系统提示词片段并提供实时预览。
 - [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind)：基于持久 Change Ledger 回退对话和工作区状态。
 - [dsh-compaction-instant](https://github.com/KitDoesIt/dsh-compaction-instant)：以确定性编译替代 LLM 摘要，并通过 `recall` / `search` 恢复被压缩内容；替换内置压缩器时需要使用 npm alias，属于较深的运行时改造。
+- [dsh-memory-plugin-traex](https://github.com/volcengine/OpenViking/tree/main/examples/dsh-memory-plugin-traex)：基于 OpenViking 上下文数据库的自演化记忆插件，将会话记忆、知识 RAG 与技能统一在一个存储/检索层，以 DSH 记忆工具形式暴露。
 
 ### 浏览器、视觉与界面
 
