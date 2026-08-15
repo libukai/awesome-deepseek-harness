@@ -249,6 +249,7 @@ dsh --profile web --dump-config
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool)：通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。
 - [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode)：从 Web UI 直接在 VS Code 中打开当前工作区。
 - [dsh-movein](https://github.com/sjh9714/dsh-movein)：一条命令把 Claude Code 的 Skills、MCP、hooks 和全局指令迁入 DSH；默认预演，`CLAUDE.md` 由 DSH 原生读取，会话历史不在范围内。MIT，已在 DSH `0.1.0-rc.6` 验证，项目仍新，标注为早期。
+- [dsh-passwords](https://github.com/slywalker2006/dsh-passwords)：DSH 网页界面的登录网关（密码门）：首次配置、多用户账号、防爆破锁定、审计日志与自动 HTTPS（Let's Encrypt）。BSD-3-Clause。
 
 ## 致谢
 
