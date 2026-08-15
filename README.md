@@ -248,6 +248,7 @@ dsh --profile web --dump-config
 - [dsh-payload-capture](https://github.com/Moeblack/dsh-payload-capture)：捕获并落盘上行模型 API Payload，便于调试请求组装。
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool)：通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。
 - [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode)：从 Web UI 直接在 VS Code 中打开当前工作区。
+- [dsh-passwords](https://github.com/slywalker2006/dsh-passwords)：dsh 登录网关（密码门）——远程访问鉴权、主用户/子用户多账号管理、HTTPS、防爆破锁定与审计日志。
 
 ## 致谢
 
