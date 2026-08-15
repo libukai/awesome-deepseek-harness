@@ -218,6 +218,7 @@ dsh --profile web --dump-config
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)：在对话流中生成沙箱化的可交互 HTML 卡片。
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [dsh-sticky-disclosure](https://github.com/Han-1413141/dsh-sticky-disclosure)：将滑出屏幕的 Think/工具/命令标签钉在 DSH Web 会话顶部，支持一键收起所有展开区块与自定义快捷键。
 
 ### 沙箱与执行
 

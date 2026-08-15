@@ -218,6 +218,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)：会話ストリーム内にサンドボックス化されたインタラクティブ HTML カードを生成。
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：タスク結果とキーワードに応じて設定できるデスクトップ通知。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：DSH の会話内容をワンクリックで生成・共有。
+- [dsh-sticky-disclosure](https://github.com/Han-1413141/dsh-sticky-disclosure)：画面外に出た Think/ツール/コマンドのラベルを DSH Web 会話の上部にピン留めし、展開済みセクションをワンクリックで折りたたむ（カスタムホットキー対応）。
 
 ### サンドボックスと実行
 
