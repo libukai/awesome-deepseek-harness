@@ -213,6 +213,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-web-review](https://github.com/CanglongCl/dsh-web-review)：DSH 内で Web ページをプレビューし、要素を選択して selector、アクセシブル名、変更意図を送信。実際のフロントエンド変更 Eval スイートを含むが、現在リポジトリにライセンス表記はない。
 - [dsh-mcp-apps](https://github.com/sugarforever/dsh-mcp-apps)：DSH Web を MCP Apps Host にし、CSP と Permission Policy を備えた sandbox iframe で対話アプリを表示。MIT、`v0.1.1` だが新しいため初期段階。
 - [dsh-genui](https://github.com/omdsh-dev/dsh-genui)：返信内にチャート、フォーム、Mermaid、3D Scene などを描画し、操作 Event をモデルへ返す。MIT、正式 Release はなく主に Git から導入するため初期段階。
+- [deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui)：タスクごとの code-first インタラクティブ UI を生成し、Inline、Canvas、全画面、CLI localhost に対応。ユーザー操作の状態は現在のタスクへ書き戻され、後続の Agent ターンから参照でき、MCP/API アクセスにはユーザー承認が必要。MIT、npm `0.12.2`、DSH `0.1.0-rc.6` で検証済み。新規プロジェクトのため初期段階。
 - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar)：ファイル、ターミナル、Git、Subagent、サードパーティ Tab を統合するサイドバーワークベンチ。
 - [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil)：DSH 内で OpenPencil デザインをプレビュー、編集。
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)：会話ストリーム内にサンドボックス化されたインタラクティブ HTML カードを生成。
