@@ -196,6 +196,8 @@ dsh --profile web --dump-config
 
 ### 上下文、会话与输入
 
+- [dsh-voice-input-plugin](https://github.com/Zhangbo-cn/dsh-voice-input-plugin)：输入框麦克风：点击持续监控、按住对话；浏览器语音识别逐字上屏，回复由 host Edge TTS 边生成边朗读，朗读时暂停识别防回声，点击可停止。
+
 - [dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor)：审计 AGENTS.md、Skill 目录和工具 Schema 的上下文 Token 成本与冲突。
 - [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve)：跨会话记忆、后台演进和分支感知能力。
 - [dsh-noema](https://github.com/ZSeven-W/dsh-noema)：为 DSH 接入本地优先的 Noema 长期记忆，支持工作前召回、设置页管理和从 Codex、Claude Code、Cursor 等导入已有记忆；MIT、`0.1.0-rc.1`，已在 DSH `0.1.0-rc.6` 验证，项目仍新，标注为早期。
