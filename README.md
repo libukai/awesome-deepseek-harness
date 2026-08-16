@@ -236,6 +236,7 @@ dsh --profile web --dump-config
 - [dsh-multica-runtime](https://github.com/forrestchang/dsh-multica-runtime)：连接 Multica 与 DSH 的早期运行时桥接；当前包标记为 `private`、`UNLICENSED`，安装与分发边界仍不完整。
 - [dsh-lark-bot](https://github.com/PlutoKeating/dsh-lark-bot)：把本地 DSH 接入飞书 / Lark，提供流式卡片、工作区、会话恢复与审批；采用 AGPL-3.0，应用凭据以权限 `600` 的明文配置保存在本机。
 - [dsh-qqbot](https://github.com/tencent-connect/dsh-qqbot)：腾讯团队维护的 QQ Bot 插件，支持扫码绑定、私聊与群聊会话隔离及重启恢复；MIT、`0.1.0`，绑定过程会把凭据保存到本地 Profile。
+- [dsh-mcp-bridge](https://github.com/Chhlafiu4312/dsh-mcp-bridge)：零依赖 MCP 客户端桥接，连接 stdio/HTTP MCP server 并将其工具自动注册为 DSH 的 `mcp_<server>_<tool>` 工具；纯 JSON-RPC 2.0 实现、断线自动重连（3 次退避）、声明 dsh.bundle 可经 `dsh plugin add` 安装。MIT、0.4.0，已用官方 filesystem MCP server 与本地 streamable-HTTP server 端到端验证。
 
 ## 开发工具
 
