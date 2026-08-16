@@ -193,6 +193,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator): annotates Agent plans section by section and submits structured feedback, with draft isolation, version binding, and stale-plan rejection.
 - [dsh-record-replay](https://github.com/humblebanana/dsh-record-replay): records macOS desktop workflows and generates Skills; currently requires Xcode Command Line Tools and a separate local `open-record-replay` source checkout.
 - [dsh-science-workbench](https://github.com/poplarity/dsh-science-workbench): reproducible science workbench that records cells, figures, feedback, and rerun lineage in a manifest, together with environment snapshots and input/output hashes; MIT and `v0.1.1`, still Early.
+- [dsh-self-evolving](https://github.com/timwhitez/dsh-self-evolving): evidence-first, crash-resumable self-evolution engine for DSH that generates bounded Cordis plugin candidates, admits them through a one-shot real Loader, evaluates with Harbor, and keeps an auditable journaled lineage; 291 unit tests + 36 Loader E2E, no Terminal-Bench improvement claimed.
 
 ### Context, Sessions, and Input
 
