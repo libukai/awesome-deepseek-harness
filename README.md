@@ -193,6 +193,7 @@ dsh --profile web --dump-config
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator)：对 Agent 计划逐段批注并提交结构化反馈，提供草稿隔离、版本绑定和过期计划拒绝。
 - [dsh-record-replay](https://github.com/humblebanana/dsh-record-replay)：录制 macOS 桌面工作流并生成 Skill；当前依赖 Xcode Command Line Tools 和独立的 `open-record-replay` 本地源码副本。
 - [dsh-science-workbench](https://github.com/poplarity/dsh-science-workbench)：面向可复现实验的工作台，把 Cell、图表、反馈与重跑链路记录到 Manifest，并保存环境快照和输入输出哈希；MIT、`v0.1.1`，功能仍处早期。
+- [dsh-self-evolving](https://github.com/timwhitez/dsh-self-evolving)：证据优先、可崩溃恢复的 DSH 自进化引擎，有界生成 Cordis 候选插件、经一次性真实 Loader 隔离准入、Harbor 评估，并保留可审计的日志化谱系；291 单测 + 36 Loader E2E，当前不声称 Terminal-Bench 提升。
 
 ### 上下文、会话与输入
 

@@ -193,6 +193,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator)：Agent の計画をセクションごとに注釈し、構造化フィードバックを送信。下書き分離、バージョン固定、古い計画の拒否に対応。
 - [dsh-record-replay](https://github.com/humblebanana/dsh-record-replay)：macOS デスクトップワークフローを記録して Skill を生成。現在は Xcode Command Line Tools と、別途用意した `open-record-replay` のローカルソースが必要。
 - [dsh-science-workbench](https://github.com/poplarity/dsh-science-workbench)：Cell、図、フィードバック、再実行の系譜を Manifest に記録し、環境 Snapshot と入出力 Hash も保存する再現可能な科学ワークベンチ。MIT、`v0.1.1` で、まだ初期段階。
+- [dsh-self-evolving](https://github.com/timwhitez/dsh-self-evolving)：エビデンス優先・クラッシュ復帰可能な DSH 自己進化エンジン。有界な Cordis プラグイン候補を生成し、ワンショットの実 Loader で隔離准入、Harbor で評価、監査可能なジャーナル系統を保持。291 ユニットテスト + 36 Loader E2E。Terminal-Bench 改善は主張していません。
 
 ### コンテキスト・Session・入力
 
