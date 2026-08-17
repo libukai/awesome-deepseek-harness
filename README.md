@@ -190,6 +190,7 @@ dsh --profile web --dump-config
 - [mstar-harness](https://github.com/btspoony/mstar-harness)：以 Skill 驱动的 Harness / Loop Engineering 工作流插件。
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams)：为 DSH 提供 Agent Teams 能力。
 - [dsh-automation](https://github.com/titanwings/dsh-automation)：按计划在全新根 Agent 和 Session 中执行独立任务，保留定义修订、运行历史和明确的工作区与权限边界。
+- [dsh-trading](https://github.com/maddogfinance/dsh-trading)：只读交易研究工作台：类型化行情数据接缝（可自带数据源）、多周期指标快照、带溯源与价格校验标注的交互式 K 线卡、以及在 pre-execute 层拦截下单类调用的 risk-guard。
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator)：对 Agent 计划逐段批注并提交结构化反馈，提供草稿隔离、版本绑定和过期计划拒绝。
 - [dsh-record-replay](https://github.com/humblebanana/dsh-record-replay)：录制 macOS 桌面工作流并生成 Skill；当前依赖 Xcode Command Line Tools 和独立的 `open-record-replay` 本地源码副本。
 - [dsh-science-workbench](https://github.com/poplarity/dsh-science-workbench)：面向可复现实验的工作台，把 Cell、图表、反馈与重跑链路记录到 Manifest，并保存环境快照和输入输出哈希；MIT、`v0.1.1`，功能仍处早期。
