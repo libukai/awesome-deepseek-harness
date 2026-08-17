@@ -206,6 +206,7 @@ dsh --profile web --dump-config
 - [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind)：基于持久 Change Ledger 回退对话和工作区状态。
 - [dsh-compaction-instant](https://github.com/KitDoesIt/dsh-compaction-instant)：以确定性编译替代 LLM 摘要，并通过 `recall` / `search` 恢复被压缩内容；替换内置压缩器时需要使用 npm alias，属于较深的运行时改造。
 - [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report)：从会话事件日志只读生成日报、周报、月报、年报和自定义区间报告，不改写会话历史；MIT、`v0.2.0`，仍属早期。
+- [dsh-what-changed](https://github.com/sjh9714/dsh-what-changed)：把一个会话里 Agent 写过的所有文件汇总成一屏审阅面板，被权限拒绝的写入单独计数不算改动；数据来自 session projection，不解析磁盘日志。
 
 ### 浏览器、视觉与界面
 
