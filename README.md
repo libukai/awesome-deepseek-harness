@@ -268,6 +268,7 @@ dsh --profile web --dump-config
 - [dsh-movein](https://github.com/sjh9714/dsh-movein)：一条命令把 Claude Code 的 Skills、MCP、hooks 和全局指令迁入 DSH；默认预演，`CLAUDE.md` 由 DSH 原生读取，会话历史不在范围内。MIT，已在 DSH `0.1.0-rc.6` 验证，项目仍新，标注为早期。
 - [dshpack](https://github.com/hili986/dshpack)：把 Skills、MCP、Profile Patch 和权限默认值打包成可安装、可分享、可审计的 DSH Profile；默认拒绝构建脚本，支持 dry-run、固定来源、凭据扫描和事务回滚。MIT、M0 预发布，尚无 npm，`init` / `pack` 仍未实现，标注为早期。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter)：让 DSH 直接复用 Claude Code、Codex 和 OpenCode 的 hooks 配置，并提供 Shell、Webhook、LLM 与子 Agent Handler；MIT、仓库声明 111 项测试但尚无 Release，自动发现的 hooks 可执行命令和外发数据，标注为早期。
+- [PolinniZhong/dsh-omi-voice](https://github.com/PolinniZhong/dsh-omi-voice)：沉浸式听朗读——DSH 对话内点读/暂停/继续，豆包 TTS 自然音色，BYOK（Key 留在本地 Omi 引擎），只读最终回答并过滤代码/表格/图形，含本地引擎 Swift 源码。MIT。
 
 ## 致谢
 
