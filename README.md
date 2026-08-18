@@ -231,6 +231,7 @@ dsh --profile web --dump-config
 
 ### 沙箱与执行
 
+- [dsh-rate-limiter](https://github.com/Xidong-AI/dsh-rate-limiter)：按 provider 令牌桶主动限速，超限请求在发出前延迟排队而非失败，避免触发上游 429。
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：提供 fail-closed 的 microsandbox microVM 能力；安装后 Provider 与模型工具均默认关闭，必须分别显式启用，平台检查失败时不会降级为无约束宿主执行。含测试目录但尚无正式 Release；`package.json` 声明 BSD-3-Clause，但仓库根目录没有 `LICENSE` 文件，标注为早期。
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：用 Windows Credential Manager、macOS Keychain 或 Linux Secret Service 替代明文凭据文件，并在无 Secret Service 的 Linux 上 fail closed；MIT、`0.1.0`，有内存后端测试但尚无 npm / Release，真实系统钥匙串仍待逐平台烟测，标注为早期。
 - [dsh-win32](https://github.com/sjh9714/dsh-win32)：为 Windows 提供沙箱内可运行的持久 Shell、极简模式和 `doctor` 体检；MIT、`v0.12.0`，基于 DSH `0.1.0-rc.6`，现已修复 `SIGTERM`、管道和后台任务清理，并以 85 项测试和三系统矩阵验证。Windows 控制台进程在优雅终止失败后可能升级为强制终止；可选沙箱还会下载 GPLv2 BusyBox，缺少 pnpm 时 `setup` 会通过 Corepack 启用。
