@@ -198,6 +198,12 @@ dsh --profile web --dump-config
 - [dsh-omicos](https://github.com/omicverse/dsh-omicos)：把 OmicOS 生物信息学能力接入 DSH，提供持久 Python / R 内核、能力目录、后台任务和执行过程视图；GPL-3.0-only、npm `0.2.1`。分析工具以 `permission_mode: full` 运行并可能启动本地内核，云模型和高级套餐需要 OmicOS 账号。
 - [dsh-crew](https://github.com/ZSeven-W/dsh-crew)：从 Claude Code 或 Codex 调度真实 DSH Worker，并提供进度、状态分片和分层策略；MIT、npm `0.1.0-rc.1`，会写入 `~/.config/dsh-crew/status.d/`，外部模型服务可能需要 API Key。当前仅声明在 DSH `0.1.0-rc.6` 验证，且尚无可见测试，标注为早期。
 - [dsh-trading](https://github.com/maddogfinance/dsh-trading)：面向交易研究的 DSH 工作台，提供确定性指标、CSV 数据源和交互式图表；MIT、npm `@dsh-trading/bundle@0.1.0`。项目不提供订单执行接口，并以启发式规则拦截资金移动类工具，但该拦截并非完备安全边界，标注为早期。
+- [dsh-background-agents](https://github.com/PerryLink/dsh-background-agents)：可交互长会话后台代理与持久多代理团队房间：官方 subagent 接缝上的可续跑子代理，加消息总线、共享任务板与审批门交接，跨 DSH 重启存活。
+- [dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck)：交付质量门：动笔前审讯需求、红绿测试证据门、交付后对抗评审，产出逐维核验报告。
+- [dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind)：DSH 版 Claude Code /rewind：git 优先的工作区快照、轮边界会话 fork 与 /checkpoint、/rewind 一键恢复，设置页时间线带两两 diff。
+- [dsh-memento](https://github.com/PerryLink/dsh-memento)：有界、分层、带审批门、可审计的跨会话记忆：ctx.memory 服务 + 零依赖 SQLite provider + memory 工具与冻结快照注入。
+- [dsh-composer-history](https://github.com/PerryLink/dsh-composer-history)：网页输入区的终端式输入历史：方向键精确还原草稿/光标、Ctrl+R 反搜、工作区级回忆，并感知滑动上下文。
+- [dsh-session-sync](https://github.com/PerryLink/dsh-session-sync)：会话跨设备同步：专用 git 镜像 + append-only 三方合并（keep-both + fork 冲突解决），/sync 命令与可配置自动推拉。
 
 ### 上下文、会话与输入
 
@@ -211,6 +217,8 @@ dsh --profile web --dump-config
 - [dsh-compaction-instant](https://github.com/KitDoesIt/dsh-compaction-instant)：以确定性编译替代 LLM 摘要，并通过 `recall` / `search` 恢复被压缩内容；替换内置压缩器时需要使用 npm alias，属于较深的运行时改造。
 - [toolshrink](https://github.com/unclecode/toolshrink)：按测试、Diff、JSON、目录树、日志和安装输出的结构做内容感知压缩，并在需要时保留原始输出引用；MIT、`0.1.0`，目前需从源码构建并修改全局 `~/.dsh/cordis.patch.yml`，暂存的原始输出会在 24 小时后清理，标注为早期。
 - [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report)：从会话事件日志只读生成日报、周报、月报、年报和自定义区间报告，并在 `v0.4.0` 增加 DeepTrace、成本与余额、发现项、协作、活动、资源、风险和 Session Trace；不改写会话历史，MIT，仍属早期。
+- [dsh-draw](https://github.com/PerryLink/dsh-draw)：统一静态图像生成路由：一个 image_generate 工具接 OpenAI 兼容引擎（OpenAI Images、智谱 CogView 及任意兼容端点），健康感知回退、会话配额与结果卡片。
+- [dsh-click](https://github.com/PerryLink/dsh-click)：跨平台原生桌面控制（Windows 优先）：截图、无障碍树读屏、点击/输入/滚轮/按键与应用启动；变更动作全过审批门，绝不抢前台焦点。
 
 ### 浏览器、视觉与界面
 
@@ -228,6 +236,7 @@ dsh --profile web --dump-config
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)：在对话流中生成沙箱化的可交互 HTML 卡片。
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules)：声明式 allow/deny/ask 权限规则（工具名/参数/路径/身份匹配）+ Codex 式进程级网络策略：内置本地 HTTP/CONNECT 代理接管 shell 子进程流量，全量会话日志审计与规则热重载。
 
 ### 沙箱与执行
 
@@ -252,6 +261,11 @@ dsh --profile web --dump-config
 - [dsh-qqbot](https://github.com/tencent-connect/dsh-qqbot)：腾讯团队维护的 QQ Bot 插件，支持扫码绑定、私聊与群聊会话隔离及重启恢复；MIT、`0.1.0`，绑定过程会把凭据保存到本地 Profile。
 - [LoongSuite DSH Plugin](https://github.com/loongsuite/dsh-plugin)：把 Agent Turn、模型调用、工具执行和 Token 使用转成 OpenTelemetry GenAI Trace，可发送到 Jaeger、Tempo、SigNoz、Langfuse 等 OTLP 后端；Apache-2.0、Beta，已在 DSH `0.1.0-rc.6` 的 Headless 与 Web Profile 验证。内容采集默认关闭，启用后可能外发源码、凭据和个人数据。
 - [dsh-wakatime](https://github.com/dingyi222666/dsh-wakatime)：把 DSH 文件操作、AI 代码行数和项目耗时上报到 WakaTime；MIT、npm `0.1.1`，有测试但项目仍新，标注为早期。需要 WakaTime API Key，会写入 `~/.wakatime/dsh-wakatime/` 并在缺少 CLI 时自动下载或更新 `wakatime-cli`。
+- [dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide)：插件开发知识库打包为按需加载的 agent 技能：官方约束、任务工作流、API 参考与社区踩坑，随 bundle 安装即可边开发边查。
+- [dsh-fast](https://github.com/PerryLink/dsh-fast)：只读性能诊断：会话加载耗时、spill 命中、压缩统计、上下文注入 token 占比与 LLM 缓存命中率，经 /fast 命令与 fast_report 工具呈现。
+- [dsh-score](https://github.com/PerryLink/dsh-score)：插件多维质量评分：安装成功（消费 dsh-test-drive 结果）/维护/文档/安全/协议合规五维，真实 CLI 证据 + 审计时间戳，产出榜单报告。
+- [dsh-test-drive](https://github.com/PerryLink/dsh-test-drive)：插件隔离安装冒烟试驾：一次性 DSH_HOME profile 内安装、校验 bundle patch、启动冒烟，产出结构化通过/失败矩阵，自隔离临时目录。
+- [dsh-github](https://github.com/PerryLink/dsh-github)：官方级 GitHub CI 集成：composite action、轮询 PR 审查机器人（幂等行内评论）与状态检查门，PR/issue/仓库/文件工具写操作全过人工审批。
 
 ## 开发工具
 
