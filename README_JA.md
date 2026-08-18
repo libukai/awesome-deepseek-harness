@@ -260,6 +260,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [deepseek-harness-action](https://github.com/Lixiaoyiao/deepseek-harness-action)：GitHub Actions 上で DSH による PR Review、CI 診断、自動修正、Issue → PR を実行。書き込み権限はデフォルトで無効で、検証は認証情報を持たないコンテナで行う。
 - [Awesome DSH Plugins Radar](https://github.com/AdamPlatin123/awesome-dsh-plugins)：発見、静的、Compile、Runtime の信号を分離して表示する自動互換性レーダー。MIT、データ変動が速く Release もなく、「Runtime で利用可能」は Security Audit や品質保証ではないため初期段階。
 - [dsh-market](https://github.com/dsh-market/dsh-market)：`awesome-dsh-plugin` 掲載プロジェクトを DSH 内で閲覧、検索、インストール、更新、削除できるプラグインマーケット。MIT、`v1.9.0`。Build Script は既定で遮断され、Install Endpoint は Same-origin POST のみを受け付けるが、ディレクトリ掲載は安全性の保証ではない。
+- [dsh-skill-hub](https://github.com/cheshireez/dsh-skill-hub)：DSH 公式 ctx.skills レジストリに基づき、ローカルスキルの閲覧・検索・有効化/無効化・確認・診断・新規作成ができる GUI スキルハブ。スキルマーケットとソース追跡同期付き。MIT、npm \`dsh-skill-hub@0.2.2\`。
 - [dsh-suite](https://whyihaveyou.github.io/dsh-suite/)：中国語・英語対応の DSH エコシステム索引。プラグイン検索、`create-dsh-plugin` スキャフォールダー、基本的な互換性メタデータを提供。Catalog は毎時更新され、収録パッケージを一時 Profile へ毎日インストールして互換性を確認する。インストール成功は Security Audit や品質保証ではない。
 - [deepseek-harness-plugin-mcp](https://github.com/bobleer/deepseek-harness-plugin-mcp)：他の Agent が MCP 経由で DSH プラグインを発見、検査、インストール、呼び出し可能にする。インストールと Runtime はデフォルトで無効で、`--allow-install` / `--allow-runtime` を明示的に有効化した場合のみ、それぞれの副作用が発生する。
 - [dsh-payload-capture](https://github.com/Moeblack/dsh-payload-capture)：モデル API へ送信する Payload を取得・保存し、リクエスト組み立てのデバッグに利用。
