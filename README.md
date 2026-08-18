@@ -167,6 +167,8 @@ dsh --profile web --dump-config
 | [DSH Desktop](https://github.com/dataelement/dsh-desktop) | macOS / Windows · Electron           | 管理本地 Harness、工作区、随机端口、Profile、插件和会话的跨平台桌面端                                                  |
 | [dsh-launcher](https://github.com/Ruler4396/dsh-launcher) | Windows · WebView2                   | 提供静默启动、独立窗口、便携包和 MSI 的轻量启动器                                                                      |
 
+| [deepseek-desktop](https://github.com/huchunlinnk/deepseek-desktop) | macOS / Windows · Tauri · 早期 | 原生 Tauri 桌面壳，由 RSI 引擎自我维护：每日自动追上游、强制 128 插件 1:1 对等、自动修复并开 PR（AI for AI） |
+
 ### 终端、移动与 Web 体验
 
 | 项目                                                            | 类型              | 说明                                                                                              |
@@ -184,6 +186,8 @@ dsh --profile web --dump-config
 ## 精选插件
 
 ### 工作流与 Agent
+
+- [deepseek-desk-rsi](https://github.com/huchunlinnk/deepseek-desk-rsi)：递归自主进化（RSI）引擎——有界 perceive→integrate→verify→parity→repair→propose 环路，让下游应用与上游保持 1:1 特性对等（DSH 维护 DSH）。
 
 - [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit)：时间、编码、JSON、计算器、CSV、正则、Markdown、Diff 等确定性工具合集。
 - [dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research)：面向 DSH 的自适应深度研究编排器。
