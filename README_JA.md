@@ -187,6 +187,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 ### ワークフローと Agent
 
 - [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit)：時刻、エンコーディング、JSON、計算、CSV、正規表現、Markdown、Diff などの決定論的ツール集。
+- [dsh-review](https://github.com/Tinzlu/dsh-review)：DeepSeek Harness の headless を Codex スキルにした独立クロスレビュー。V4 Flash で diff・ファイル・リポジトリ全体をレビュー。MIT・`v0.1.0`。Node.js と `DEEPSEEK_API_KEY` が必要で、DSH の開発者プレビューに依存。レビュー内容は DeepSeek API に送信されます。
 - [dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research)：DSH 向けの適応型ディープリサーチオーケストレーター。
 - [dsh-101](https://github.com/bill9109/dsh-101)：DSH 内で公式ドキュメントを読み、理解するための学習モード。
 - [dsh-auto-approval](https://github.com/Andy8647/dsh-auto-approval)：ルールとモデルでツール呼び出しを分類し、`allow / deny` の自動承認判断を返す。
