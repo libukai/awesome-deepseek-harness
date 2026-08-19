@@ -228,7 +228,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize): generates sandboxed, interactive HTML cards in the conversation stream.
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification): configurable desktop notifications based on task outcomes and keywords.
 - [dsh-share](https://github.com/hellodigua/dsh-share): generates and shares DSH conversation content in one click.
-
+[dsh-github-search](https://github.com/ttb-eng/dsh-github-search): a GitHub console for the web sidebar — search, README browsing, one-click clone, agent handoff, agent verdict, history, and Star/Fork; MIT, `v1.0.0`.
 ### Sandboxing and Execution
 
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro): provides a fail-closed microsandbox microVM capability; both the Provider and model-facing tools stay disabled after installation until separately enabled, and failed platform checks never degrade to unconstrained host execution. It has test directories but no formal Release; `package.json` declares BSD-3-Clause, but the repository has no root `LICENSE` file, so it is marked Early.
