@@ -234,6 +234,8 @@ dsh --profile web --dump-config
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：提供 fail-closed 的 microsandbox microVM 能力；安装后 Provider 与模型工具均默认关闭，必须分别显式启用，平台检查失败时不会降级为无约束宿主执行。含测试目录但尚无正式 Release；`package.json` 声明 BSD-3-Clause，但仓库根目录没有 `LICENSE` 文件，标注为早期。
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：用 Windows Credential Manager、macOS Keychain 或 Linux Secret Service 替代明文凭据文件，并在无 Secret Service 的 Linux 上 fail closed；MIT、`0.1.0`，有内存后端测试但尚无 npm / Release，真实系统钥匙串仍待逐平台烟测，标注为早期。
 - [dsh-win32](https://github.com/sjh9714/dsh-win32)：为 Windows 提供沙箱内可运行的持久 Shell、极简模式和 `doctor` 体检；MIT、`v0.12.0`，基于 DSH `0.1.0-rc.6`，现已修复 `SIGTERM`、管道和后台任务清理，并以 85 项测试和三系统矩阵验证。Windows 控制台进程在优雅终止失败后可能升级为强制终止；可选沙箱还会下载 GPLv2 BusyBox，缺少 pnpm 时 `setup` 会通过 Corepack 启用。
+- [dsh-credential-manager](https://github.com/accpowered/dsh-credential-manager)：具名凭据管理器，模型按引用使用用户凭据，秘密值不进入对话，以 `DSH_CM_*` 环境变量按次注入 shell 执行，附 Settings → 凭据管理页；MIT，含单元测试与真实部署验证。
+- [dsh-auto-review](https://github.com/accpowered/dsh-auto-review)：workspace-write 之上沙箱升级的自动审批应答器，确定性正则过滤先行、灰色地带交清洁上下文的小模型审查、不确定才问人，错误路径 fail-closed；需要对核心应用随附的两个补丁（'auto' 审批策略与 'auto-review' 请求用途），仓库内含补丁与 rebase 指南；MIT，含单元测试。
 
 ### 主题与皮肤
 
