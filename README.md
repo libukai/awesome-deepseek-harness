@@ -228,7 +228,7 @@ dsh --profile web --dump-config
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)：在对话流中生成沙箱化的可交互 HTML 卡片。
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
-
+- [dsh-github-search](https://github.com/ttb-eng/dsh-github-search)：Web 侧边栏的 GitHub 操作台，闭环搜索、README 浏览、一键克隆、喂给 Agent、Agent 判断、历史记录与 Star/Fork；MIT、`v1.0.0`。
 ### 沙箱与执行
 
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：提供 fail-closed 的 microsandbox microVM 能力；安装后 Provider 与模型工具均默认关闭，必须分别显式启用，平台检查失败时不会降级为无约束宿主执行。含测试目录但尚无正式 Release；`package.json` 声明 BSD-3-Clause，但仓库根目录没有 `LICENSE` 文件，标注为早期。
