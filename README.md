@@ -213,7 +213,7 @@ dsh --profile web --dump-config
 - [dsh-web-review](https://github.com/CanglongCl/dsh-web-review)：在 DSH 内预览网页、点选元素并提交选择器、可访问名称和修改意图，附真实前端修改评测套件；当前仓库尚未声明许可证。
 - [dsh-mcp-apps](https://github.com/sugarforever/dsh-mcp-apps)：让 DSH Web 成为 MCP Apps Host，在带 CSP 和 Permission Policy 的沙箱 iframe 中渲染交互应用；MIT、`v0.1.1`，但项目仍新，标注为早期。
 - [dsh-genui](https://github.com/omdsh-dev/dsh-genui)：在回复中渲染图表、表单、Mermaid、3D 场景等交互组件，并将操作事件送回模型；MIT、尚无正式 Release，当前主要通过 Git 安装，标注为早期。
-- [deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui)：按任务生成 code-first 交互界面，支持 Inline、Canvas、全屏与 CLI localhost；用户操作状态写回当前任务，供 Agent 后续轮次继续读取，MCP/API 访问需用户授权。MIT、npm `0.12.2`，已在 DSH `0.1.0-rc.6` 验证，项目仍新，标注为早期。
+- [deepseek-harness-genui](https://github.com/pengyue-polaron/deepseek-harness-genui)：按任务生成 code-first 交互界面，支持 Inline、Canvas、全屏与 CLI localhost；用户操作状态写回当前任务，供 Agent 后续轮次继续读取，MCP/API 访问需用户授权。MIT、npm `0.13.1`，已在 DSH `0.1.0-rc.6` 验证，项目仍新，标注为早期。
 - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar)：集成文件、终端、Git、子 Agent 和第三方 Tab 的侧边栏工作台。
 - [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil)：在 DSH 中预览和编辑 OpenPencil 设计。
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)：在对话流中生成沙箱化的可交互 HTML 卡片。
