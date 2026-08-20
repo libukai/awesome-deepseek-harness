@@ -216,6 +216,7 @@ dsh --profile web --dump-config
 - [dsh-compaction-instant](https://github.com/KitDoesIt/dsh-compaction-instant)：以确定性编译替代 LLM 摘要，并通过 `recall` / `search` 恢复被压缩内容；替换内置压缩器时需要使用 npm alias，属于较深的运行时改造。
 - [toolshrink](https://github.com/unclecode/toolshrink)：按测试、Diff、JSON、目录树、日志和安装输出的结构做内容感知压缩，并在需要时保留原始输出引用；MIT、`0.1.0`，目前需从源码构建并修改全局 `~/.dsh/cordis.patch.yml`，暂存的原始输出会在 24 小时后清理，标注为早期。
 - [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report)：从会话事件日志只读生成日报、周报、月报、年报和自定义区间报告，并在 `v0.4.0` 增加 DeepTrace、成本与余额、发现项、协作、活动、资源、风险和 Session Trace；不改写会话历史，MIT，仍属早期。
+- [dsh-conversation-landmarks](https://github.com/mantonlove/dsh-conversation-landmarks)：DSH 长会话左缘导航轨——每个用户任务一个地标、悬停预览请求与最近回答、按需加载更早历史；仅使用官方扩展点，无需改动源码。
 
 ### 浏览器、视觉与界面
 
