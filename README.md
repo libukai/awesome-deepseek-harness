@@ -219,6 +219,7 @@ dsh --profile web --dump-config
 
 ### 浏览器、视觉与界面
 
+- [dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth)：手机优先的 DSH 前端体验优化（输入框自动折叠、手机回车换行、侧边栏/顶部栏压缩、设置页、禁缩放回弹），以及长任务完成/权限申请/提问的通知（页面卡片、Web Push、webhook）；零 dsh 本体改动。
 - [dsh-browser](https://github.com/Lum1104/dsh-browser)：Chrome 侧边栏扩展，让 DSH 直接操作当前浏览器页面。
 - [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)：图片问答、长截图 OCR、UI 还原、Grounding 和像素对比。
 - [dsh-computer-use](https://github.com/Anionex/dsh-computer-use)：原生 macOS Computer Use Bundle，优先使用 Accessibility，拒绝过期观察并按应用、Session 和操作范围管理权限；当前为早期 `0.1.0`，需从源码检出目录安装。

@@ -219,6 +219,7 @@ The following projects provide standalone user interfaces, distribution formats,
 
 ### Browser, Vision, and Interface
 
+- [dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth): mobile-first UX polish for the DSH Web UI (composer auto-fold, Enter-as-newline on phones, compact sidebar/header, settings page, zoom and overscroll lock) plus notifications for task completion / permission requests / questions via in-page cards, Web Push, and webhook; zero dsh changes.
 - [dsh-browser](https://github.com/Lum1104/dsh-browser): Chrome sidebar extension that lets DSH operate the current browser page directly.
 - [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit): image Q&A, long-screenshot OCR, UI reconstruction, grounding, and pixel comparison.
 - [dsh-computer-use](https://github.com/Anionex/dsh-computer-use): native macOS Computer Use Bundle that prioritizes Accessibility, rejects stale observations, and scopes permissions by app, Session, and action; currently an early `0.1.0` release installed from a source checkout.
