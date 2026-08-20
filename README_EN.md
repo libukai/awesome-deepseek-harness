@@ -233,6 +233,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize): generates sandboxed, interactive HTML cards in the conversation stream.
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification): configurable desktop notifications based on task outcomes and keywords.
 - [dsh-share](https://github.com/hellodigua/dsh-share): generates and shares DSH conversation content in one click.
+- [dsh-web-app-launcher](https://github.com/sylkmpo/dsh-web-app-launcher): Windows plugin that runs dsh web like an ordinary desktop app — the native web UI under the hood (no Electron, no repackaging, no fork), presented as a desktop application: a desktop shortcut is created automatically on first run, and double-clicking opens the Web UI in a frameless Edge/Chrome/Brave/Vivaldi app window (no tab bar or address bar) that exits the harness when closed; MIT, installed from GitHub via `dsh plugin --profile web add github:sylkmpo/dsh-web-app-launcher`; requires Windows 10/11.
 
 ### Sandboxing and Execution
 

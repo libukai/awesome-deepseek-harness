@@ -233,6 +233,7 @@ dsh --profile web --dump-config
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)：在对话流中生成沙箱化的可交互 HTML 卡片。
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [dsh-web-app-launcher](https://github.com/sylkmpo/dsh-web-app-launcher)：Windows 插件，让 dsh web 像普通桌面软件一样运行：本质是原生 Web（无 Electron、无二次打包、无 fork），视觉上是桌面软件——首次运行自动创建桌面快捷方式，双击即以 Edge/Chrome/Brave/Vivaldi 的无边框应用窗口（无标签栏/地址栏）打开 Web UI，关闭窗口即退出 Harness；MIT，经 GitHub 安装（`dsh plugin --profile web add github:sylkmpo/dsh-web-app-launcher`），需 Windows 10/11。
 
 ### 沙箱与执行
 
