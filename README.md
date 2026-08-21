@@ -241,7 +241,7 @@ dsh --profile web --dump-config
 
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：提供 fail-closed 的 microsandbox microVM 能力；安装后 Provider 与模型工具均默认关闭，必须分别显式启用，平台检查失败时不会降级为无约束宿主执行。含测试目录但尚无正式 Release；`package.json` 声明 BSD-3-Clause，但仓库根目录没有 `LICENSE` 文件，标注为早期。
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：用 Windows Credential Manager、macOS Keychain 或 Linux Secret Service 替代明文凭据文件，并在无 Secret Service 的 Linux 上 fail closed；MIT、`0.1.0`，有内存后端测试但尚无 npm / Release，真实系统钥匙串仍待逐平台烟测，标注为早期。
-- [dsh-win32](https://github.com/sjh9714/dsh-win32)：为 Windows 提供沙箱内可运行的持久 Shell、极简模式和 `doctor` 体检；MIT、`v0.14.0`，以 98 项测试和 Windows 受限令牌沙箱 CI 验证。当前仍限制 DSH `>=0.1.0-rc.5 <0.1.0-rc.7`；Git Bash 预设需要 `danger-full-access`，沙箱内应使用会下载 GPLv2 BusyBox 的变体，Windows 控制台进程在优雅终止失败后可能升级为强制终止。
+- [dsh-win32](https://github.com/sjh9714/dsh-win32)，为 Windows 提供无需 WSL 的原生持久 Shell 与 Workspace Write 沙箱预设；MIT、`v0.15.1`，由 103 项测试和 Windows 受限令牌 CI 验证。沙箱会话使用 busybox-w32，非受限会话使用 Git Bash，并保留 GBK / UTF-16 读取和 `doctor` 安装诊断。当前仍限制 DSH `>=0.1.0-rc.5 <0.1.0-rc.7`，Windows 控制台进程在优雅终止失败后可能升级为强制终止。
 - [dsh-exec-extension](https://github.com/LvDAO/dsh-exec-extension)：为 Headless Profile 增加一次性 Exec CLI，把 stdin、`@file`、工作目录、模型、超时、JSONL 输出和权限模式变为逐次参数；MIT `v0.1.0`，固定 DSH `0.1.0-rc.7`、Node.js 22.19+，含 Node / Rust 测试与持续集成。默认仍是 `workspace-write`，无界面的 `--approval ask` 会 fail closed；`--full-auto` / `--yolo` 会自动批准，只有显式 `--sandbox danger-full-access` 才解除沙箱。当前仅通过固定 Git Tag 安装，Git 依赖的 `prepare` 在 Agent 沙箱外执行，需先审查并显式授权。
 
 ### 主题与皮肤
@@ -281,7 +281,7 @@ dsh --profile web --dump-config
 - [dsh-payload-capture](https://github.com/Moeblack/dsh-payload-capture)：捕获并落盘上行模型 API Payload，便于调试请求组装。
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool)：通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。
 - [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode)：从 Web UI 直接在 VS Code 中打开当前工作区。
-- [dsh-movein](https://github.com/sjh9714/dsh-movein)：一条命令把 Claude Code 的 Skills、MCP、hooks 和全局指令迁入 DSH；默认预演，`CLAUDE.md` 由 DSH 原生读取，会话历史不在范围内。MIT，已在 DSH `0.1.0-rc.6` 验证，项目仍新，标注为早期。
+- [dsh-movein](https://github.com/sjh9714/dsh-movein)，预览并将 Claude Code、Codex 与 OpenCode 的受支持配置迁入 DSH；涵盖技能、命令、代理、指令与本地或远程 MCP 服务，支持 OpenCode V1 / V2 JSONC 优先级、目标冲突保护、备份、恢复与 `doctor`。会话历史、OpenCode 权限和插件仍不在范围内。MIT、`v0.7.2`，项目仍新，标注为早期。
 - [dshpack](https://github.com/hili986/dshpack)：把 Skills、MCP、Profile Patch 和权限默认值打包成可安装、可分享、可审计的 DSH Profile；默认拒绝构建脚本，支持 dry-run、固定来源、凭据扫描和事务回滚。MIT、npm `0.1.1`，M0 格式仍属预发布，`init` / `pack` 尚未实现，标注为早期。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter)：让 DSH 直接复用 Claude Code、Codex 和 OpenCode 的 hooks 配置，并提供 Shell、Webhook、LLM 与子 Agent Handler；MIT、仓库声明 111 项测试但尚无 Release，自动发现的 hooks 可执行命令和外发数据，标注为早期。
 
