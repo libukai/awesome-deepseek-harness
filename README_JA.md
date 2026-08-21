@@ -241,7 +241,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：fail-closed な microsandbox microVM 能力を提供。導入後も Provider とモデル向け Tool は個別に明示有効化するまで無効で、プラットフォーム検査に失敗しても無制限の Host 実行へフォールバックしない。テストディレクトリはあるが正式 Release はなく、`package.json` は BSD-3-Clause を宣言する一方でルートに `LICENSE` ファイルがないため初期段階。
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：平文 Credential File を Windows Credential Manager、macOS Keychain、Linux Secret Service に置き換え、Secret Service のない Linux では fail closed。MIT `0.1.0` で Memory Backend Test はあるが npm / Release はまだなく、実 OS Keychain の Platform 別 Smoke Test も未完了のため初期段階。
-- [dsh-win32](https://github.com/sjh9714/dsh-win32)：Windows 向けに Sandbox 内で動作する永続 Shell、Minimal Mode、`doctor` 診断を提供。MIT `v0.14.0`、98 Test と Windows Restricted-token Sandbox CI で検証。現在も DSH `>=0.1.0-rc.5 <0.1.0-rc.7` に限定される。Git Bash Preset は `danger-full-access` が必要で、Sandbox では GPLv2 BusyBox を Download する Variant を使う。Windows Console Process は Graceful Termination 失敗後に Force Kill へ進む場合がある。
+- [dsh-win32](https://github.com/sjh9714/dsh-win32)、WSL なしで Windows 向けのネイティブな永続 Shell と Workspace Write Sandbox Preset を提供。MIT `v0.15.1`、103 Test と Windows Restricted-token CI で検証。Sandbox Session は busybox-w32、無制限 Session は Git Bash を使い、GBK / UTF-16 読み取りと `doctor` Setup 診断を備える。現在も DSH `>=0.1.0-rc.5 <0.1.0-rc.7` に限定され、Windows Console Process は Graceful Termination 失敗後に Force Kill へ進む場合がある。
 - [dsh-exec-extension](https://github.com/LvDAO/dsh-exec-extension)：Headless Profile に単発 Exec CLI を追加し、stdin、`@file`、作業ディレクトリ、モデル、Timeout、JSONL 出力、Permission Mode を呼び出しごとの Flag として提供。MIT `v0.1.0`、DSH `0.1.0-rc.7` と Node.js 22.19+ に固定され、Node / Rust Test と CI がある。既定は `workspace-write` のままで、UI のない `--approval ask` は fail closed。`--full-auto` / `--yolo` は自動承認し、Sandbox を解除するのは明示的な `--sandbox danger-full-access` のみ。現在は固定 Git Tag から導入し、Git 依存の `prepare` は Agent Sandbox 外で動くため、事前確認と明示許可が必要。
 
 ### テーマとスキン
@@ -281,7 +281,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-payload-capture](https://github.com/Moeblack/dsh-payload-capture)：モデル API へ送信する Payload を取得・保存し、リクエスト組み立てのデバッグに利用。
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool)：Monaco エディターでサンドボックス化された JavaScript ツールを作成・管理。
 - [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode)：Web UI から現在のワークスペースを VS Code で直接開く。
-- [dsh-movein](https://github.com/sjh9714/dsh-movein)：1 コマンドで Claude Code の Skill、MCP、hooks、グローバル指示を DSH へ移行。デフォルトはドライラン。`CLAUDE.md` は DSH がネイティブに読み、Session 履歴は対象外。MIT。DSH `0.1.0-rc.6` で検証済みだが新しいため初期段階。
+- [dsh-movein](https://github.com/sjh9714/dsh-movein)、Claude Code、Codex、OpenCode の対応 Setup を確認して DSH へ移行。Skill、Command、Agent、指示、Local または Remote MCP Server に対応し、OpenCode V1 / V2 JSONC の優先順位、衝突検査、Backup、Restore、`doctor` を備える。Session、OpenCode Permission、Plugin は対象外。MIT `v0.7.2`、まだ新しいため初期段階。
 - [dshpack](https://github.com/hili986/dshpack)：Skill、MCP、Profile Patch、Permission Default を Install・共有・監査可能な DSH Profile に Package 化。Build Script は既定で拒否し、dry-run、Source Pin、Credential Scan、Transaction Rollback を備える。MIT、npm `0.1.1`。M0 Format はまだ Prerelease で `init` / `pack` も未実装のため初期段階。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter)：Claude Code、Codex、OpenCode の hooks Config を DSH で直接再利用し、Shell、Webhook、LLM、Subagent Handler を提供。MIT、Repository は 111 Test を示すが Release はまだない。自動検出した hooks は Command 実行や Data 送信が可能なため初期段階。
 
