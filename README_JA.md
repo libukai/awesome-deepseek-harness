@@ -223,6 +223,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 
 - [dsh-browser](https://github.com/Lum1104/dsh-browser)：DSH から現在のブラウザページを直接操作できる Chrome サイドバー拡張。
 - [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)：画像 Q&A、長いスクリーンショットの OCR、UI 再現、Grounding、ピクセル比較。
+- [dsh-vision-router](https://github.com/ysr666/dsh-vision-router)：内蔵の無料ビジョンチェーンとピクセル級ビジョンツール。画像を貼るだけで動作し、Python 不要、ワンコマンドでインストール。
 - [dsh-computer-use](https://github.com/Anionex/dsh-computer-use)：Accessibility を優先し、古い観測を拒否し、アプリ・Session・操作単位で権限を管理するネイティブ macOS Computer Use Bundle。現在は初期 `0.1.0` で、ソースチェックアウトからインストールする必要がある。
 - [dsh-ios](https://github.com/ZSeven-W/dsh-ios)：DSH の会話内に iOS Simulator または USB 接続 iPhone のライブ画面を表示し、Build / Run、Semantic UI Automation、Log、Backtrace、Leak 検査の 21 Tool を提供。MIT、npm / Release `0.1.0-rc.1`、DSH `0.1.0-rc.6` で検証済みで、CI と Smoke Test もある。まだ Pre-release で、完全な Xcode を備えた macOS が必要。任意の AXe は初回に SHA-256 検証済み Binary を Download する場合があり、OCR はローカルで Compile され、実機操作にはユーザーが用意して署名した WebDriverAgent が必要で、Tool は Build と実機操作を実行できるため初期段階。
 - [modlens](https://github.com/liustack/modlens)：画像の貼り付けとモデルルーティングによってテキスト専用モデルに視覚能力を与える。ワークスペース画像を独立したビジョンツールで処理する方式とは異なる選択肢。
