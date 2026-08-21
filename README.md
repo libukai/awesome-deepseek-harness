@@ -241,7 +241,7 @@ dsh --profile web --dump-config
 
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：提供 fail-closed 的 microsandbox microVM 能力；安装后 Provider 与模型工具均默认关闭，必须分别显式启用，平台检查失败时不会降级为无约束宿主执行。含测试目录但尚无正式 Release；`package.json` 声明 BSD-3-Clause，但仓库根目录没有 `LICENSE` 文件，标注为早期。
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：用 Windows Credential Manager、macOS Keychain 或 Linux Secret Service 替代明文凭据文件，并在无 Secret Service 的 Linux 上 fail closed；MIT、`0.1.0`，有内存后端测试但尚无 npm / Release，真实系统钥匙串仍待逐平台烟测，标注为早期。
-- [dsh-win32](https://github.com/sjh9714/dsh-win32)：为 Windows 提供沙箱内可运行的持久 Shell、极简模式和 `doctor` 体检；MIT、`v0.14.0`，以 98 项测试和 Windows 受限令牌沙箱 CI 验证。当前仍限制 DSH `>=0.1.0-rc.5 <0.1.0-rc.7`；Git Bash 预设需要 `danger-full-access`，沙箱内应使用会下载 GPLv2 BusyBox 的变体，Windows 控制台进程在优雅终止失败后可能升级为强制终止。
+- [dsh-win32](https://github.com/sjh9714/dsh-win32)，为 Windows 提供沙箱内可运行的持久 Shell、极简模式和 `doctor` 体检；MIT、`v0.15.0`，由跨平台 CI 和 Windows 受限令牌沙箱实验验证。当前仍限制 DSH `>=0.1.0-rc.5 <0.1.0-rc.7`；普通 `setup` 仍需要 Git Bash；`setup --sandboxed` 在没有 Git Bash 时会继续安装下载 GPLv2 BusyBox 的沙箱预设，检测到 Git Bash 时则安装两个预设；Windows 控制台进程在优雅终止失败后可能升级为强制终止。
 - [dsh-exec-extension](https://github.com/LvDAO/dsh-exec-extension)：为 Headless Profile 增加一次性 Exec CLI，把 stdin、`@file`、工作目录、模型、超时、JSONL 输出和权限模式变为逐次参数；MIT `v0.1.0`，固定 DSH `0.1.0-rc.7`、Node.js 22.19+，含 Node / Rust 测试与持续集成。默认仍是 `workspace-write`，无界面的 `--approval ask` 会 fail closed；`--full-auto` / `--yolo` 会自动批准，只有显式 `--sandbox danger-full-access` 才解除沙箱。当前仅通过固定 Git Tag 安装，Git 依赖的 `prepare` 在 Agent 沙箱外执行，需先审查并显式授权。
 
 ### 主题与皮肤
