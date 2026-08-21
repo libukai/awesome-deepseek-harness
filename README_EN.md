@@ -236,6 +236,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize): generates sandboxed, interactive HTML cards in the conversation stream.
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification): configurable desktop notifications based on task outcomes and keywords.
 - [dsh-share](https://github.com/hellodigua/dsh-share): generates and shares DSH conversation content in one click.
+- [dsh-sticky-disclosure](https://github.com/Han-1413141/dsh-sticky-disclosure): pins off-screen Think/tool/command labels to the top of the DSH Web conversation and collapses every expanded section in one click (custom hotkey).
 
 ### Sandboxing and Execution
 
