@@ -235,6 +235,7 @@ dsh --profile web --dump-config
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)：在对话流中生成沙箱化的可交互 HTML 卡片。
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [local-ocr](https://github.com/Daive1119/local-ocr)：离线本地 OCR 技能，为无视觉模型提供图片理解通道；Windows 原生 OCR 引擎优先（RapidOCR/Tesseract 兜底），支持图片与 PDF，输出结构化 JSON（含置信度语义），零云端成本；MIT，附 SKILL.md 技能指令与详细原理/排查文档，`v1.0.0` 已发布。
 
 ### 沙箱与执行
 
