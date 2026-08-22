@@ -187,6 +187,7 @@ The following projects provide standalone user interfaces, distribution formats,
 ### Workflows and Agents
 
 - [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit): deterministic tools for time, encoding, JSON, calculations, CSV, regex, Markdown, Diff, and more.
+- [dsh-review](https://github.com/Tinzlu/dsh-review): packages DeepSeek Harness headless as a Codex skill for independent cross-review of diffs, files, or whole repos with V4 Flash; MIT and `v0.1.0`. Requires Node.js and `DEEPSEEK_API_KEY`; depends on the DSH developer preview, and review content is sent to the DeepSeek API.
 - [dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research): adaptive deep-research orchestrator for DSH.
 - [dsh-101](https://github.com/bill9109/dsh-101): learning mode for reading and understanding the official documentation inside DSH.
 - [dsh-auto-approval](https://github.com/Andy8647/dsh-auto-approval): classifies tool calls with rules and models, then returns `allow / deny` approval decisions.

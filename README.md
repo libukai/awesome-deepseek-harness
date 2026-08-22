@@ -187,6 +187,7 @@ dsh --profile web --dump-config
 ### 工作流与 Agent
 
 - [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit)：时间、编码、JSON、计算器、CSV、正则、Markdown、Diff 等确定性工具合集。
+- [dsh-review](https://github.com/Tinzlu/dsh-review)：把 DeepSeek Harness headless 封装为 Codex 的独立交叉审查技能，用 V4 Flash 对 diff / 文件 / 仓库做跨模型审查；MIT、`v0.1.0`，需 Node.js 与 `DEEPSEEK_API_KEY`，依赖 DSH 开发者预览版，审查内容会发送至 DeepSeek API。
 - [dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research)：面向 DSH 的自适应深度研究编排器。
 - [dsh-101](https://github.com/bill9109/dsh-101)：在 DSH 中阅读和理解官方文档的学习模式。
 - [dsh-auto-approval](https://github.com/Andy8647/dsh-auto-approval)：使用规则和模型分类工具调用，输出 `allow / deny` 自动审批决策。
