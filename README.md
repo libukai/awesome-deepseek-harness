@@ -237,6 +237,7 @@ dsh --profile web --dump-config
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)：在对话流中生成沙箱化的可交互 HTML 卡片。
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [dsh-md-preview](https://github.com/ywleeo/dsh-md-preview)：在 dsh Web 界面中阅读工作区 Markdown 文件——侧边栏 workspace 行悬停触发预览面板，嵌套目录树（可折叠/计数），顶栏集成「打开（系统默认应用）/刷新/关闭」，迷你 Markdown 渲染器跟随明暗主题。
 
 ### 沙箱与执行
 
