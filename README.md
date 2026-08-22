@@ -248,6 +248,7 @@ dsh --profile web --dump-config
 ### 主题与皮肤
 
 - [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)：DSH Web GUI 的鲸鱼娘主题皮肤集合；当前包含可热插拔的 `maid-atelier` Web Client Bundle，可通过 `dsh plugin --profile web add ...` 安装和卸载。项目采用 **CC BY-NC-SA 4.0**，禁止商业性使用。
+- [dsh-skin-center](https://github.com/bruce-hmz/dsh-skin-center)：DSH Web UI 的皮肤中心插件：35 套内置皮肤（14 套开发者经典配色 + 21 套社区主题）、单图取色生成自定义主题、皮肤包 JSON 导入/导出与多标签实时同步；界面钩子在浏览器运行时盖章、不改宿主源码，npx 安装可用。MIT、npm `2.1.0-rc.2`（该版修复了"选中皮肤后设置面板皮肤行消失"的必现问题）。系 [HeiGeAi/deepseek-harness-skin](https://github.com/HeiGeAi/deepseek-harness-skin) 的插件化再实现，保留上游归因。
 
 ## 外部集成
 
