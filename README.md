@@ -192,6 +192,7 @@ dsh --profile web --dump-config
 - [dsh-auto-approval](https://github.com/Andy8647/dsh-auto-approval)：使用规则和模型分类工具调用，输出 `allow / deny` 自动审批决策。
 - [mstar-harness](https://github.com/btspoony/mstar-harness)：以 Skill 驱动的 Harness / Loop Engineering 工作流插件。
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams)：为 DSH 提供 Agent Teams 能力。
+- [dsh-captain-call](https://github.com/Daisy2048/dsh-captain-call)：队长来电——让 AgentTeams 队员"打电话"给你：微信式来电界面、通讯录主动拨打、真实队员语音对话；内置 Kokoro-82M-zh（本地 102 款离线音色）与 Edge（14 款在线音色）双语音引擎，每人独立声线可选可试听；MIT，可通过 `dsh plugin --profile web add` 安装。
 - [dsh-automation](https://github.com/titanwings/dsh-automation)：按计划在全新根 Agent 和 Session 中执行独立任务，保留定义修订、运行历史和明确的工作区与权限边界。
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator)：对 Agent 计划逐段批注并提交结构化反馈，提供草稿隔离、版本绑定和过期计划拒绝。
 - [dsh-spec-collab](https://github.com/zx490336534/dsh-spec-collab)：把产品原始需求整理为由产品、研发与双方 AI 共审的 Git 版本化 Ready Spec，AI 只能提交 Review Item 和候选 Patch，确认与正式保存仍由人完成。Apache-2.0、npm `0.2.1`，声明兼容 DSH `0.1.1-rc.1` 并附测试套件；但仍为同日快速迭代项目，尚无 CI、GitHub Release 或独立使用证据，标注为早期。插件会在 `~/.dsh/spec-collab` 写入协作账本与独立 Git 仓库，并启动额外 AI 审核会话；HTTP 管理面默认仅回环与同源，花名并非身份认证，对外开放前必须另配认证和可信反向代理。
