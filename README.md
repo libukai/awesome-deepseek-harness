@@ -248,6 +248,7 @@ dsh --profile web --dump-config
 ### 主题与皮肤
 
 - [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)：DSH Web GUI 的鲸鱼娘主题皮肤集合；当前包含可热插拔的 `maid-atelier` Web Client Bundle，可通过 `dsh plugin --profile web add ...` 安装和卸载。项目采用 **CC BY-NC-SA 4.0**，禁止商业性使用。
+- [dsh-prism-plugin](https://github.com/mantonlove/dsh-prism-plugin)：Prism · 棱镜——DSH Web GUI 深度可定制的毛玻璃主题：清透/磨砂/毛绒三种材质、六区独立透明度、弹簧阻尼滑轨、色号输入 + 取色器、流光背景与图片/GIF 多图轮播；`dsh plugin --profile web add github:mantonlove/dsh-prism-plugin` 一键安装。
 
 ## 外部集成
 
