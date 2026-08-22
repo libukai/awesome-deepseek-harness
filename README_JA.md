@@ -221,6 +221,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 
 ### ブラウザ・ビジョン・インターフェース
 
+- [dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth)：モバイル優先の DSH Web UI 最適化（入力欄の自動折りたたみ、モバイルでの Enter=改行、サイドバー/ヘッダー圧縮、設定画面、ズーム・バウンス無効化）に加え、長タスクの完了・権限要求・質問の通知（ページ内カード、Web Push、webhook）を提供。dsh 本体への変更は一切なし。
 - [dsh-browser](https://github.com/Lum1104/dsh-browser)：DSH から現在のブラウザページを直接操作できる Chrome サイドバー拡張。
 - [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)：画像 Q&A、長いスクリーンショットの OCR、UI 再現、Grounding、ピクセル比較。
 - [dsh-computer-use](https://github.com/Anionex/dsh-computer-use)：Accessibility を優先し、古い観測を拒否し、アプリ・Session・操作単位で権限を管理するネイティブ macOS Computer Use Bundle。現在は初期 `0.1.0` で、ソースチェックアウトからインストールする必要がある。
