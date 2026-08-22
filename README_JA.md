@@ -240,6 +240,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 
 ### サンドボックスと実行
 
+- [dsh-rate-limiter](https://github.com/Xidong-AI/dsh-rate-limiter)：プロバイダー別のトークンバケットによる能動的レート制限。超過リクエストは送信前に遅延キューイングされ、上流の 429 エラーを防止します。
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：fail-closed な microsandbox microVM 能力を提供。導入後も Provider とモデル向け Tool は個別に明示有効化するまで無効で、プラットフォーム検査に失敗しても無制限の Host 実行へフォールバックしない。テストディレクトリはあるが正式 Release はなく、`package.json` は BSD-3-Clause を宣言する一方でルートに `LICENSE` ファイルがないため初期段階。
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：平文 Credential File を Windows Credential Manager、macOS Keychain、Linux Secret Service に置き換え、Secret Service のない Linux では fail closed。MIT `0.1.0` で Memory Backend Test はあるが npm / Release はまだなく、実 OS Keychain の Platform 別 Smoke Test も未完了のため初期段階。
 - [dsh-win32](https://github.com/sjh9714/dsh-win32)：Windows 向けに Sandbox 内で動作する永続 Shell、Minimal Mode、`doctor` 診断を提供。MIT `v0.15.1`。Release Commit の Windows Restricted-token Sandbox CI は成功しているが、Release 後の最新 main CI は現在失敗している。互換範囲は引き続き DSH `>=0.1.0-rc.5 <0.1.0-rc.7` に限定される。Git Bash Preset は `danger-full-access` が必要で、Sandbox では GPLv2 BusyBox を Download する Variant を使う。Windows Console Process は Graceful Termination 失敗後に Force Kill へ進む場合がある。
