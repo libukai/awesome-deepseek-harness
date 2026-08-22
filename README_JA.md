@@ -212,6 +212,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file)：入力欄の `@file` でワークスペース内のファイルを検索し、内容を添付。
 - [dsh-shikitor](https://github.com/oneworks-ai/shikitor/tree/master/packages/dsh-shikitor)：Composer で `#` Session、`@` Workspace File、`$` Skill、`/` Command を統合検索し、拡張可能な Workspace File Editor も提供。MIT、npm `1.0.2`、DSH `>=0.1.0-rc.5 <0.2.0` 対応。編集は既定で自動保存され、外観と Path Rule は Browser 側に保存される。
 - [dsh-message-edit](https://github.com/Moeblack/dsh-message-edit)：ブランチ型メッセージ編集、再試行、再生成、バージョンタイムライン。
+- [dsh-plugin-no-workspace](https://github.com/SpookySandwich/dsh-plugin-no-workspace)：DSH の会話をワークスペース外で作成、またはデータを失わずに切り離し、「未分類」フォルダーを表示せずサイドバー直下に配置する。MIT `v1.0.0`、DSH `0.1.1-rc.2` で検証済み。88 件の Test と実 Desktop E2E を含む。
 - [dsh-client-auto-retry](https://github.com/Frog755/dsh-client-auto-retry)：`error`、`interrupted`、`max-tokens` の後に既定メッセージ `继续` を元の Session へ自動送信し、猶予時間、クールダウン、連続回数上限で再試行を制御。MIT、npm `0.3.1`、互換性表明は DSH `0.1.0-rc.7` のみ。既定では起動時に直近 15 分の中断 Session を走査し、モデル呼び出しと Token 消費を継続する可能性がある。確認できる Test や Release がないため初期段階。
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio)：システムプロンプト断片を編集し、リアルタイムプレビューを表示。
 - [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind)：永続的な Change Ledger に基づき、会話とワークスペース状態を巻き戻す。
