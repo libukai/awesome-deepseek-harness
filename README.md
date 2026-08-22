@@ -227,6 +227,7 @@ dsh --profile web --dump-config
 - [dsh-ios](https://github.com/ZSeven-W/dsh-ios)：在 DSH 对话中提供 iOS 模拟器与 USB 真机的实时画面，以及 21 个构建运行、语义 UI 自动化、日志、回溯和泄漏检查工具；MIT、npm / Release `0.1.0-rc.1`，已在 DSH `0.1.0-rc.6` 验证，并有 CI 与烟测。当前仍为预发布且仅支持 macOS + 完整 Xcode；可选 AXe 首次可能下载经 SHA-256 校验的二进制，OCR 会本地编译，真机控制需用户预置并签名 WebDriverAgent，工具可执行构建和真实设备操作，因此标注为早期。
 - [modlens](https://github.com/liustack/modlens)：通过粘贴图片和模型路由让纯文本模型获得视觉能力，是以独立视觉工具处理工作区图片之外的另一种方案。
 - [ModSearch](https://github.com/liustack/modsearch)：为 DSH 补充 Web 搜索、X 搜索和网页正文读取，返回结构化证据；MIT，已发布 `v5.4.2`，不同搜索通道可能依赖外部 CLI、登录、API Key、额度与各自服务条款。
+- [dsh-free-web-search](https://github.com/delef/dsh-free-web-search)：免费网页搜索：10 个搜索引擎（Bing/DuckDuckGo/SearXNG/AnySearch 免费 + Exa/Tavily/Keenable/Perplexity/DeepSeek 付费），自动故障转移、时间过滤搜索、平台搜索（GitHub/Reddit）、网页抓取、LRU 缓存和设置界面；Apache-2.0，基础使用无需 API 密钥。
 - [dsh-better-browser](https://github.com/titanwings/dsh-better-browser)：通过外部 Kimi WebBridge 操作保留登录态的真实浏览器，按任务维护标签页会话；需另行安装并运行 WebBridge。
 - [dsh-web-review](https://github.com/CanglongCl/dsh-web-review)：在 DSH 内预览网页、点选元素并提交选择器、可访问名称和修改意图，附真实前端修改评测套件；当前仓库尚未声明许可证。
 - [dsh-mcp-apps](https://github.com/sugarforever/dsh-mcp-apps)：让 DSH Web 成为 MCP Apps Host，在带 CSP 和 Permission Policy 的沙箱 iframe 中渲染交互应用；MIT、`v0.1.1`，但项目仍新，标注为早期。
