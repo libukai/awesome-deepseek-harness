@@ -237,6 +237,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize): generates sandboxed, interactive HTML cards in the conversation stream.
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification): configurable desktop notifications based on task outcomes and keywords.
 - [dsh-share](https://github.com/hellodigua/dsh-share): generates and shares DSH conversation content in one click.
+- [dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream): reveals assistant replies in fading paragraph batches instead of token-by-token, with smooth scroll-follow while streaming.
 
 ### Sandboxing and Execution
 

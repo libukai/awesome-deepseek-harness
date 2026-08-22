@@ -237,6 +237,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)：会話ストリーム内にサンドボックス化されたインタラクティブ HTML カードを生成。
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：タスク結果とキーワードに応じて設定できるデスクトップ通知。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：DSH の会話内容をワンクリックで生成・共有。
+- [dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream)：アシスタントの返答をトークン単位ではなくフェードインする段落単位で表示し、ストリーミング中はスクロールが滑らかに追従。
 
 ### サンドボックスと実行
 
