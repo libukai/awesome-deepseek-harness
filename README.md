@@ -238,6 +238,7 @@ dsh --profile web --dump-config
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
 
+- [dsh-bridge](https://github.com/wenbin-wb/dsh-bridge)：多通道远程访问插件，支持局域网扫码、Cloudflare 隧道和自建隧道服务器，让你随时随地访问本地 DSH；MIT、npm `@wenbin_wb/dsh-bridge@1.0.8`。
 ### 沙箱与执行
 
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：提供 fail-closed 的 microsandbox microVM 能力；安装后 Provider 与模型工具均默认关闭，必须分别显式启用，平台检查失败时不会降级为无约束宿主执行。含测试目录但尚无正式 Release；`package.json` 声明 BSD-3-Clause，但仓库根目录没有 `LICENSE` 文件，标注为早期。
