@@ -193,6 +193,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [mstar-harness](https://github.com/btspoony/mstar-harness)：Skill 駆動の Harness / Loop Engineering ワークフロープラグイン。
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams)：DSH に Agent Teams 機能を追加。
 - [dsh-automation](https://github.com/titanwings/dsh-automation)：新しいルート Agent と Session で独立タスクをスケジュール実行し、定義の改訂履歴、実行履歴、明示的なワークスペースと権限境界を保持。
+- [dsh-trading](https://github.com/maddogfinance/dsh-trading)：リサーチ専用のトレーディング作業台：型付きマーケットデータ接続層、決定論的インジケータ、根拠と価格検証が必須の注釈付き対話型チャートカード、注文実行を構造的に遮断する risk-guard。
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator)：Agent の計画をセクションごとに注釈し、構造化フィードバックを送信。下書き分離、バージョン固定、古い計画の拒否に対応。
 - [dsh-spec-collab](https://github.com/zx490336534/dsh-spec-collab)：製品の生要件を、Product、Engineering、双方の AI が共同レビューする Git Version 管理の Ready Spec に整理する。AI は Review Item と Candidate Patch の提出に限定され、確認と正式保存は人間が担う。Apache-2.0、npm `0.2.1`、DSH `0.1.1-rc.1` 互換を表明し Test Suite を備える。ただし同日中も高速に更新され、CI、GitHub Release、独立利用の証拠がないため初期段階。`~/.dsh/spec-collab` に Collaboration Ledger と独立 Git Repository を書き込み、追加の AI Review Session を起動する。HTTP 管理面は既定で Loopback / Same-origin のみだが、花名は認証ではないため、外部公開時は別途認証と信頼できる Reverse Proxy が必要。
 - [dsh-record-replay](https://github.com/humblebanana/dsh-record-replay)：macOS デスクトップワークフローを記録して Skill を生成。現在は Xcode Command Line Tools と、別途用意した `open-record-replay` のローカルソースが必要。
