@@ -212,7 +212,7 @@ dsh --profile web --dump-config
 - [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file)：在输入框中通过 `@file` 搜索工作区文件并附加内容。
 - [dsh-shikitor](https://github.com/oneworks-ai/shikitor/tree/master/packages/dsh-shikitor)：在输入区统一发现 `#` 会话、`@` 工作区文件、`$` Skill 和 `/` 命令，并提供可扩展的工作区文件编辑器；MIT、npm `1.0.2`，支持 DSH `>=0.1.0-rc.5 <0.2.0`。编辑默认自动保存，外观与路径规则保存在浏览器侧。
 - [dsh-message-edit](https://github.com/Moeblack/dsh-message-edit)：分支式消息编辑、重试、重新生成和版本时间线。
-- [dsh-plugin-no-workspace](https://github.com/SpookySandwich/dsh-plugin-no-workspace)：让 DSH 会话可独立于工作区创建或从工作区无损移出，并在侧边栏作为一级会话显示而不出现「未分组」文件夹；MIT `v1.0.0`，已在 DSH `0.1.1-rc.2` 验证，含 88 项测试与真实桌面端 E2E。
+- [dsh-plugin-no-workspace](https://github.com/SpookySandwich/dsh-plugin-no-workspace)：让 DSH 会话可独立于工作区创建或从工作区无损移出，并在侧边栏作为一级会话显示而不出现「未分组」文件夹；MIT、npm `1.0.0`，已在 DSH `0.1.1-rc.2` 验证，含 88 项测试与真实桌面端 E2E。
 - [dsh-client-auto-retry](https://github.com/Frog755/dsh-client-auto-retry)：检测 `error`、`interrupted` 或 `max-tokens` 后自动向原会话发送“继续”，并用宽限期、冷却和连续次数上限约束重试；MIT、npm `0.3.1`，仅声明兼容 DSH `0.1.0-rc.7`。默认启动时扫描最近 15 分钟的中断会话，可能继续产生模型调用和 Token 消耗；尚无可见测试或 Release，标注为早期。
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio)：编辑系统提示词片段并提供实时预览。
 - [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind)：基于持久 Change Ledger 回退对话和工作区状态。
