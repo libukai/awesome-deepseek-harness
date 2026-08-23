@@ -211,6 +211,7 @@ dsh --profile web --dump-config
 - [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve)：跨会话记忆、后台演进和分支感知能力。
 - [dsh-noema](https://github.com/ZSeven-W/dsh-noema)：为 DSH 接入本地优先的 Noema 长期记忆，支持工作前召回、设置页管理和从 Codex、Claude Code、Cursor、Hermes 等导入已有记忆；MIT、Release / npm `next` `0.1.0-rc.3`，已在 DSH `0.1.1-rc.1` 验证并有 CI 与测试，项目仍新，标注为早期。
 - [EverOS Memory for DSH](https://github.com/EverMind-AI/EverOS/tree/main/examples/dsh)：把用户、助手、工具调用和结果轨迹写入本地 EverOS，并在后续会话开始前召回；Apache-2.0，插件 `0.1.0` 支持 DSH `>=0.1.0-rc.6 <0.2.0-0`，但尚未发布 npm，延迟提取还依赖未进入标签版的 EverOS 能力。轨迹可能含源码、命令和工具输出，外部模型配置需单独审查，标注为早期。
+- [qwert702/dsh-commander](https://github.com/qwert702/dsh-commander)：DSH 网页端指挥官模式插件：会话标题栏一键注入协议简报，解析模型回复中的任务块并自动执行，让策略层与执行层分离；通过徽章按钮激活/停用。
 - [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file)：在输入框中通过 `@file` 搜索工作区文件并附加内容。
 - [qwert702/dsh-memory](https://github.com/qwert702/dsh-memory) - Project-level and global long-term memory for DSH Web: isolated POST route to avoid path conflicts, multi-turn tool-call context compression before storing entries, deduplication and session-persistent storage.
 - [dsh-shikitor](https://github.com/oneworks-ai/shikitor/tree/master/packages/dsh-shikitor)：在输入区统一发现 `#` 会话、`@` 工作区文件、`$` Skill 和 `/` 命令，并提供可扩展的工作区文件编辑器；MIT、npm `1.0.2`，支持 DSH `>=0.1.0-rc.5 <0.2.0`。编辑默认自动保存，外观与路径规则保存在浏览器侧。
