@@ -174,6 +174,7 @@ dsh --profile web --dump-config
 | --------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------- |
 | [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI)               | TUI Bundle        | Claude Code 风格全屏终端、流式状态、上下文仪表与会话回退                                          |
 | [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | TUI Bundle        | 基于天枢演进的完整终端交互层，状态来自 DSH 会话事件流                                             |
+| [Blue](https://github.com/dsh-blue/blue) | TUI Bundle | 插件树式终端界面：流式 markdown 会话流、工具卡片、模糊命令补全与主题热切换，每个界面组件都是可热替换的 Cordis 插件；基于 DSH `0.1.1-rc.2` 开发与测试 |
 | [dsh-tui](https://github.com/openguardrails/dsh-tui)            | TUI Bundle · 早期 | 支持本地 DeepSeek 与离线运行；仍处于活跃开发期，移植前的测试套件尚未恢复运行                      |
 | [dsh-mini-tui](https://github.com/boxeryao/dsh-mini-tui)        | TUI 插件 · 早期   | 直接连接 DSH Runtime 的轻量终端界面；MIT、`v0.2.0`，通过 npm 安装，并以 DSH `0.1.0-rc.6` 开发与测试 |
 | [Orbis](https://github.com/icodesign/orbis)                     | 移动远控 · Beta   | 通过 DSH 插件完成设备配对、端到端加密传输和多设备实时更新                                         |
