@@ -239,6 +239,7 @@ dsh --profile web --dump-config
 - [dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize)：在对话流中生成沙箱化的可交互 HTML 卡片。
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [dsh-pianist](https://github.com/Laplace-bit/dsh-pianist)：让 Agent 弹奏真钢琴，Canvas2D 三角钢琴渲染、Salamander Grand 真实采样音色与 88 键可弹键盘，附全屏沉浸式舞台；MIT、npm `dsh-pianist@0.1.0`，提供在线 Demo 与演奏短片。
 
 ### 沙箱与执行
 
