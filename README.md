@@ -270,6 +270,7 @@ dsh --profile web --dump-config
 - [Tencent Cloud Agent Observability for DSH](https://github.com/TencentCloud/tencentcloud-agentobs-sdk-dsh)：腾讯云团队维护的 CLS 直传可观测插件，无需 OTLP Collector，把 Session、Agent Loop、模型流和工具生命周期映射为五层 Trace；Apache-2.0、npm / Release `0.0.1`，支持 DSH `>=0.1.0-rc.6 <0.2.0`，项目很新，标注为早期。默认会把 Prompt、Response 和工具参数/结果发送到 CLS，处理敏感仓库前应关闭 `captureContent` 并配置最小权限与保留策略。
 - [Token Monitor](https://github.com/Javis603/token-monitor)：本地优先的跨平台桌面用量工具；当前 Release 为 `v0.47.0`，DSH 的 JSONL / Zstandard 会话读取与按回合 Token、Prompt、工具记录展示自 `v0.46.0` 加入。MIT，macOS 包已签名公证、Windows 包已签名，含 DSH 解析测试与持续集成；默认不向维护者发送遥测，可选多设备同步会向操作者指定的 Hub 发送汇总用量和账号 / 项目元数据，但不发送原始 Prompt、源码或凭据。
 - [dsh-wakatime](https://github.com/dingyi222666/dsh-wakatime)：把 DSH 文件操作、AI 代码行数和项目耗时上报到 WakaTime；MIT、npm `0.1.1`，有测试但项目仍新，标注为早期。需要 WakaTime API Key，会写入 `~/.wakatime/dsh-wakatime/` 并在缺少 CLI 时自动下载或更新 `wakatime-cli`。
+- [dsh-sonarqube](https://github.com/maxmilian/dsh-sonarqube)：面向 SonarQube Community Build Web API 的只读 DSH 插件，提供实例状态、分支或 PR 的项目质量阈、议题与安全热点搜索、单个热点详情，以及覆盖率、重复率或调用方指定的度量项；议题与热点结果附带标准化位置（组件 key、文件路径、行号与文本范围）。MIT、npm `dsh-sonarqube` `0.1.0`，官方 `@deepseek-ai/*` 以 peerDependencies 声明并显式兼容 `0.1.1-rc.2`。0.1 版所有工具只读，不做指派、确认、解决或重开。需要 SonarQube 实例 URL 与具备相应项目权限的 token；已针对 Community Build `26.8.0.126808` 实测，但该版本不含 SECURITY_HOTSPOT 规则，成功读取热点的路径由 mock 测试覆盖。工具元数据支持英文、繁体中文、简体中文与日文。
 
 ## 开发工具
 
