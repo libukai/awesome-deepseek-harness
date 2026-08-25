@@ -167,6 +167,7 @@ The following projects provide standalone user interfaces, distribution formats,
 | [Oh-DSH](https://github.com/hust-open-atom-club/oh-dsh) | macOS / Linux / Windows · Community distribution | Packages DSH, Node.js, and local capabilities as Desktop, Web, and TUI editions with tiered installers and a unified `ohdsh` launcher |
 | [DSH Desktop](https://github.com/dataelement/dsh-desktop) | macOS / Windows · Electron | Cross-platform desktop client for managing local Harness instances, workspaces, random ports, Profiles, plugins, and sessions |
 | [dsh-launcher](https://github.com/Ruler4396/dsh-launcher) | Windows · WebView2 | Lightweight launcher with silent startup, a standalone window, portable packages, and MSI distribution |
+| [DSH-Portable](https://github.com/WSL043/DSH-Portable) | Windows / macOS / Linux · Community portable distribution | Keeps sessions, settings, plugins, desktop data, and the default workspace in a movable directory with a bundled runtime, plugin CLI, and market; adds a dedicated window, tray, data-preserving product / DSH core updates, migration packages, and repair tools, with finished-product gates for startup, exit, movement, plugins, and updates across platforms |
 
 ### Terminal, Mobile, and Web Experiences
 
