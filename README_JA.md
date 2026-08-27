@@ -294,7 +294,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-payload-capture](https://github.com/Moeblack/dsh-payload-capture)：モデル API へ送信する Payload を取得・保存し、リクエスト組み立てのデバッグに利用。
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool)：Monaco エディターでサンドボックス化された JavaScript ツールを作成・管理。
 - [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode)：Web UI から現在のワークスペースを VS Code で直接開く。
-- [dsh-movein](https://github.com/sjh9714/dsh-movein)：DSH のネイティブ設定画面または CLI から Claude Code 設定を確認して移行する。Skill、Command、Agent、hooks、Permission Rule、MCP に対応し、Codex と OpenCode も副次的な移行元として保持する。衝突検査、Backup、Restore、`doctor` を備え、Session 履歴は対象外。MIT `v0.13.1`、まだ新しいため初期段階。
+- [dsh-movein](https://github.com/sjh9714/dsh-movein)：DSH のネイティブ設定画面または CLI から Claude Code 設定を確認して移行する。Skill、Command、Agent、hooks、Permission Rule、MCP に対応し、Codex と OpenCode も副次的な移行元として保持する。衝突検査、Backup、Restore、`doctor` を備え、Session 履歴は対象外。MIT `v0.13.2`、まだ新しいため初期段階。
 - [dshpack](https://github.com/hili986/dshpack)：Skill、MCP、Profile Patch、Permission Default を Install・共有・監査可能な DSH Profile に Package 化する。MIT、npm `0.3.0`。`init`、`export`、`compose`、`lock`、`pack`、Transaction 対応 Install / Update / Uninstall、Loopback 管理 UI を含む 18 Command が利用可能。Build Script は既定で拒否、Source は Commit 固定、Export は 3 回 Credential Scan、Conflict は明示解決、Failure は Journal から Rollback する。`doctor` は DSH に `cordis.yml` の再書込を行わせる場合があり、dshpack 自身も Audit Log を書く。Pack Format と CLI はまだ Stable API ではないため初期段階。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter)：Claude Code、Codex、OpenCode の hooks Config を DSH で直接再利用し、Shell、Webhook、LLM、Subagent Handler を提供。MIT、Repository は 111 Test を示すが Release はまだない。自動検出した hooks は Command 実行や Data 送信が可能なため初期段階。
 

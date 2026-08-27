@@ -294,7 +294,7 @@ dsh --profile web --dump-config
 - [dsh-payload-capture](https://github.com/Moeblack/dsh-payload-capture)：捕获并落盘上行模型 API Payload，便于调试请求组装。
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool)：通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。
 - [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode)：从 Web UI 直接在 VS Code 中打开当前工作区。
-- [dsh-movein](https://github.com/sjh9714/dsh-movein)：通过原生 DSH 设置页或 CLI 预览并迁移 Claude Code 配置，涵盖技能、命令、代理、hooks、权限规则与 MCP；Codex 和 OpenCode 作为次要来源继续支持，并保留目标冲突保护、备份、恢复与 `doctor`。会话历史仍不在范围内。MIT、`v0.13.1`，项目仍新，标注为早期。
+- [dsh-movein](https://github.com/sjh9714/dsh-movein)：通过原生 DSH 设置页或 CLI 预览并迁移 Claude Code 配置，涵盖技能、命令、代理、hooks、权限规则与 MCP；Codex 和 OpenCode 作为次要来源继续支持，并保留目标冲突保护、备份、恢复与 `doctor`。会话历史仍不在范围内。MIT、`v0.13.2`，项目仍新，标注为早期。
 - [dshpack](https://github.com/hili986/dshpack)：把 Skills、MCP、Profile Patch 和权限默认值打包成可安装、可分享、可审计的 DSH Profile；MIT、npm `0.3.0`，18 个命令已可用，包括 `init`、`export`、`compose`、`lock`、`pack`、事务化安装 / 更新 / 卸载和回环管理 UI。构建脚本默认拒绝，来源固定到 Commit，导出前后三次扫描凭据，冲突要求显式解决，失败会带 Journal 回滚；`doctor` 可能触发 DSH 重写 `cordis.yml`，并由 dshpack 写审计日志。Pack 格式与 CLI 仍不是稳定 API，标注为早期。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter)：让 DSH 直接复用 Claude Code、Codex 和 OpenCode 的 hooks 配置，并提供 Shell、Webhook、LLM 与子 Agent Handler；MIT、仓库声明 111 项测试但尚无 Release，自动发现的 hooks 可执行命令和外发数据，标注为早期。
 
