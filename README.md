@@ -226,6 +226,7 @@ dsh --profile web --dump-config
 
 - [dsh-browser](https://github.com/Lum1104/dsh-browser)：Chrome 侧边栏扩展，让 DSH 直接操作当前浏览器页面。
 - [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)：图片问答、长截图 OCR、UI 还原、Grounding 和像素对比。
+- [dsh-vision-router](https://github.com/ysr666/dsh-vision-router)：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用，无 Python，一条命令安装。
 - [dsh-computer-use](https://github.com/Anionex/dsh-computer-use)：原生 macOS Computer Use Bundle，优先使用 Accessibility，拒绝过期观察并按应用、Session 和操作范围管理权限；当前为早期 `0.1.0`，需从源码检出目录安装。
 - [dsh-plugin-appshot](https://github.com/TaurusWood/dsh-plugin-appshot)：通过 macOS / Windows 全局快捷键截取当前前台窗口，并把图片作为 Attachment 送入当前 DSH Composer；MIT、npm / Release `0.4.0`，仓库包含 34 个测试路径与双平台 Native 构建。预构建包内含 macOS App 和 Windows 自包含 EXE；macOS 需要屏幕录制与辅助功能权限，Native Agent 会持久化截图并通过本机 SSE 交给 Host。包元数据未声明 Peer 依赖，开发依赖仍固定旧 DSH `0.1.0-rc.6`，当前 rc.2 兼容性与高权限链路仍需实机复核，因此标注为早期。
 - [dsh-ios](https://github.com/ZSeven-W/dsh-ios)：在 DSH 对话中提供 iOS 模拟器与 USB 真机的实时画面，以及 22 个构建运行、语义 UI 自动化、SwiftUI Preview 热重载、日志、回溯和泄漏检查工具；MIT、Release / npm `latest` / `next` `0.1.0-rc.5`，最新 Release Commit 的 Plugin Check 与发布流程均通过，并自报 744 个验证步骤。rc.5 为繁忙 WDA 增加快速超时、10 秒冷却和共享尺寸缓存，并为停滞 MJPEG 流增加 8 秒看门狗，但原始真机故障尚未在真实设备上复现。包的 Peer 依赖从 DSH `0.1.0-rc.6` 起、README Requirements 也写 `>=0.1.0-rc.6`，而页首仍遗留 rc.3 / DSH `0.1.1-rc.1` 的旧声明，兼容元数据尚未统一。当前仍为预发布且仅支持 macOS + 完整 Xcode；可选 AXe 首次可能下载经 SHA-256 校验的二进制，OCR 会本地编译，真机控制需用户预置并签名 WebDriverAgent，工具可执行构建和真实设备操作，因此标注为早期。
