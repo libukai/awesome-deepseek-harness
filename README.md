@@ -208,15 +208,19 @@ dsh --profile web --dump-config
 - [dsh-context](https://github.com/bowenliang123/dsh-context)：在 Web UI 的 Context 面板和 `/context` 命令中，按请求展示 System Prompt、工具 Schema、消息、注入、回复和工具结果的 Token 组成，并标出压缩、剪枝与缓存命中；Apache-2.0、npm / Release `0.33.1`。`0.31` 起以正负 Delta 显示相邻请求的净增长与回收，`0.32` 为每步增加 User / In / Response 摘要并可直达原消息，`0.33` 增加文件活动卡片，按读、写、搜索统计文件、估算行增减并跳到对应工具结果，`0.33.1` 再补充按活跃度、时间、路径与用途排序。Peer 依赖仍从 `^0.1.0-rc.7` 起，源码测试采用逐文件覆盖门槛并有 Bundle 烟测；无需外部服务，但 UI 会每小时至多一次查询 npm 最新版本。
 - [dsh-profile-settings](https://github.com/XMoon/dsh-profile-settings)：在全局 `settings.yaml` 上增加按 Profile 隔离的 `settings.patch.yml` 覆盖层，支持递归合并、`!unset`、来源检查、热重载及设置页管理，并保持原有 `ctx.settings` 接口。MIT、npm / Git Tag `0.1.0`、Node.js 22.6+，Peer 依赖锁定 DSH `0.1.1-rc.2` 系列，含 15 个测试文件；最新 CI 的源码检查、构建与 Node 22.6 / 24 / 26 发布包烟测通过，但总流程仍在 npm 发布步骤失败，而 Registry 已可获取 `0.1.0`。插件默认可写 Profile 覆盖文件，`promote` / `demote` / `migrate` 还会跨全局与 Profile 文档改值，并以锁、原子替换和迁移备份约束写入；项目同日首发、无 GitHub Release 或独立使用证据，因此标注为早期。
 - [dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor)：审计 AGENTS.md、Skill 目录和工具 Schema 的上下文 Token 成本与冲突。
+- [qwert702/dsh-context-compressor](https://github.com/qwert702/dsh-context-compressor) - Context compression for small models: compresses tool output and conversation history to a few sentences, freeing context for the actual task; continues in a fresh session automatically.
 - [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve)：跨会话记忆、后台演进和分支感知能力。
 - [dsh-noema](https://github.com/ZSeven-W/dsh-noema)：为 DSH 接入本地优先的 Noema 长期记忆，支持工作前召回、设置页管理和从 Codex、Claude Code、Cursor、Hermes 等导入已有记忆；MIT、Release / npm `next` `0.1.0-rc.3`，已在 DSH `0.1.1-rc.1` 验证并有 CI 与测试，项目仍新，标注为早期。
 - [EverOS Memory for DSH](https://github.com/EverMind-AI/EverOS/tree/main/examples/dsh)：把用户、助手、工具调用和结果轨迹写入本地 EverOS，并在后续会话开始前召回；Apache-2.0，插件 `0.1.0` 支持 DSH `>=0.1.0-rc.6 <0.2.0-0`，但尚未发布 npm，延迟提取还依赖未进入标签版的 EverOS 能力。轨迹可能含源码、命令和工具输出，外部模型配置需单独审查，标注为早期。
+- [qwert702/dsh-commander](https://github.com/qwert702/dsh-commander)：DSH 网页端指挥官模式插件：会话标题栏一键注入协议简报，解析模型回复中的任务块并自动执行，让策略层与执行层分离；通过徽章按钮激活/停用。
 - [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file)：在输入框中通过 `@file` 搜索工作区文件并附加内容。
+- [qwert702/dsh-memory](https://github.com/qwert702/dsh-memory) - Project-level and global long-term memory for DSH Web: isolated POST route to avoid path conflicts, multi-turn tool-call context compression before storing entries, deduplication and session-persistent storage.
 - [dsh-shikitor](https://github.com/oneworks-ai/shikitor/tree/master/packages/dsh-shikitor)：在输入区统一发现 `#` 会话、`@` 工作区文件、`$` Skill 和 `/` 命令，并提供可扩展的工作区文件编辑器；MIT、npm `1.0.2`，支持 DSH `>=0.1.0-rc.5 <0.2.0`。编辑默认自动保存，外观与路径规则保存在浏览器侧。
 - [dsh-message-edit](https://github.com/Moeblack/dsh-message-edit)：分支式消息编辑、重试、重新生成和版本时间线。
 - [dsh-client-auto-retry](https://github.com/Frog755/dsh-client-auto-retry)：检测 `error`、`interrupted` 或 `max-tokens` 后自动向原会话发送“继续”，并用宽限期、冷却和连续次数上限约束重试；MIT、npm `0.3.1`，仅声明兼容 DSH `0.1.0-rc.7`。默认启动时扫描最近 15 分钟的中断会话，可能继续产生模型调用和 Token 消耗；尚无可见测试或 Release，标注为早期。
 - [dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio)：编辑系统提示词片段并提供实时预览。
 - [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind)：基于持久 Change Ledger 回退对话和工作区状态。
+- [qwert702/dsh-continue-on-limit](https://github.com/qwert702/dsh-continue-on-limit) - Auto-sends continue when a local model hits its output-token cap: dual-source detection, maxConsecutive guard (default 3) prevents infinite loops, throttled by deduplication.
 - [dsh-compaction-instant](https://github.com/KitDoesIt/dsh-compaction-instant)：以确定性编译替代 LLM 摘要，并通过 `recall` / `search` 恢复被压缩内容；替换内置压缩器时需要使用 npm alias，属于较深的运行时改造。
 - [toolshrink](https://github.com/unclecode/toolshrink)：按测试、Diff、JSON、目录树、日志和安装输出的结构做内容感知压缩，并在需要时保留原始输出引用；MIT、`0.1.0`，目前需从源码构建并修改全局 `~/.dsh/cordis.patch.yml`，暂存的原始输出会在 24 小时后清理，标注为早期。
 - [dsh-tool-squeeze](https://github.com/w2829562572-dev/dsh-tool-squeeze)：为测试、Diff、JSON、目录树、日志、安装输出和 HTML 提供确定性、本地优先的工具结果压缩；MIT `v0.1.0`，固定兼容 DSH / `dsh-tools` `0.1.0-rc.8`，项目声明 21 项测试及可复现基准。与需源码构建并自行保留原文的 toolshrink 相比，它可直接安装 GitHub Bundle、无需额外模型或网络调用，并将完整原文交给官方 Spill Store；压缩仍有损，且项目为同日初发、无 CI 或独立使用证据，标注为早期。
@@ -235,6 +239,7 @@ dsh --profile web --dump-config
 - [dsh-better-browser](https://github.com/titanwings/dsh-better-browser)：通过外部 Kimi WebBridge 操作保留登录态的真实浏览器，按任务维护标签页会话；需另行安装并运行 WebBridge。
 - [dsh-web-review](https://github.com/CanglongCl/dsh-web-review)：在 DSH 内预览网页、点选元素并提交选择器、可访问名称和修改意图，附真实前端修改评测套件；当前仓库尚未声明许可证。
 - [dsh-mcp-apps](https://github.com/sugarforever/dsh-mcp-apps)：让 DSH Web 成为 MCP Apps Host，在带 CSP 和 Permission Policy 的沙箱 iframe 中渲染交互应用；MIT、`v0.1.1`，但项目仍新，标注为早期。
+- [qwert702/dsh-auto-translate](https://github.com/qwert702/dsh-auto-translate) - Auto-translates English replies inline below the original text, with Chinese annotations for tool calls; translation goes through an independent provider request and never enters the session context.
 - [dsh-genui](https://github.com/omdsh-dev/dsh-genui)：在回复中渲染图表、表单、Mermaid、3D 场景等交互组件，并将操作事件送回模型；MIT，当前源码包版本 `0.9.1`、最新 GitHub Release 为 `v0.8.6`，以 Git 安装为主，Peer 依赖已覆盖 DSH rc.8 与 `0.1.1-rc.x`，并有 CI，仍标注为早期。
 - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar)：集成文件、终端、Git、子 Agent 和第三方 Tab 的侧边栏工作台。
 - [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil)：在 DSH 中预览和编辑 OpenPencil 设计。
@@ -276,6 +281,7 @@ dsh --profile web --dump-config
 - [LoongSuite DSH Plugin](https://github.com/loongsuite/dsh-plugin)：把 Agent Turn、模型调用、工具执行和 Token 使用转成 OpenTelemetry GenAI Trace，可发送到 Jaeger、Tempo、SigNoz、Langfuse 等 OTLP 后端；Apache-2.0、Beta，已在 DSH `0.1.0-rc.6` 的 Headless 与 Web Profile 验证。内容采集默认关闭，启用后可能外发源码、凭据和个人数据。
 - [Tencent Cloud Agent Observability for DSH](https://github.com/TencentCloud/tencentcloud-agentobs-sdk-dsh)：腾讯云团队维护的 CLS 直传可观测插件，无需 OTLP Collector，把 Session、Agent Loop、模型流和工具生命周期映射为五层 Trace；Apache-2.0、npm / Release `0.0.1`，支持 DSH `>=0.1.0-rc.6 <0.2.0`，项目很新，标注为早期。默认会把 Prompt、Response 和工具参数/结果发送到 CLS，处理敏感仓库前应关闭 `captureContent` 并配置最小权限与保留策略。
 - [Token Monitor](https://github.com/Javis603/token-monitor)：本地优先的跨平台桌面用量工具；当前 Release 为 `v0.47.0`，DSH 的 JSONL / Zstandard 会话读取与按回合 Token、Prompt、工具记录展示自 `v0.46.0` 加入。MIT，macOS 包已签名公证、Windows 包已签名，含 DSH 解析测试与持续集成；默认不向维护者发送遥测，可选多设备同步会向操作者指定的 Hub 发送汇总用量和账号 / 项目元数据，但不发送原始 Prompt、源码或凭据。
+- [qwert702/dsh-token-viewer](https://github.com/qwert702/dsh-token-viewer) - CC Switch-style token consumption statistics for DSH Web: per-request usage log, real-consumption hero with cache-hit rate, request-time-bucketed trend chart, per-model peak/off-peak list pricing, per-project stats, and account balance.
 - [dsh-wakatime](https://github.com/dingyi222666/dsh-wakatime)：把 DSH 文件操作、AI 代码行数和项目耗时上报到 WakaTime；MIT、npm `0.1.1`，有测试但项目仍新，标注为早期。需要 WakaTime API Key，会写入 `~/.wakatime/dsh-wakatime/` 并在缺少 CLI 时自动下载或更新 `wakatime-cli`。
 
 ## 开发工具
