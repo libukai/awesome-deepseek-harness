@@ -176,6 +176,7 @@ dsh --profile web --dump-config
 | [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | TUI Bundle        | 基于天枢演进的完整终端交互层，状态来自 DSH 会话事件流                                             |
 | [dsh-tui](https://github.com/openguardrails/dsh-tui)            | TUI Bundle · 早期 | 支持本地 DeepSeek 与离线运行；仍处于活跃开发期，移植前的测试套件尚未恢复运行                      |
 | [dsh-mini-tui](https://github.com/boxeryao/dsh-mini-tui)        | TUI 插件 · 早期   | 直接连接 DSH Runtime 的轻量终端界面；MIT、`v0.2.0`，通过 npm 安装，并以 DSH `0.1.0-rc.6` 开发与测试 |
+| [Blue](https://github.com/dsh-blue/blue)                        | TUI Bundle        | pi-tui 渲染器挂载为 Cordis 插件树：每个组件可热替换、可省略；流式回复、工具卡片、底部 dock 面板、六套主题与中英双语，以 DSH `0.1.1-rc.2` 构建测试 |
 | [Orbis](https://github.com/icodesign/orbis)                     | 移动远控 · Beta   | 通过 DSH 插件完成设备配对、端到端加密传输和多设备实时更新                                         |
 | [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui)       | Web UI 集合       | 汇总任务看板、Git Graph、移动界面、皮肤、宠物和运行统计等组件                                     |
 | [dsh-web](https://github.com/Tom6814/dsh-web)                   | Docker Web · 早期 | 通过 Docker 部署完整 Web 界面、工作区和插件市场；项目处于高速开发期，需挂载数据卷持久化配置与会话 |
