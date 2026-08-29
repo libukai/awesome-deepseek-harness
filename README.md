@@ -136,6 +136,7 @@ dsh --profile web --dump-config
 | [解剖 DeepSeek Harness](https://xueai.app/slides/learn.html#dsh-1.html)                      | 交互式源码专题  | 拆解会话、上下文、工具、沙箱、Code Mode 和 Subagent 等核心机制                   |
 | [Cordis 在做什么：从 DeepSeek Harness 看](https://blog.antinomie.org)                        | 中文架构短文    | 从插件作者视角解释 Cordis 心智模型，讨论复杂度如何转移到系统内部                 |
 | [DeepSeek Harness 白皮书](https://github.com/Electricitysheep/dsh-handbook)                  | 中英双语手册    | 14 章覆盖安装、插件开发、安全与成本，提供在线阅读、PDF 和可运行示例；内容采用 CC BY-NC-SA 4.0，基于 `0.1.0-rc.6` |
+| [DeepSeek Harness Handbook](https://github.com/sandbaseai/deepseek-harness-handbook)         | 英文 canonical、多语言入口 | 173 篇源码关联指南、202 份多语言文档、58 个精选生态资源，按 Agent 运行时边界组织安装、MCP、Skills、Subagents、沙箱与故障排查 |
 | [NanoCordis](https://github.com/SheltonLiu-N/nano-cordis)                                    | 可运行的教学实现 | 用约 1,600 行 TypeScript 重建 Cordis 插件框架与 DSH 形态的 Agent Runtime；MIT、npm `0.1.0`、95 项测试，默认 Fake Model 无需 Key，Bash 工具仍需人工批准，真实模型凭据只从环境变量读取 |
 
 ### 社区讨论
