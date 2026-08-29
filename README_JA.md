@@ -222,6 +222,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [toolshrink](https://github.com/unclecode/toolshrink)：Test、Diff、JSON、Directory Tree、Log、Install Output の構造を認識して圧縮し、必要に応じて元の出力への参照を保持。MIT `0.1.0`。現在は Source Build と Global `~/.dsh/cordis.patch.yml` の編集が必要で、保存した原文は 24 時間後に削除されるため初期段階。
 - [dsh-tool-squeeze](https://github.com/w2829562572-dev/dsh-tool-squeeze)：Test、Diff、JSON、Directory Tree、Log、Install、HTML の Tool Output を決定論的かつローカル優先で圧縮。MIT `v0.1.0`、DSH / `dsh-tools` `0.1.0-rc.8` に固定対応し、Project は 21 Test と再現可能な Benchmark を報告している。Source Build と Plugin 独自の原文保持が必要な toolshrink と異なり、GitHub Bundle として直接導入でき、追加の Model / Network Call を行わず、完全な原文を公式 Spill Store に委ねる。ただし圧縮は Lossy で、同日初回 Release かつ CI や独立利用の証拠がないため初期段階。
 - [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report)：Session Event Log から日次、週次、月次、年次、任意期間の Report を読み取り専用で生成する。MIT、`v0.5.0`、Node.js 22.19+ または 24+、DSH Peer は `>=0.1.1-rc.2 <0.2.0`。本版は決定論的な TRACE → DIAGNOSE → IMPROVE 提案、破損 Session の隔離と切断 Log の読み取り専用 Recovery、正規化した Token / Peak・Off-peak Cost、Provider 照合、Dark Mode を追加し、History を書き換えず追加 LLM Token も使わない。Release Note は 226 Test 成功を表明するが、Release Commit の CI は実際には Unit tests で失敗し Build を Skip したため、引き続き初期段階。
+- [dsh-resume-on-restart](https://github.com/nickkkkkk123123/dsh-resume-on-restart)：DSH サービスの再起動を検出し、メインエージェントを自動で起こして復旧通知を届けます。中断された作業は自力で再開します。
 
 ### ブラウザ・ビジョン・インターフェース
 
