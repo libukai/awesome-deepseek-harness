@@ -244,6 +244,8 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：29 Namespace、721 件の UI 文字列と System 日本語 Font により DSH Web を日本語化する。MIT、npm / Release `0.4.3`、Node.js 22+、`@deepseek-ai/dsh-client-locale ^0.1.1-rc.2` 固定で、Repository Test、Dictionary Drift Check、毎日の DSH `next` E2E は成功している。Client Localization Module だけを Mount し、Host Route、Credential、外部 Service は追加しない。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：DSH の会話内容をワンクリックで生成・共有。
 
+- [nickkkkkk123123/dsh-whale-girl](https://github.com/nickkkkkk123123/dsh-whale-girl)：DSH Web のクジラ娘デスクトップペット：残高・使用量・コンテキスト占有率のリアルタイム表示、中ボタンのスリングショット、イースターエッグの吹き出し、省エネモード。346KB、追加プロセスなし（実測アイドル CPU 影響約 0.6%）。
+
 ### サンドボックスと実行
 
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：fail-closed な microsandbox microVM 能力を提供。導入後も Provider とモデル向け Tool は個別に明示有効化するまで無効で、プラットフォーム検査に失敗しても無制限の Host 実行へフォールバックしない。テストディレクトリはあるが正式 Release はなく、`package.json` は BSD-3-Clause を宣言する一方でルートに `LICENSE` ファイルがないため初期段階。
