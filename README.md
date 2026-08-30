@@ -247,7 +247,7 @@ dsh --profile web --dump-config
 
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：提供 fail-closed 的 microsandbox microVM 能力；安装后 Provider 与模型工具均默认关闭，必须分别显式启用，平台检查失败时不会降级为无约束宿主执行。含测试目录但尚无正式 Release；`package.json` 声明 BSD-3-Clause，但仓库根目录没有 `LICENSE` 文件，标注为早期。
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：用 Windows Credential Manager、macOS Keychain 或 Linux Secret Service 替代明文凭据文件，并在无 Secret Service 的 Linux 上 fail closed；MIT、`0.1.0`，有内存后端测试但尚无 npm / Release，真实系统钥匙串仍待逐平台烟测，标注为早期。
-- [dsh-win32](https://github.com/sjh9714/dsh-win32)：面向当前 Windows 版 DSH 的诊断、验收与安全修复工具；MIT、npm / Release `0.17.1`，CI 在 Node 22.19 / 24 下覆盖 npm hoisted 与 pnpm strict 安装。新增 `verify` 会在隔离的临时 Home / Workspace 中，用已安装的官方 PowerShell、Subprocess 与 Workspace Write 组件验证持久状态、外部写入拒绝、恢复、取消、PTY 替换与清理，但不启动完整 Minimal Host 或发起模型请求。默认 `setup` 不替换官方栈，只核验组件、修复可确认的 `koffi` 加载问题并可创建桌面快捷方式；`doctor` 只读，`fix` 仅修复已知损坏或真实加载失败的 `koffi`。旧 Git Bash / BusyBox 路径仍需显式 `setup --legacy`，其中 Git Bash 要求 `danger-full-access`；工具不会自动安装 Git、PowerShell、BusyBox、WSL 或另一套 DSH Bundle。
+- [dsh-win32](https://github.com/sjh9714/dsh-win32)：面向当前 Windows 版 DSH 的诊断、验收与安全修复工具；MIT、npm / Release `0.17.3`，CI 在 Node 22.19 / 24 下覆盖 npm hoisted 与 pnpm strict 安装。新增 `verify` 会在隔离的临时 Home / Workspace 中，用已安装的官方 PowerShell、Subprocess 与 Workspace Write 组件验证持久状态、外部写入拒绝、恢复、取消、PTY 替换与清理，但不启动完整 Minimal Host 或发起模型请求。默认 `setup` 不替换官方栈，只核验组件、修复可确认的 `koffi` 加载问题并可创建桌面快捷方式；`doctor` 只读，`fix` 仅修复已知损坏或真实加载失败的 `koffi`。旧 Git Bash / BusyBox 路径仍需显式 `setup --legacy`，其中 Git Bash 要求 `danger-full-access`；工具不会自动安装 Git、PowerShell、BusyBox、WSL 或另一套 DSH Bundle。
 - [dsh-exec-extension](https://github.com/LvDAO/dsh-exec-extension)：为 Headless Profile 增加一次性 Exec CLI，把 stdin、`@file`、工作目录、模型、超时、JSONL 输出和权限模式变为逐次参数；MIT `v0.1.0`，固定 DSH `0.1.0-rc.7`、Node.js 22.19+，含 Node / Rust 测试与持续集成。默认仍是 `workspace-write`，无界面的 `--approval ask` 会 fail closed；`--full-auto` / `--yolo` 会自动批准，只有显式 `--sandbox danger-full-access` 才解除沙箱。当前仅通过固定 Git Tag 安装，Git 依赖的 `prepare` 在 Agent 沙箱外执行，需先审查并显式授权。
 
 ### 主题与皮肤
@@ -294,7 +294,7 @@ dsh --profile web --dump-config
 - [dsh-payload-capture](https://github.com/Moeblack/dsh-payload-capture)：捕获并落盘上行模型 API Payload，便于调试请求组装。
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool)：通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。
 - [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode)：从 Web UI 直接在 VS Code 中打开当前工作区。
-- [dsh-movein](https://github.com/sjh9714/dsh-movein)：通过原生 DSH 设置页或 CLI 预览并迁移 Claude Code 配置，涵盖技能、命令、代理、hooks、权限规则与 MCP；Codex 和 OpenCode 作为次要来源继续支持，并保留目标冲突保护、备份、恢复与 `doctor`。会话历史仍不在范围内。MIT、`v0.13.2`，项目仍新，标注为早期。
+- [dsh-movein](https://github.com/sjh9714/dsh-movein)：通过原生 DSH 设置页或 CLI 预览并迁移 Claude Code 配置，涵盖技能、命令、代理、hooks、权限规则与 MCP；Codex 和 OpenCode 作为次要来源继续支持，并保留目标冲突保护、备份、恢复与 `doctor`。会话历史仍不在范围内。MIT、`v0.13.4`，项目仍新，标注为早期。
 - [dshpack](https://github.com/hili986/dshpack)：把 Skills、MCP、Profile Patch 和权限默认值打包成可安装、可分享、可审计的 DSH Profile；MIT、npm `0.3.0`，18 个命令已可用，包括 `init`、`export`、`compose`、`lock`、`pack`、事务化安装 / 更新 / 卸载和回环管理 UI。构建脚本默认拒绝，来源固定到 Commit，导出前后三次扫描凭据，冲突要求显式解决，失败会带 Journal 回滚；`doctor` 可能触发 DSH 重写 `cordis.yml`，并由 dshpack 写审计日志。Pack 格式与 CLI 仍不是稳定 API，标注为早期。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter)：让 DSH 直接复用 Claude Code、Codex 和 OpenCode 的 hooks 配置，并提供 Shell、Webhook、LLM 与子 Agent Handler；MIT、仓库声明 111 项测试但尚无 Release，自动发现的 hooks 可执行命令和外发数据，标注为早期。
 
