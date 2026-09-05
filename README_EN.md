@@ -186,6 +186,7 @@ The following projects provide standalone user interfaces, distribution formats,
 
 ### Workflows and Agents
 
+- [RoutineKit](https://github.com/sjh9714/routinekit): captures explicitly selected successful DSH / native WebMCP tool calls as reviewed, parameterized linear routines with result references, fresh approval, and live contract checks; exports a companion `SKILL.md`. MIT, npm `0.1.0`, Node 22.19+, and tested with DSH `0.1.2-rc.1`; the web panel is loopback-only and standalone MCP actions require human form elicitation. Raw recording outputs are not saved, but reviewed literal arguments can contain private data. No independent-use evidence yet, so marked Early.
 - [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit): deterministic tools for time, encoding, JSON, calculations, CSV, regex, Markdown, Diff, and more.
 - [dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research): adaptive deep-research orchestrator for DSH.
 - [dsh-101](https://github.com/bill9109/dsh-101): learning mode for reading and understanding the official documentation inside DSH.
