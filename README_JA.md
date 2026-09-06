@@ -246,6 +246,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 
 ### サンドボックスと実行
 
+- [dsh-rate-limiter](https://github.com/Xidong-AI/dsh-rate-limiter)：プロバイダー別のトークンバケットによる能動的レート制限。超過リクエストは送信前に遅延キューイングされ、上流の 429 エラーを防止します。
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：fail-closed な microsandbox microVM 能力を提供。導入後も Provider とモデル向け Tool は個別に明示有効化するまで無効で、プラットフォーム検査に失敗しても無制限の Host 実行へフォールバックしない。テストディレクトリはあるが正式 Release はなく、`package.json` は BSD-3-Clause を宣言する一方でルートに `LICENSE` ファイルがないため初期段階。
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：平文 Credential File を Windows Credential Manager、macOS Keychain、Linux Secret Service に置き換え、Secret Service のない Linux では fail closed。MIT `0.1.0` で Memory Backend Test はあるが npm / Release はまだなく、実 OS Keychain の Platform 別 Smoke Test も未完了のため初期段階。
 - [dsh-win32](https://github.com/sjh9714/dsh-win32)：現在の Windows 版 DSH の診断、Acceptance、安全修復を提供。MIT、npm / Release `0.17.0`。CI は Node 22.19 / 24 で npm-hoisted と pnpm-strict Install を確認する。新しい `verify` は導入済み公式 PowerShell、Subprocess、Workspace Write Component を Isolated Temporary Home / Workspace で使い、Persistent State、Outside-write Denial、Recovery、Cancellation、PTY Replacement、Cleanup を検証するが、完全な Minimal Host 起動や Model Request は行わない。既定 `setup` は公式 Stack を置換せず、Component 検査、確実な `koffi` Load 障害の修復、Desktop Shortcut 作成だけを行う。`doctor` は Read-only、`fix` は既知の破損または実 Load 失敗した `koffi` のみを修復する。旧 Git Bash / BusyBox は明示 `setup --legacy` にあり、Git Bash は `danger-full-access` が必要。Git、PowerShell、BusyBox、WSL、別 DSH Bundle は自動導入しない。

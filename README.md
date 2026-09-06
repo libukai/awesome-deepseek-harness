@@ -246,6 +246,7 @@ dsh --profile web --dump-config
 
 ### 沙箱与执行
 
+- [dsh-rate-limiter](https://github.com/Xidong-AI/dsh-rate-limiter)：按 provider 令牌桶主动限速，超限请求在发出前延迟排队而非失败，避免触发上游 429。
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：提供 fail-closed 的 microsandbox microVM 能力；安装后 Provider 与模型工具均默认关闭，必须分别显式启用，平台检查失败时不会降级为无约束宿主执行。含测试目录但尚无正式 Release；`package.json` 声明 BSD-3-Clause，但仓库根目录没有 `LICENSE` 文件，标注为早期。
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：用 Windows Credential Manager、macOS Keychain 或 Linux Secret Service 替代明文凭据文件，并在无 Secret Service 的 Linux 上 fail closed；MIT、`0.1.0`，有内存后端测试但尚无 npm / Release，真实系统钥匙串仍待逐平台烟测，标注为早期。
 - [dsh-win32](https://github.com/sjh9714/dsh-win32)：面向当前 Windows 版 DSH 的诊断、验收与安全修复工具；MIT、npm / Release `0.17.0`，CI 在 Node 22.19 / 24 下覆盖 npm hoisted 与 pnpm strict 安装。新增 `verify` 会在隔离的临时 Home / Workspace 中，用已安装的官方 PowerShell、Subprocess 与 Workspace Write 组件验证持久状态、外部写入拒绝、恢复、取消、PTY 替换与清理，但不启动完整 Minimal Host 或发起模型请求。默认 `setup` 不替换官方栈，只核验组件、修复可确认的 `koffi` 加载问题并可创建桌面快捷方式；`doctor` 只读，`fix` 仅修复已知损坏或真实加载失败的 `koffi`。旧 Git Bash / BusyBox 路径仍需显式 `setup --legacy`，其中 Git Bash 要求 `danger-full-access`；工具不会自动安装 Git、PowerShell、BusyBox、WSL 或另一套 DSH Bundle。
