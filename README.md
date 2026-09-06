@@ -243,6 +243,7 @@ dsh --profile web --dump-config
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：为 DSH Web 增加日本语界面与系统日文字体，覆盖 29 个命名空间、721 条 UI 字符串；MIT、npm / Release `0.4.3`、Node.js 22+，Peer 依赖锁定 `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`，仓库测试、字典漂移检查和每日 `next` DSH E2E 均通过。插件只挂载客户端本地化模块，不新增 Host 路由、凭据或外部服务。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [dsh-pianist](https://github.com/Laplace-bit/dsh-pianist)：让 Agent 弹奏真钢琴，Canvas2D 三角钢琴渲染、Salamander Grand 真实采样音色与 88 键可弹键盘，附全屏沉浸式舞台；MIT、npm `dsh-pianist@0.1.0`，提供在线 Demo 与演奏短片。
 
 ### 沙箱与执行
 
