@@ -192,6 +192,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-auto-approval](https://github.com/Andy8647/dsh-auto-approval)：ルールとモデルでツール呼び出しを分類し、`allow / deny` の自動承認判断を返す。
 - [mstar-harness](https://github.com/btspoony/mstar-harness)：Skill 駆動の Harness / Loop Engineering ワークフロープラグイン。
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams)：DSH に Agent Teams 機能を追加。
+- [dsh-agent-team](https://github.com/wowyuarm/dsh-agent-team)：DSH に長期協働できる持続的 Agent チームを提供：Agent は永続的な識別（プライベートな memory/notes/skills がセッションをまたいで保持）で、Workspace がプロジェクトごとに整理し、Channel は Human が責務をルーティングし、Task Thread が複数の session agent を一本の進行ラインにつなぐ。
 - [dsh-automation](https://github.com/titanwings/dsh-automation)：新しいルート Agent と Session で独立タスクをスケジュール実行し、定義の改訂履歴、実行履歴、明示的なワークスペースと権限境界を保持。
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator)：Agent の計画をセクションごとに注釈し、構造化フィードバックを送信。下書き分離、バージョン固定、古い計画の拒否に対応。
 - [dsh-spec-collab](https://github.com/zx490336534/dsh-spec-collab)：製品の生要件を、Product、Engineering、双方の AI が共同レビューする Git Version 管理の Ready Spec に整理する。AI は Review Item と Candidate Patch の提出に限定され、確認と正式保存は人間が担う。Apache-2.0、npm `0.2.1`、DSH `0.1.1-rc.1` 互換を表明し Test Suite を備える。ただし同日中も高速に更新され、CI、GitHub Release、独立利用の証拠がないため初期段階。`~/.dsh/spec-collab` に Collaboration Ledger と独立 Git Repository を書き込み、追加の AI Review Session を起動する。HTTP 管理面は既定で Loopback / Same-origin のみだが、花名は認証ではないため、外部公開時は別途認証と信頼できる Reverse Proxy が必要。
