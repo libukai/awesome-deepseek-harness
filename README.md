@@ -167,6 +167,7 @@ dsh --profile web --dump-config
 | [Oh-DSH](https://github.com/hust-open-atom-club/oh-dsh)   | macOS / Linux / Windows · 社区发行版 | 将 DSH、Node.js 与本地能力打包为 Desktop、Web 和 TUI 三种形态，提供分层安装包与统一的 `ohdsh` 启动器                   |
 | [DSH Desktop](https://github.com/dataelement/dsh-desktop) | macOS / Windows · Electron           | 管理本地 Harness、工作区、随机端口、Profile、插件和会话的跨平台桌面端                                                  |
 | [dsh-launcher](https://github.com/Ruler4396/dsh-launcher) | Windows · WebView2                   | 提供静默启动、独立窗口、便携包和 MSI 的轻量启动器                                                                      |
+| [dsh-kernel](https://github.com/YenWuLiu/dsh-kernel-0.1.2-rc.1) | 跨平台 · 内核裁剪基座 · 早期 | 从上游 monorepo `0.1.2-rc.1` 中保留 Agent 运行时闭包（151+1 个包），删除 Web 外壳、浏览器 UI、实验包与外部协议适配（116 个包）；分层与组合机制与上游一致，含 headless 一次性任务运行器，作为二次开发基座而非可直接安装的发行版；MIT，按上游版本分仓库跟踪破坏性变更 |
 
 ### 终端、移动与 Web 体验
 
