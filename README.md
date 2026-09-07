@@ -257,6 +257,7 @@ dsh --profile web --dump-config
 
 ## 外部集成
 
+- [Busabase for DSH](https://github.com/busabase/busabase-dsh-plugin)：通过 MCP 将 DSH 接入 Busabase 的审批优先知识库与结构化数据平台；Agent 可搜索已批准内容、处理 Base / Record、提交 ChangeRequest，并在会话内用实时 Inspector 渲染结果。MIT、npm `0.1.5`、Node.js `>=24.18.0`，Peer 依赖锁定 DSH `0.1.1-rc.2`，发布提交的 CI 与 Release 流程通过。Local 模式可按需启动或复用回环 Busabase，Cloud 模式使用浏览器 OAuth 且 Token 存入 DSH Credentials；MCP 权限上限固定为 `changeRequest`，Agent 不能批准或合并自己的提案。Cloud Inspector 的审核、合并、实时刷新与嵌入式预览当前仍仅限 Local，远端需打开规范 Busabase 链接。
 - [dsh-oomol](https://github.com/oomol-lab/dsh-oomol)：通过 OOMOL Connector 渐进式发现应用和 Action、检查 Schema 并执行已连接的 SaaS 能力；MIT、npm `0.1.4`。DSH 只保存可撤销的 OOMOL MCP Key，第三方 OAuth Token 留在 OOMOL；卸载插件不会自动断开第三方账户，Action 执行目前也没有幂等键。
 - [Tencent Cloud ADP for DSH](https://github.com/TencentCloudADP/Tencent-ADP-dsh-plugin)：腾讯云 ADP 团队维护的模型、混元 AI 搜索、API / MCP 插件市场、Skill 广场与已发布 ADP 应用集成；MIT、npm / Release `0.1.1`、Node.js 22.19+ 或 24+，模拟 HTTP 测试为 CI 门槛，真实账号测试仅在显式提供环境时运行。Tool Key、SecretId / SecretKey 与逐应用 AppKey 分属三套凭据平面，值写入 DSH Credentials 或环境变量；应用 / Agent / Release 的变更操作只在启用 `allowMutating` 后注册且仍需审批。项目版本较早、依赖外部云账号并可改变 ADP 资源，标注为早期。
 - [dsh-forge](https://github.com/maxmilian/dsh-forge)：为自托管 Gitea 与 Forgejo 提供实例、仓库、Issue、分支、PR、Actions Run 与 Job Log 的只读工具；MIT、npm / Release `0.3.3`，兼容 DSH Tools rc.6 与当前 rc.2，CI 会用官方 Gitea / Forgejo 与 Runner 容器做真实集成测试。建议使用最小只读 Token 的环境变量；npm 或预构建 Release 不执行本地构建，Git 源安装则会运行 `prepare`，需要审查并固定 Commit 后再授权。
