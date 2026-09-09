@@ -243,7 +243,7 @@ dsh --profile web --dump-config
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：为 DSH Web 增加日本语界面与系统日文字体，覆盖 29 个命名空间、721 条 UI 字符串；MIT、npm / Release `0.4.3`、Node.js 22+，Peer 依赖锁定 `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`，仓库测试、字典漂移检查和每日 `next` DSH E2E 均通过。插件只挂载客户端本地化模块，不新增 Host 路由、凭据或外部服务。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
-
+- [dsh-github-search](https://github.com/ttb-eng/dsh-github-search)：Web 侧边栏的 GitHub 操作台，闭环搜索、README 浏览、一键克隆、喂给 Agent、Agent 判断、历史记录与 Star/Fork；MIT、`v1.0.0`。
 ### 沙箱与执行
 
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro)：提供 fail-closed 的 microsandbox microVM 能力；安装后 Provider 与模型工具均默认关闭，必须分别显式启用，平台检查失败时不会降级为无约束宿主执行。含测试目录但尚无正式 Release；`package.json` 声明 BSD-3-Clause，但仓库根目录没有 `LICENSE` 文件，标注为早期。
