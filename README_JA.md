@@ -174,6 +174,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 | --- | --- | --- |
 | [dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | TUI Bundle | Claude Code 風の全画面ターミナル、ストリーミング状態、コンテキスト計器、Session のロールバック |
 | [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | TUI Bundle | Tianshu から発展した完全なターミナル操作レイヤー。状態は DSH Session イベントストリームから取得 |
+| [Blue](https://github.com/dsh-blue/blue) | TUI Bundle | プラグインツリー式ターミナル UI：ストリーミング Markdown、ツールカード、ファジー補完、テーマ切替。全 UI コンポーネントがホットスワップ可能な Cordis プラグイン（DSH `0.1.1-rc.2` で開発・テスト） |
 | [dsh-tui](https://github.com/openguardrails/dsh-tui) | TUI Bundle · 初期段階 | ローカル DeepSeek とオフライン実行に対応。活発に開発中で、移植前のテストスイートはまだ動作していない |
 | [dsh-mini-tui](https://github.com/boxeryao/dsh-mini-tui) | TUI プラグイン · 初期段階 | DSH Runtime に直接接続する軽量ターミナル UI。MIT、`v0.2.0`。npm から導入でき、DSH `0.1.0-rc.6` で開発・テスト済み |
 | [Orbis](https://github.com/icodesign/orbis) | モバイル遠隔操作 · Beta | DSH プラグインによりデバイスのペアリング、エンドツーエンド暗号化転送、複数デバイスのリアルタイム更新を実現 |
