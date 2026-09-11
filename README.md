@@ -292,6 +292,7 @@ dsh --profile web --dump-config
 - [Awesome DSH Plugins Radar](https://github.com/AdamPlatin123/awesome-dsh-plugins)：自动扫描并分别展示发现、静态、编译和运行级信号的兼容性雷达；MIT、数据高速变化且尚无 Release，“运行可用”不等于安全审计或内容质量，标注为早期。
 - [dsh-market](https://github.com/dsh-market/dsh-market)：DSH 内置插件市场，可浏览、搜索、安装、更新和卸载登记在 `awesome-dsh-plugin` 的项目；MIT、npm / Release `v1.31.1`。在网络分区、中国大陆路由、官方源回退与 Anywhere Labs Desktop 可恢复安装边界基础上，新版会明确解释 npm-only Desktop 无法安装 GitHub-only 项目、目录入口已失效，以及恢复、回滚或操作后 Profile 仍缺少的启动条件；`1.29.3` 同时回滚依赖和 Bundle 行，Tasks 面板关闭设置页后仍继续显示。安装后仍比较整个 Profile 的 Bundle 状态并检查 CJS，只报告本次引入的风险；ESM Bundle 仍不做语法检查。构建脚本默认阻止、安装端点仅同源 POST、Agent 运行时禁止更新，但代理传输不证明字节等价，目录收录也不代表安全背书。
 - [dsh-suite](https://whyihaveyou.github.io/dsh-suite/zh.html)：中英双语 DSH 生态索引，提供插件搜索、`create-dsh-plugin` 脚手架和基础兼容性元数据；目录每小时刷新，并每天把收录包安装到临时 Profile 做兼容性检查。安装成功不等于安全审计或质量保证。
+- [dsplugin.app](https://dsplugin.app/)：非官方社区 DeepSeek Harness 插件目录 / 注册表；安装前请查看来源与 Manifest/`dsh.bundle`。
 - [deepseek-harness-plugin-mcp](https://github.com/bobleer/deepseek-harness-plugin-mcp)：让其他 Agent 通过 MCP 发现、检查、安装和调用 DSH 插件；安装与运行默认关闭，只有显式启用 `--allow-install` / `--allow-runtime` 才会产生对应副作用。
 - [dsh-payload-capture](https://github.com/Moeblack/dsh-payload-capture)：捕获并落盘上行模型 API Payload，便于调试请求组装。
 - [dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool)：通过 Monaco 编辑器创建和管理沙箱化 JavaScript 工具。
