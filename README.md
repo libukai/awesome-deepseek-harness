@@ -186,6 +186,7 @@ dsh --profile web --dump-config
 
 ### 工作流与 Agent
 
+- [RoutineKit](https://github.com/sjh9714/routinekit)：把明确选择且成功执行的 DSH / 原生 WebMCP 工具调用保存为可审阅、可参数化的线性流程，保留结果引用，运行前检查实时契约并重新确认，可导出附带 `SKILL.md` 的流程。MIT、npm `0.1.0`、Node 22.19+，在 DSH `0.1.2-rc.1` 验证；Web 面板仅限回环访问，独立 MCP 执行需要客户端支持人工表单确认。不保存原始录制输出，但审阅后的字面参数仍可能包含私密数据。尚无独立使用证据，标注为早期。
 - [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit)：时间、编码、JSON、计算器、CSV、正则、Markdown、Diff 等确定性工具合集。
 - [dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research)：面向 DSH 的自适应深度研究编排器。
 - [dsh-101](https://github.com/bill9109/dsh-101)：在 DSH 中阅读和理解官方文档的学习模式。

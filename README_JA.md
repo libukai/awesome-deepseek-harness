@@ -186,6 +186,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 
 ### ワークフローと Agent
 
+- [RoutineKit](https://github.com/sjh9714/routinekit)：明示的に選択して成功した DSH / ネイティブ WebMCP のツール呼び出しを、結果参照を持つレビュー可能なパラメーター付き線形ルーチンとして保存。再実行時に実際のツール契約を確認し、新たな承認を求め、`SKILL.md` を添えてエクスポートできる。MIT、npm `0.1.0`、Node 22.19+、DSH `0.1.2-rc.1` で検証。Web パネルはループバック限定で、単独の MCP 実行にはクライアントの人間向けフォーム確認が必要。記録した生の出力は保存しないが、レビュー済みの固定引数にも機密情報が残る場合がある。独立した利用実績はまだなく、初期段階。
 - [dsh-toolkit](https://github.com/omdsh-dev/dsh-toolkit)：時刻、エンコーディング、JSON、計算、CSV、正規表現、Markdown、Diff などの決定論的ツール集。
 - [dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research)：DSH 向けの適応型ディープリサーチオーケストレーター。
 - [dsh-101](https://github.com/bill9109/dsh-101)：DSH 内で公式ドキュメントを読み、理解するための学習モード。
