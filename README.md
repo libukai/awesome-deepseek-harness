@@ -202,6 +202,7 @@ dsh --profile web --dump-config
 - [dsh-crew](https://github.com/ZSeven-W/dsh-crew)：从 Claude Code 或 Codex 调度真实 DSH Worker，并提供进度、状态分片和分层策略；MIT、Release / npm `next` `0.1.0-rc.4`，声明在 DSH `0.1.1-rc.1` 验证并含 MCP 与发布包烟测。会写入 `~/.config/dsh-crew/status.d/`，外部模型服务可能需要 API Key；仍为预发布且没有独立测试 CI，标注为早期。
 - [dsh-trading](https://github.com/maddogfinance/dsh-trading)：面向交易研究的 DSH 工作台，提供确定性指标、CSV 数据源和交互式图表；MIT、npm `@dsh-trading/bundle@0.1.0`。项目不提供订单执行接口，并以启发式规则拦截资金移动类工具，但该拦截并非完备安全边界，标注为早期。
 - [oh-story-dsh](https://github.com/worldwonderer/oh-story-dsh)：把 13 个小说 Skills、7 个专业 Roles 和短剧生产流程接入 DSH 原生 Session、审批与三栏创作工作台。MIT、npm / Release `0.1.3`、Node.js 24+，Peer 依赖从 DSH `0.1.1-rc.1` 起，Release 声明 34 项自动化测试和 Ubuntu / macOS / Windows CI；本版复用官方 Composer 高度，为消息流增加滚动安全区与锚点几何回归，避免展开任务、流式状态和定位消息被 Composer 遮挡。构建会排除上游登录 / CDP 抓取器和独立 Dashboard；插件不读取模型凭据或另开监听端口，但会在当前 Agent 可见工具范围内读写创作项目文件、调用专业 Role，并在 DSH Web Server 上增加受 Host、Origin、Session、路径 containment 和乐观并发保护的文件路由。项目于 8 月 21 日首次发布，目前只明确验证 DSH rc.1，尚缺长期维护与独立使用证据，因此标注为早期。
+- [dsh-auto-review](https://github.com/PerryLink/dsh-auto-review)：审批链上的第二模型自动审查——只读审查子代理返回结构化 allow/deny 裁决与理由，默认 fail-closed，全程可经会话日志审计（approval/asked → autoReview/verdict → approval/decided）。Apache-2.0、GitHub Release `v0.12.4`、源码 `cordis.patch.yml`，`dsh plugin add "github:PerryLink/dsh-auto-review#main"` 可安装（无 npm 包），CI 绿，README 钉版 DSH `0.1.5-rc.2`。审查意见质量受第二模型能力限制，是**决策辅助而非安全边界**；deny 阈值可配置，误配可能加严审批流，建议先小范围试用。
 
 ### 上下文、会话与输入
 
@@ -222,6 +223,7 @@ dsh --profile web --dump-config
 - [toolshrink](https://github.com/unclecode/toolshrink)：按测试、Diff、JSON、目录树、日志和安装输出的结构做内容感知压缩，并在需要时保留原始输出引用；MIT、`0.1.0`，目前需从源码构建并修改全局 `~/.dsh/cordis.patch.yml`，暂存的原始输出会在 24 小时后清理，标注为早期。
 - [dsh-tool-squeeze](https://github.com/w2829562572-dev/dsh-tool-squeeze)：为测试、Diff、JSON、目录树、日志、安装输出和 HTML 提供确定性、本地优先的工具结果压缩；MIT `v0.1.0`，固定兼容 DSH / `dsh-tools` `0.1.0-rc.8`，项目声明 21 项测试及可复现基准。与需源码构建并自行保留原文的 toolshrink 相比，它可直接安装 GitHub Bundle、无需额外模型或网络调用，并将完整原文交给官方 Spill Store；压缩仍有损，且项目为同日初发、无 CI 或独立使用证据，标注为早期。
 - [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report)：从会话事件日志生成日报、周报、月报、年报和自定义区间报告；MIT、Release / npm `0.6.1`、Node.js `^22.19 || >=24`，Peer 依赖要求 DSH `>=0.1.1-rc.2 <0.2.0`。`0.6.0` 加入首个严格白名单的 Apply & Verify 操作：仅在重复 Bash 超时证据与用户明确批准后，可将 `shell.timeoutMs` 从 60 秒调为 120 秒并验证、审计和安全回滚；不支持任意设置、任意命令、自动修复或自动回滚。当前 Release Commit 的 CI 通过，说明包含 393 项测试与真实包验收；`0.6.1` 修正历史计价生效日期、启动后新会话与恢复会话的统计，可实质改变历史 Token / 成本总额，但未改变 Apply & Verify 边界。项目仍新且已具备受控配置写入能力，故标注为早期。
+- [dsh-memento](https://github.com/PerryLink/dsh-memento)：有界、分层、审批门、可审计的跨会话记忆——`ctx.memory` 服务 + 零依赖 SQLite + `memory` 工具 + 冻结快照注入；写必审批、模型可见 ⟺ 落盘，可自会话日志重建。Apache-2.0、GitHub Release `v0.5.12`、源码 `cordis.patch.yml`，`dsh plugin add "github:PerryLink/dsh-memento#main"` 可安装（无 npm 包），CI 绿，README 钉版 DSH `0.1.5-rc.2`；预演 dsh-memory-protocol v1（适配器注册表 + 可分发一致性套件）。第三方旁证：Herdeny 目录 🛡️QC:70 🟢（⭐97）、org awesome-dsh-plugin 已收录。注意其跨会话记忆为本地存储，多机同步需自行配合（如 dsh-session-sync）。
 
 ### 浏览器、视觉与界面
 
@@ -250,6 +252,7 @@ dsh --profile web --dump-config
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：用 Windows Credential Manager、macOS Keychain 或 Linux Secret Service 替代明文凭据文件，并在无 Secret Service 的 Linux 上 fail closed；MIT、`0.1.0`，有内存后端测试但尚无 npm / Release，真实系统钥匙串仍待逐平台烟测，标注为早期。
 - [dsh-win32](https://github.com/sjh9714/dsh-win32)：面向当前 Windows 版 DSH 的诊断、验收与安全修复工具；MIT、npm / Release `0.17.0`，CI 在 Node 22.19 / 24 下覆盖 npm hoisted 与 pnpm strict 安装。新增 `verify` 会在隔离的临时 Home / Workspace 中，用已安装的官方 PowerShell、Subprocess 与 Workspace Write 组件验证持久状态、外部写入拒绝、恢复、取消、PTY 替换与清理，但不启动完整 Minimal Host 或发起模型请求。默认 `setup` 不替换官方栈，只核验组件、修复可确认的 `koffi` 加载问题并可创建桌面快捷方式；`doctor` 只读，`fix` 仅修复已知损坏或真实加载失败的 `koffi`。旧 Git Bash / BusyBox 路径仍需显式 `setup --legacy`，其中 Git Bash 要求 `danger-full-access`；工具不会自动安装 Git、PowerShell、BusyBox、WSL 或另一套 DSH Bundle。
 - [dsh-exec-extension](https://github.com/LvDAO/dsh-exec-extension)：为 Headless Profile 增加一次性 Exec CLI，把 stdin、`@file`、工作目录、模型、超时、JSONL 输出和权限模式变为逐次参数；MIT `v0.1.0`，固定 DSH `0.1.0-rc.7`、Node.js 22.19+，含 Node / Rust 测试与持续集成。默认仍是 `workspace-write`，无界面的 `--approval ask` 会 fail closed；`--full-auto` / `--yolo` 会自动批准，只有显式 `--sandbox danger-full-access` 才解除沙箱。当前仅通过固定 Git Tag 安装，Git 依赖的 `prepare` 在 Agent 沙箱外执行，需先审查并显式授权。
+- [dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules)：Claude Code 风格声明式权限规则——按序 allow/deny/ask 的 YAML 规则在 tools/pre-execute 瀑布匹配工具名、参数、工作区路径与 agent 身份，带会话日志审计、干跑模式与热重载。Apache-2.0、GitHub Release `v0.7.2`、源码 `cordis.patch.yml`，`dsh plugin add "github:PerryLink/dsh-permission-rules#main"` 可安装（无 npm 包；另走 1024 store 通道），CI 绿，README 钉版 DSH `0.1.5-rc.2`。规则引擎只约束**经过 DSH ToolRuntime 的调用**，不覆盖插件在管线之外自行执行的代码；deny 规则误配会阻断合法工具调用，建议先 `dry-run` 验证规则集再热载。
 
 ### 主题与皮肤
 
