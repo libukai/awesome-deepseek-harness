@@ -299,6 +299,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-movein](https://github.com/sjh9714/dsh-movein)：1 コマンドで Claude Code の Skill、MCP、hooks、グローバル指示を DSH へ移行。デフォルトはドライラン。`CLAUDE.md` は DSH がネイティブに読み、Session 履歴は対象外。MIT。DSH `0.1.0-rc.6` で検証済みだが新しいため初期段階。
 - [dshpack](https://github.com/hili986/dshpack)：Skill、MCP、Profile Patch、Permission Default を Install・共有・監査可能な DSH Profile に Package 化する。MIT、npm `0.3.0`。`init`、`export`、`compose`、`lock`、`pack`、Transaction 対応 Install / Update / Uninstall、Loopback 管理 UI を含む 18 Command が利用可能。Build Script は既定で拒否、Source は Commit 固定、Export は 3 回 Credential Scan、Conflict は明示解決、Failure は Journal から Rollback する。`doctor` は DSH に `cordis.yml` の再書込を行わせる場合があり、dshpack 自身も Audit Log を書く。Pack Format と CLI はまだ Stable API ではないため初期段階。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter)：Claude Code、Codex、OpenCode の hooks Config を DSH で直接再利用し、Shell、Webhook、LLM、Subagent Handler を提供。MIT、Repository は 111 Test を示すが Release はまだない。自動検出した hooks は Command 実行や Data 送信が可能なため初期段階。
+- [sofagent](https://github.com/KongFangXun/sofagent)：AI コーディング Agent 向けのコミット時ガバナンス harness。MIT、GitHub Marketplace に Action として登録済み、MCP サーバーも提供。24 の決定論的ルールがローカルで git diff を監査（秘密情報、範囲外変更、無確認改変、プロンプト注入痕跡）、モデル呼び出しゼロ。HMAC チェーン式の監査履歴で改ざん検知が可能。`engine/dsh-plugins/` 配下に cordis プラグインファミリー（audit / gate / rollback / inject / ontology / evolve / commons / daemon / fde）を同梱し、SkillHub で配布（`skillhub install cordis-plugin-sofagent-*`）。ルール意味論は公式 DSH バージョンと分離しており、Profile 側ではなくリポジトリ側に装着する。
 
 ## 謝辞
 

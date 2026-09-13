@@ -299,6 +299,7 @@ dsh --profile web --dump-config
 - [dsh-movein](https://github.com/sjh9714/dsh-movein)：一条命令把 Claude Code 的 Skills、MCP、hooks 和全局指令迁入 DSH；默认预演，`CLAUDE.md` 由 DSH 原生读取，会话历史不在范围内。MIT，已在 DSH `0.1.0-rc.6` 验证，项目仍新，标注为早期。
 - [dshpack](https://github.com/hili986/dshpack)：把 Skills、MCP、Profile Patch 和权限默认值打包成可安装、可分享、可审计的 DSH Profile；MIT、npm `0.3.0`，18 个命令已可用，包括 `init`、`export`、`compose`、`lock`、`pack`、事务化安装 / 更新 / 卸载和回环管理 UI。构建脚本默认拒绝，来源固定到 Commit，导出前后三次扫描凭据，冲突要求显式解决，失败会带 Journal 回滚；`doctor` 可能触发 DSH 重写 `cordis.yml`，并由 dshpack 写审计日志。Pack 格式与 CLI 仍不是稳定 API，标注为早期。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter)：让 DSH 直接复用 Claude Code、Codex 和 OpenCode 的 hooks 配置，并提供 Shell、Webhook、LLM 与子 Agent Handler；MIT、仓库声明 111 项测试但尚无 Release，自动发现的 hooks 可执行命令和外发数据，标注为早期。
+- [sofagent](https://github.com/KongFangXun/sofagent)：面向 AI 编程 Agent 的提交时治理 harness；MIT，GitHub Action 已上架 Marketplace，另提供 MCP server。24 条确定性规则在本地审计 git diff（密钥、越权改动、盲改、提示注入痕迹），零模型调用；HMAC 链式审计记录防篡改。`engine/dsh-plugins/` 下含 cordis 插件家族（audit / gate / rollback / inject / ontology / evolve / commons / daemon / fde），经 SkillHub 分发（`skillhub install cordis-plugin-sofagent-*`）。以规则语义为主，与官方 DSH 版本解耦，装在仓库侧而非 Profile 侧。
 
 ## 致谢
 
