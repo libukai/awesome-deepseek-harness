@@ -202,6 +202,8 @@ dsh --profile web --dump-config
 - [dsh-crew](https://github.com/ZSeven-W/dsh-crew)：从 Claude Code 或 Codex 调度真实 DSH Worker，并提供进度、状态分片和分层策略；MIT、Release / npm `next` `0.1.0-rc.4`，声明在 DSH `0.1.1-rc.1` 验证并含 MCP 与发布包烟测。会写入 `~/.config/dsh-crew/status.d/`，外部模型服务可能需要 API Key；仍为预发布且没有独立测试 CI，标注为早期。
 - [dsh-trading](https://github.com/maddogfinance/dsh-trading)：面向交易研究的 DSH 工作台，提供确定性指标、CSV 数据源和交互式图表；MIT、npm `@dsh-trading/bundle@0.1.0`。项目不提供订单执行接口，并以启发式规则拦截资金移动类工具，但该拦截并非完备安全边界，标注为早期。
 - [oh-story-dsh](https://github.com/worldwonderer/oh-story-dsh)：把 13 个小说 Skills、7 个专业 Roles 和短剧生产流程接入 DSH 原生 Session、审批与三栏创作工作台。MIT、npm / Release `0.1.3`、Node.js 24+，Peer 依赖从 DSH `0.1.1-rc.1` 起，Release 声明 34 项自动化测试和 Ubuntu / macOS / Windows CI；本版复用官方 Composer 高度，为消息流增加滚动安全区与锚点几何回归，避免展开任务、流式状态和定位消息被 Composer 遮挡。构建会排除上游登录 / CDP 抓取器和独立 Dashboard；插件不读取模型凭据或另开监听端口，但会在当前 Agent 可见工具范围内读写创作项目文件、调用专业 Role，并在 DSH Web Server 上增加受 Host、Origin、Session、路径 containment 和乐观并发保护的文件路由。项目于 8 月 21 日首次发布，目前只明确验证 DSH rc.1，尚缺长期维护与独立使用证据，因此标注为早期。
+- [dsh-lit-search](https://github.com/Flan246/dsh-lit-search)：学术文献检索、引用格式化（GB/T 7714 / APA / BibTeX）与相关工作发现工具，基于 Crossref + OpenAlex、无需 API Key，可通过 `dsh plugin add dsh-lit-search` 安装。
+- [dsh-latex-guard](https://github.com/Flan246/dsh-latex-guard)：LaTeX 编译检查（自动检测 xelatex / lualatex）与 BibTeX lint、字段补全、引用审计工具，可通过 `dsh plugin add dsh-latex-guard` 安装。
 
 ### 上下文、会话与输入
 
