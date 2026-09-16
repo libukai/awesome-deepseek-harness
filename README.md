@@ -299,6 +299,7 @@ dsh --profile web --dump-config
 - [dsh-movein](https://github.com/sjh9714/dsh-movein)：一条命令把 Claude Code 的 Skills、MCP、hooks 和全局指令迁入 DSH；默认预演，`CLAUDE.md` 由 DSH 原生读取，会话历史不在范围内。MIT，已在 DSH `0.1.0-rc.6` 验证，项目仍新，标注为早期。
 - [dshpack](https://github.com/hili986/dshpack)：把 Skills、MCP、Profile Patch 和权限默认值打包成可安装、可分享、可审计的 DSH Profile；MIT、npm `0.3.0`，18 个命令已可用，包括 `init`、`export`、`compose`、`lock`、`pack`、事务化安装 / 更新 / 卸载和回环管理 UI。构建脚本默认拒绝，来源固定到 Commit，导出前后三次扫描凭据，冲突要求显式解决，失败会带 Journal 回滚；`doctor` 可能触发 DSH 重写 `cordis.yml`，并由 dshpack 写审计日志。Pack 格式与 CLI 仍不是稳定 API，标注为早期。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter)：让 DSH 直接复用 Claude Code、Codex 和 OpenCode 的 hooks 配置，并提供 Shell、Webhook、LLM 与子 Agent Handler；MIT、仓库声明 111 项测试但尚无 Release，自动发现的 hooks 可执行命令和外发数据，标注为早期。
+- [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay)：在 provider 边界录下模型请求与响应，之后不联网、不花 token 地按字节回放整段会话；`--from N --model M` 可从任一步换模型继续，把「换个模型会不会做对」变成单变量实验。**DSH 从自己的配置解析 provider origin、不读 base-URL 环境变量，所以要用 `orca attach --port N` 并把 DSH 的 provider 端点指过去**，包裹式的 `orca record` 对 DSH 不生效。回放一致不等于确定性结论；`egress=blocked` 只挡模型侧出口，不是沙箱，录进去的工具调用回放时真执行。Apache-2.0、Node 20+、npm `orcareplay`。
 
 ## 致谢
 
