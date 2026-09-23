@@ -244,6 +244,8 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja): adds a Japanese DSH Web interface and system Japanese fonts across 29 namespaces and 721 UI strings. It is MIT, npm / Release `0.4.3`, Node.js 22+, and pins `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`; repository tests, dictionary-drift checks, and daily E2E against DSH `next` pass. It mounts only a client localization module, adding no Host route, credential, or external service.
 - [dsh-share](https://github.com/hellodigua/dsh-share): generates and shares DSH conversation content in one click.
 
+- [nickkkkkk123123/dsh-whale-girl](https://github.com/nickkkkkk123123/dsh-whale-girl): interactive whale-girl desktop pet for DSH Web: live balance/usage/context occupancy, middle-button slingshot toss, easter-egg bubbles, and eco mode. 346KB package, zero extra processes (measured idle CPU impact ~0.6%).
+
 ### Sandboxing and Execution
 
 - [sandbox-micro](https://github.com/omdsh-dev/sandbox-micro): provides a fail-closed microsandbox microVM capability; both the Provider and model-facing tools stay disabled after installation until separately enabled, and failed platform checks never degrade to unconstrained host execution. It has test directories but no formal Release; `package.json` declares BSD-3-Clause, but the repository has no root `LICENSE` file, so it is marked Early.
