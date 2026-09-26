@@ -278,6 +278,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [Tencent Cloud Agent Observability for DSH](https://github.com/TencentCloud/tencentcloud-agentobs-sdk-dsh)：Tencent Cloud チーム保守の CLS 直送 Observability Plugin。OTLP Collector なしで Session、Agent Loop、Model Stream、Tool Lifecycle を 5 層 Trace に変換する。Apache-2.0、npm / Release `0.0.1`、DSH `>=0.1.0-rc.6 <0.2.0` 対応。非常に新しいため初期段階。Prompt、Response、Tool Argument / Result の Capture は既定で有効なので、機密 Repository では `captureContent` を無効化し、最小権限と Retention を設定する。
 - [Token Monitor](https://github.com/Javis603/token-monitor)：Local-first の Cross-platform Desktop Usage Tool。現在の Release は `v0.47.0` で、`~/.dsh/sessions/` の JSONL / Zstandard Session 読み取りと DSH の Turn ごとの Token、Prompt、Tool Record 表示は `v0.46.0` で追加された。MIT で、macOS Build は署名・公証済み、Windows Build は署名済み。DSH Parser の Test と CI もある。既定で Maintainer Telemetry は送信せず、任意の Multi-device Sync は集計 Usage と Account / Project Metadata を Operator 指定 Hub へ送るが、生 Prompt、Source Code、Credential は送らない。
 - [dsh-wakatime](https://github.com/dingyi222666/dsh-wakatime)：DSH の File Activity、AI Line Change、Project Time を WakaTime へ送信。MIT、npm `0.1.1`。Test はあるが新しいため初期段階。WakaTime API Key が必要で、`~/.wakatime/dsh-wakatime/` に State を書き、CLI がなければ `wakatime-cli` を自動 Download / Update する。
+- [dsh-webdav-server](https://github.com/weibaohui/dsh-webdav-server)：共有ディレクトリを WebDAV サービスに変え、全 OS でローカルディスクとしてマウント可能。MIT、npm \`@weibaohui/dsh-webdav-server\` v0.1.3。
 
 ## 開発ツール
 
