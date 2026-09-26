@@ -222,6 +222,7 @@ dsh --profile web --dump-config
 - [toolshrink](https://github.com/unclecode/toolshrink)：按测试、Diff、JSON、目录树、日志和安装输出的结构做内容感知压缩，并在需要时保留原始输出引用；MIT、`0.1.0`，目前需从源码构建并修改全局 `~/.dsh/cordis.patch.yml`，暂存的原始输出会在 24 小时后清理，标注为早期。
 - [dsh-tool-squeeze](https://github.com/w2829562572-dev/dsh-tool-squeeze)：为测试、Diff、JSON、目录树、日志、安装输出和 HTML 提供确定性、本地优先的工具结果压缩；MIT `v0.1.0`，固定兼容 DSH / `dsh-tools` `0.1.0-rc.8`，项目声明 21 项测试及可复现基准。与需源码构建并自行保留原文的 toolshrink 相比，它可直接安装 GitHub Bundle、无需额外模型或网络调用，并将完整原文交给官方 Spill Store；压缩仍有损，且项目为同日初发、无 CI 或独立使用证据，标注为早期。
 - [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report)：从会话事件日志生成日报、周报、月报、年报和自定义区间报告；MIT、Release / npm `0.6.1`、Node.js `^22.19 || >=24`，Peer 依赖要求 DSH `>=0.1.1-rc.2 <0.2.0`。`0.6.0` 加入首个严格白名单的 Apply & Verify 操作：仅在重复 Bash 超时证据与用户明确批准后，可将 `shell.timeoutMs` 从 60 秒调为 120 秒并验证、审计和安全回滚；不支持任意设置、任意命令、自动修复或自动回滚。当前 Release Commit 的 CI 通过，说明包含 393 项测试与真实包验收；`0.6.1` 修正历史计价生效日期、启动后新会话与恢复会话的统计，可实质改变历史 Token / 成本总额，但未改变 Apply & Verify 边界。项目仍新且已具备受控配置写入能力，故标注为早期。
+- [dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup)：一条命令备份与恢复整个 `~/.dsh`（会话、设置、技能、MCP）：定时备份与分级轮换、宿主升级前自动快照、sha256 校验的合并恢复（先 dry-run 预览，解压失败自动回滚）、跨机迁移预检与守卫、会话日志体检与定点修复（`/backup doctor`，坏文件先隔离再入档）、宿主起不来时可用的零依赖进程外救援控制台；凭据默认脱敏（明文只留本机 vault），`--types credentials` 归档按设计含明文、永不进 GitHub 同步。MIT、npm `@xiaoyuyu6420/dsh-backup` `0.13.1`、Node.js >=20，Peer 覆盖 DSH `0.1.1-rc.2` / `0.1.2-rc.1` / `0.1.5-rc.1` / `0.1.6-alpha.1` / `0.1.7-alpha.1` 各列车；仓库带三层回归（286 项零依赖 smoke、29 项客户端、37 项真实宿主 e2e）与双矩阵 CI，并在 0.1.6+ 与 0.1.7-rc 各代宿主实机验证。项目仍为 0.x，但已有持续发布与真实安装量（npm 周下载数百）。
 
 ### 浏览器、视觉与界面
 
