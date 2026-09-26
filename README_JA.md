@@ -243,6 +243,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：タスク結果とキーワードに応じて設定できるデスクトップ通知。
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：29 Namespace、721 件の UI 文字列と System 日本語 Font により DSH Web を日本語化する。MIT、npm / Release `0.4.3`、Node.js 22+、`@deepseek-ai/dsh-client-locale ^0.1.1-rc.2` 固定で、Repository Test、Dictionary Drift Check、毎日の DSH `next` E2E は成功している。Client Localization Module だけを Mount し、Host Route、Credential、外部 Service は追加しない。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：DSH の会話内容をワンクリックで生成・共有。
+- [dsh-settings-ui](https://github.com/weibaohui/dsh-settings-ui)：設定ウィンドウのサイズ・透明度・背景をカスタマイズし、フローティングボールで素早く調整。MIT、npm \`@weibaohui/dsh-settings-ui\` v0.2.6。
 
 ### サンドボックスと実行
 

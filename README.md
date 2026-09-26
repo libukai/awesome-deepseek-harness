@@ -243,6 +243,7 @@ dsh --profile web --dump-config
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：为 DSH Web 增加日本语界面与系统日文字体，覆盖 29 个命名空间、721 条 UI 字符串；MIT、npm / Release `0.4.3`、Node.js 22+，Peer 依赖锁定 `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`，仓库测试、字典漂移检查和每日 `next` DSH E2E 均通过。插件只挂载客户端本地化模块，不新增 Host 路由、凭据或外部服务。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [dsh-settings-ui](https://github.com/weibaohui/dsh-settings-ui)：设置界面自定义：调整原生设置窗口大小（全屏/预置/自定义宽高）、背景透明度与背景（主题/颜色/图片），悬浮球即开即调，存本机浏览器。MIT、npm \`@weibaohui/dsh-settings-ui\` v0.2.6。
 
 ### 沙箱与执行
 
