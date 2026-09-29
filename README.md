@@ -305,3 +305,9 @@ dsh --profile web --dump-config
 感谢 DeepSeek Harness 团队、Cordis 社区、首批内测开发者，以及所有公开文档、插件、客户端、实践和生态索引的贡献者。
 
 [![滑动变祖器：当前状态为梁子，点击进入完整交互版](assets/media/liang-intensity-calibrator-card-liangzi.png)](https://lichtspektrum.github.io/liang-intensity-calibrator/)
+- [Ln1m/dsh-vk-suite](https://github.com/Ln1m/dsh-vk-suite) — 
+- [Ln1m/dsh-side-suite](https://github.com/Ln1m/dsh-side-suite) — 
+- [Ln1m/dsh-pane-suite](https://github.com/Ln1m/dsh-pane-suite) — 
+- [Ln1m/dsh-chrome-suite](https://github.com/Ln1m/dsh-chrome-suite) — 
+- [Ln1m/dsh-input-suite](https://github.com/Ln1m/dsh-input-suite) — 
+- [Ln1m/dsh-tool-suite](https://github.com/Ln1m/dsh-tool-suite) — 
