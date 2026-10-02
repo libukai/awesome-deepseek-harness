@@ -202,6 +202,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-crew](https://github.com/ZSeven-W/dsh-crew)：Claude Code または Codex から実際の DSH Worker を Dispatch し、進捗、Status Shard、Tier Policy を提供。MIT、Release / npm `next` `0.1.0-rc.4`。DSH `0.1.1-rc.1` で検証され、MCP と Package の Smoke Check を備える。`~/.config/dsh-crew/status.d/` に書き込み、外部 Model Service では API Key が必要になる場合がある。まだ Prerelease で独立した Test CI がないため初期段階。
 - [dsh-trading](https://github.com/maddogfinance/dsh-trading)：決定論的 Indicator、CSV Provider、対話型 Chart を備えた取引 Research 向け DSH Workbench。MIT、npm `@dsh-trading/bundle@0.1.0`。注文実行 Interface は公開せず、資金移動 Tool をヒューリスティックに遮断するが、完全な Security Boundary ではないため初期段階。
 - [oh-story-dsh](https://github.com/worldwonderer/oh-story-dsh)：13 個の小説 Skills、7 個の専門 Role、短編 Drama 制作 Workflow を DSH ネイティブの Session、Approval、3 Column の Creative Workbench に統合。MIT、npm / Release `0.1.3`、Node.js 24+、Peer Dependency は DSH `0.1.1-rc.1` 以降。Release は 34 件の自動 Test と Ubuntu / macOS / Windows CI を報告する。本版は公式 Composer の高さを再利用し、Message Stream に Scroll Safety Area と Anchor Geometry の Regression 検証を追加して、展開 Task、Streaming State、移動先 Message が Composer に隠れないようにした。Build は上流の Login / CDP Scraper と独立 Dashboard を除外する。Plugin は Model Credential を読まず独自 Listener も開かないが、呼び出し元 Agent に見える Tool の範囲で Creative Project File を読み書きして専門 Role を呼び出し、DSH Web Server に Host、Origin、Session、Path Containment、Optimistic Concurrency で保護された File Route を追加する。初回 Release は 8 月 21 日で、明示的な検証は DSH rc.1 のみ、長期保守と独立利用の証拠もまだないため初期段階。
+- [dsh-autocompose](https://github.com/Han-1413141/dsh-autocompose) - タスクの説明から DSH プラグインを検索・組み合わせ、独立した対話環境を開くか現在の Profile にインストールします。 DSH 0.2.0-rc.2.
 
 ### コンテキスト・Session・入力
 
@@ -243,6 +244,9 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：タスク結果とキーワードに応じて設定できるデスクトップ通知。
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：29 Namespace、721 件の UI 文字列と System 日本語 Font により DSH Web を日本語化する。MIT、npm / Release `0.4.3`、Node.js 22+、`@deepseek-ai/dsh-client-locale ^0.1.1-rc.2` 固定で、Repository Test、Dictionary Drift Check、毎日の DSH `next` E2E は成功している。Client Localization Module だけを Mount し、Host Route、Credential、外部 Service は追加しない。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：DSH の会話内容をワンクリックで生成・共有。
+- [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) - DSH の会話・モデル別費用、Token 使用量、予算、プロバイダー残高と Coding Plan の利用枠を表示します。 DSH 0.2.0-rc.2.
+- [dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) - DSH Desktop と Web のプラグイン UI を検索・表示・非表示・移動・サイズ変更・配置し、レイアウトの保存と復元に対応します。 DSH 0.2.0-rc.2.
+- [dsh-visual-edit](https://github.com/Han-1413141/dsh-visual-edit) - DSH のプレビューで要素選択・矢印・範囲指定を行い、変更要求をチャットに追加して更新前後の画像を比較します。 DSH 0.2.0-rc.2.
 
 ### サンドボックスと実行
 
@@ -250,6 +254,8 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：平文 Credential File を Windows Credential Manager、macOS Keychain、Linux Secret Service に置き換え、Secret Service のない Linux では fail closed。MIT `0.1.0` で Memory Backend Test はあるが npm / Release はまだなく、実 OS Keychain の Platform 別 Smoke Test も未完了のため初期段階。
 - [dsh-win32](https://github.com/sjh9714/dsh-win32)：現在の Windows 版 DSH の診断、Acceptance、安全修復を提供。MIT、npm / Release `0.17.0`。CI は Node 22.19 / 24 で npm-hoisted と pnpm-strict Install を確認する。新しい `verify` は導入済み公式 PowerShell、Subprocess、Workspace Write Component を Isolated Temporary Home / Workspace で使い、Persistent State、Outside-write Denial、Recovery、Cancellation、PTY Replacement、Cleanup を検証するが、完全な Minimal Host 起動や Model Request は行わない。既定 `setup` は公式 Stack を置換せず、Component 検査、確実な `koffi` Load 障害の修復、Desktop Shortcut 作成だけを行う。`doctor` は Read-only、`fix` は既知の破損または実 Load 失敗した `koffi` のみを修復する。旧 Git Bash / BusyBox は明示 `setup --legacy` にあり、Git Bash は `danger-full-access` が必要。Git、PowerShell、BusyBox、WSL、別 DSH Bundle は自動導入しない。
 - [dsh-exec-extension](https://github.com/LvDAO/dsh-exec-extension)：Headless Profile に単発 Exec CLI を追加し、stdin、`@file`、作業ディレクトリ、モデル、Timeout、JSONL 出力、Permission Mode を呼び出しごとの Flag として提供。MIT `v0.1.0`、DSH `0.1.0-rc.7` と Node.js 22.19+ に固定され、Node / Rust Test と CI がある。既定は `workspace-write` のままで、UI のない `--approval ask` は fail closed。`--full-auto` / `--yolo` は自動承認し、Sandbox を解除するのは明示的な `--sandbox danger-full-access` のみ。現在は固定 Git Tag から導入し、Git 依存の `prepare` は Agent Sandbox 外で動くため、事前確認と明示許可が必要。
+- [dsh-wsl-native](https://github.com/Han-1413141/dsh-wsl-native) - Windows と WSL のネイティブ Linux DSH セッションを同じ Windows ウィンドウで使い、環境切り替えと双方向のシステム操作に対応します。 DSH 0.2.0-rc.2.
+- [dsh-codex-computer-use](https://github.com/Han-1413141/dsh-codex-computer-use) - インストール済み Codex Computer Use を通じて DSH のモデルが Windows アプリを読み取り・操作し、セッションごとのアプリ承認を保持します。 DSH 0.2.0-rc.2.
 
 ### テーマとスキン
 
@@ -299,6 +305,8 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-movein](https://github.com/sjh9714/dsh-movein)：1 コマンドで Claude Code の Skill、MCP、hooks、グローバル指示を DSH へ移行。デフォルトはドライラン。`CLAUDE.md` は DSH がネイティブに読み、Session 履歴は対象外。MIT。DSH `0.1.0-rc.6` で検証済みだが新しいため初期段階。
 - [dshpack](https://github.com/hili986/dshpack)：Skill、MCP、Profile Patch、Permission Default を Install・共有・監査可能な DSH Profile に Package 化する。MIT、npm `0.3.0`。`init`、`export`、`compose`、`lock`、`pack`、Transaction 対応 Install / Update / Uninstall、Loopback 管理 UI を含む 18 Command が利用可能。Build Script は既定で拒否、Source は Commit 固定、Export は 3 回 Credential Scan、Conflict は明示解決、Failure は Journal から Rollback する。`doctor` は DSH に `cordis.yml` の再書込を行わせる場合があり、dshpack 自身も Audit Log を書く。Pack Format と CLI はまだ Stable API ではないため初期段階。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter)：Claude Code、Codex、OpenCode の hooks Config を DSH で直接再利用し、Shell、Webhook、LLM、Subagent Handler を提供。MIT、Repository は 111 Test を示すが Release はまだない。自動検出した hooks は Command 実行や Data 送信が可能なため初期段階。
+- [dsh-compat-guardian](https://github.com/Han-1413141/dsh-compat-guardian) - DSH プラグインの競合と読み込み障害を検出し、隔離・復元と起動できない場合のオフライン修復を提供します。 DSH 0.2.0-rc.2.
+- [dsh-pnpm-build-control](https://github.com/Han-1413141/dsh-pnpm-build-control) - DSH Profile 全体の pnpm ビルドスクリプト承認を切り替え、DSH 0.2.0-rc.2 の同一 Git URL 更新を修正します。 DSH 0.2.0-rc.2.
 
 ## 謝辞
 

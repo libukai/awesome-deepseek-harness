@@ -202,6 +202,7 @@ dsh --profile web --dump-config
 - [dsh-crew](https://github.com/ZSeven-W/dsh-crew)：从 Claude Code 或 Codex 调度真实 DSH Worker，并提供进度、状态分片和分层策略；MIT、Release / npm `next` `0.1.0-rc.4`，声明在 DSH `0.1.1-rc.1` 验证并含 MCP 与发布包烟测。会写入 `~/.config/dsh-crew/status.d/`，外部模型服务可能需要 API Key；仍为预发布且没有独立测试 CI，标注为早期。
 - [dsh-trading](https://github.com/maddogfinance/dsh-trading)：面向交易研究的 DSH 工作台，提供确定性指标、CSV 数据源和交互式图表；MIT、npm `@dsh-trading/bundle@0.1.0`。项目不提供订单执行接口，并以启发式规则拦截资金移动类工具，但该拦截并非完备安全边界，标注为早期。
 - [oh-story-dsh](https://github.com/worldwonderer/oh-story-dsh)：把 13 个小说 Skills、7 个专业 Roles 和短剧生产流程接入 DSH 原生 Session、审批与三栏创作工作台。MIT、npm / Release `0.1.3`、Node.js 24+，Peer 依赖从 DSH `0.1.1-rc.1` 起，Release 声明 34 项自动化测试和 Ubuntu / macOS / Windows CI；本版复用官方 Composer 高度，为消息流增加滚动安全区与锚点几何回归，避免展开任务、流式状态和定位消息被 Composer 遮挡。构建会排除上游登录 / CDP 抓取器和独立 Dashboard；插件不读取模型凭据或另开监听端口，但会在当前 Agent 可见工具范围内读写创作项目文件、调用专业 Role，并在 DSH Web Server 上增加受 Host、Origin、Session、路径 containment 和乐观并发保护的文件路由。项目于 8 月 21 日首次发布，目前只明确验证 DSH rc.1，尚缺长期维护与独立使用证据，因此标注为早期。
+- [dsh-autocompose](https://github.com/Han-1413141/dsh-autocompose) - 根据任务查找并组合 DSH 插件，打开可继续对话的独立环境，或将方案中的插件安装到当前配置。 DSH 0.2.0-rc.2.
 
 ### 上下文、会话与输入
 
@@ -243,6 +244,9 @@ dsh --profile web --dump-config
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：为 DSH Web 增加日本语界面与系统日文字体，覆盖 29 个命名空间、721 条 UI 字符串；MIT、npm / Release `0.4.3`、Node.js 22+，Peer 依赖锁定 `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`，仓库测试、字典漂移检查和每日 `next` DSH E2E 均通过。插件只挂载客户端本地化模块，不新增 Host 路由、凭据或外部服务。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) - 在 DSH 中查看会话和模型费用、Token 用量、预算、服务商余额及 Coding Plan 额度，支持中英文界面。 DSH 0.2.0-rc.2.
+- [dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) - 搜索、显示、隐藏、移动、缩放和排布 DSH Desktop 与 Web 中的插件控件，支持布局备份、恢复与撤销。 DSH 0.2.0-rc.2.
+- [dsh-visual-edit](https://github.com/Han-1413141/dsh-visual-edit) - 在 DSH 预览中点选元素、画箭头或框选区域，将修改意见加入对话，并查看更新前后的截图对比。 DSH 0.2.0-rc.2.
 
 ### 沙箱与执行
 
@@ -250,6 +254,8 @@ dsh --profile web --dump-config
 - [dsh-credentials-keyring](https://github.com/irisnb/dsh-credentials-keyring)：用 Windows Credential Manager、macOS Keychain 或 Linux Secret Service 替代明文凭据文件，并在无 Secret Service 的 Linux 上 fail closed；MIT、`0.1.0`，有内存后端测试但尚无 npm / Release，真实系统钥匙串仍待逐平台烟测，标注为早期。
 - [dsh-win32](https://github.com/sjh9714/dsh-win32)：面向当前 Windows 版 DSH 的诊断、验收与安全修复工具；MIT、npm / Release `0.17.0`，CI 在 Node 22.19 / 24 下覆盖 npm hoisted 与 pnpm strict 安装。新增 `verify` 会在隔离的临时 Home / Workspace 中，用已安装的官方 PowerShell、Subprocess 与 Workspace Write 组件验证持久状态、外部写入拒绝、恢复、取消、PTY 替换与清理，但不启动完整 Minimal Host 或发起模型请求。默认 `setup` 不替换官方栈，只核验组件、修复可确认的 `koffi` 加载问题并可创建桌面快捷方式；`doctor` 只读，`fix` 仅修复已知损坏或真实加载失败的 `koffi`。旧 Git Bash / BusyBox 路径仍需显式 `setup --legacy`，其中 Git Bash 要求 `danger-full-access`；工具不会自动安装 Git、PowerShell、BusyBox、WSL 或另一套 DSH Bundle。
 - [dsh-exec-extension](https://github.com/LvDAO/dsh-exec-extension)：为 Headless Profile 增加一次性 Exec CLI，把 stdin、`@file`、工作目录、模型、超时、JSONL 输出和权限模式变为逐次参数；MIT `v0.1.0`，固定 DSH `0.1.0-rc.7`、Node.js 22.19+，含 Node / Rust 测试与持续集成。默认仍是 `workspace-write`，无界面的 `--approval ask` 会 fail closed；`--full-auto` / `--yolo` 会自动批准，只有显式 `--sandbox danger-full-access` 才解除沙箱。当前仅通过固定 Git Tag 安装，Git 依赖的 `prepare` 在 Agent 沙箱外执行，需先审查并显式授权。
+- [dsh-wsl-native](https://github.com/Han-1413141/dsh-wsl-native) - 在同一个 Windows 窗口中使用 Windows 与原生 Linux DSH 会话，支持 WSL 环境切换和双向系统操作。 DSH 0.2.0-rc.2.
+- [dsh-codex-computer-use](https://github.com/Han-1413141/dsh-codex-computer-use) - 让 DSH 当前模型通过已安装的 Codex Computer Use 运行时读取和操作 Windows 应用，并保留每个会话的应用授权。 DSH 0.2.0-rc.2.
 
 ### 主题与皮肤
 
@@ -299,6 +305,8 @@ dsh --profile web --dump-config
 - [dsh-movein](https://github.com/sjh9714/dsh-movein)：一条命令把 Claude Code 的 Skills、MCP、hooks 和全局指令迁入 DSH；默认预演，`CLAUDE.md` 由 DSH 原生读取，会话历史不在范围内。MIT，已在 DSH `0.1.0-rc.6` 验证，项目仍新，标注为早期。
 - [dshpack](https://github.com/hili986/dshpack)：把 Skills、MCP、Profile Patch 和权限默认值打包成可安装、可分享、可审计的 DSH Profile；MIT、npm `0.3.0`，18 个命令已可用，包括 `init`、`export`、`compose`、`lock`、`pack`、事务化安装 / 更新 / 卸载和回环管理 UI。构建脚本默认拒绝，来源固定到 Commit，导出前后三次扫描凭据，冲突要求显式解决，失败会带 Journal 回滚；`doctor` 可能触发 DSH 重写 `cordis.yml`，并由 dshpack 写审计日志。Pack 格式与 CLI 仍不是稳定 API，标注为早期。
 - [hooks-adapter](https://github.com/JohnXu22786/hooks-adapter)：让 DSH 直接复用 Claude Code、Codex 和 OpenCode 的 hooks 配置，并提供 Shell、Webhook、LLM 与子 Agent Handler；MIT、仓库声明 111 项测试但尚无 Release，自动发现的 hooks 可执行命令和外发数据，标注为早期。
+- [dsh-compat-guardian](https://github.com/Han-1413141/dsh-compat-guardian) - 检查 DSH 插件冲突与加载故障，隔离和恢复受影响的插件，并在宿主无法启动时提供离线修复。 DSH 0.2.0-rc.2.
+- [dsh-pnpm-build-control](https://github.com/Han-1413141/dsh-pnpm-build-control) - 在“添加插件”中统一控制各 DSH 配置的 pnpm 构建脚本审批，并修复 DSH 0.2.0-rc.2 的同一 Git 地址更新问题。 DSH 0.2.0-rc.2.
 
 ## 致谢
 
