@@ -243,6 +243,7 @@ dsh --profile web --dump-config
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：为 DSH Web 增加日本语界面与系统日文字体，覆盖 29 个命名空间、721 条 UI 字符串；MIT、npm / Release `0.4.3`、Node.js 22+，Peer 依赖锁定 `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`，仓库测试、字典漂移检查和每日 `next` DSH E2E 均通过。插件只挂载客户端本地化模块，不新增 Host 路由、凭据或外部服务。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [dsh-web-app-launcher](https://github.com/sylkmpo/dsh-web-app-launcher)：Windows 插件，让 dsh web 像普通桌面软件一样运行：本质是原生 Web（无 Electron、无二次打包、无 fork），视觉上是桌面软件——首次运行自动创建桌面快捷方式，双击即以 Edge/Chrome/Brave/Vivaldi 的无边框应用窗口（无标签栏/地址栏）打开 Web UI，关闭窗口即退出 Harness；MIT，经 GitHub 安装（`dsh plugin --profile web add github:sylkmpo/dsh-web-app-launcher`），需 Windows 10/11。
 
 ### 沙箱与执行
 

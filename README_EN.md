@@ -243,6 +243,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification): configurable desktop notifications based on task outcomes and keywords.
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja): adds a Japanese DSH Web interface and system Japanese fonts across 29 namespaces and 721 UI strings. It is MIT, npm / Release `0.4.3`, Node.js 22+, and pins `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`; repository tests, dictionary-drift checks, and daily E2E against DSH `next` pass. It mounts only a client localization module, adding no Host route, credential, or external service.
 - [dsh-share](https://github.com/hellodigua/dsh-share): generates and shares DSH conversation content in one click.
+- [dsh-web-app-launcher](https://github.com/sylkmpo/dsh-web-app-launcher): Windows plugin that runs dsh web like an ordinary desktop app — the native web UI under the hood (no Electron, no repackaging, no fork), presented as a desktop application: a desktop shortcut is created automatically on first run, and double-clicking opens the Web UI in a frameless Edge/Chrome/Brave/Vivaldi app window (no tab bar or address bar) that exits the harness when closed; MIT, installed from GitHub via `dsh plugin --profile web add github:sylkmpo/dsh-web-app-launcher`; requires Windows 10/11.
 
 ### Sandboxing and Execution
 
