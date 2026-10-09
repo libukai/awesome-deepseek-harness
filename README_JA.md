@@ -243,6 +243,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：タスク結果とキーワードに応じて設定できるデスクトップ通知。
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：29 Namespace、721 件の UI 文字列と System 日本語 Font により DSH Web を日本語化する。MIT、npm / Release `0.4.3`、Node.js 22+、`@deepseek-ai/dsh-client-locale ^0.1.1-rc.2` 固定で、Repository Test、Dictionary Drift Check、毎日の DSH `next` E2E は成功している。Client Localization Module だけを Mount し、Host Route、Credential、外部 Service は追加しない。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：DSH の会話内容をワンクリックで生成・共有。
+- [dsh-artifact](https://github.com/Jannchie/dsh-artifact)：HTML ベースのフル機能ドキュメントとスライドを提供する、Claude Code 風のアーティファクト実装。Agent が `artifact` ツールで書いたドキュメントやスライドは書き込み完了時に右サイドバーで開き、履歴の比較と復元に対応する。スライドはその場で編集、プレゼンテーション、PPTX 書き出しが可能。MIT、npm `0.8.1`、CI から npm Trusted Publishing で公開。アーティファクトは `~/.dsh/artifacts` に保存され、HTML はネットワークと同一オリジンへのアクセスを禁止したサンドボックス iframe で描画される。
 
 ### サンドボックスと実行
 

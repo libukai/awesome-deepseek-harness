@@ -243,6 +243,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification): configurable desktop notifications based on task outcomes and keywords.
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja): adds a Japanese DSH Web interface and system Japanese fonts across 29 namespaces and 721 UI strings. It is MIT, npm / Release `0.4.3`, Node.js 22+, and pins `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`; repository tests, dictionary-drift checks, and daily E2E against DSH `next` pass. It mounts only a client localization module, adding no Host route, credential, or external service.
 - [dsh-share](https://github.com/hellodigua/dsh-share): generates and shares DSH conversation content in one click.
+- [dsh-artifact](https://github.com/Jannchie/dsh-artifact): Full-featured HTML-based docs and slides, a Claude Code-style artifact implementation. Documents and decks the agent writes with the `artifact` tool open in the right sidebar as they are written, with revision comparison and restore; decks can be edited in place, presented, and exported to PPTX. MIT, npm `0.8.1`, published from CI through npm Trusted Publishing; artifacts are stored in `~/.dsh/artifacts`, and HTML renders in a sandboxed iframe with no network or same-origin access.
 
 ### Sandboxing and Execution
 
