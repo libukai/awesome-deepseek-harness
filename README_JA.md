@@ -179,6 +179,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 | [Orbis](https://github.com/icodesign/orbis) | モバイル遠隔操作 · Beta | DSH プラグインによりデバイスのペアリング、エンドツーエンド暗号化転送、複数デバイスのリアルタイム更新を実現 |
 | [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | Web UI コレクション | タスクボード、Git Graph、モバイル UI、スキン、ペット、実行統計などのコンポーネントを収録 |
 | [dsh-web](https://github.com/Tom6814/dsh-web) | Docker Web · 初期段階 | Docker で完全な Web UI、ワークスペース、プラグインマーケットを展開。開発は急速に進んでおり、設定と Session を永続化するにはデータボリュームのマウントが必要 |
+| [DSH_Mobile](https://github.com/jayantTang/DSH_Mobile) | iOS クライアント · リレー | ネイティブ iOS クライアント、ホスト側コネクタ、自前で立てられる WSS リレー。4G/5G で自分の PC の DSH セッションに接続でき、公開 IP は不要 |
 
 > 掲載されていることは、署名済み、公証済み、自己完結型、本番利用可能であることを意味しません。各プロジェクトの README と Releases で最新状況を確認してください。
 

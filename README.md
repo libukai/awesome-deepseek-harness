@@ -179,6 +179,7 @@ dsh --profile web --dump-config
 | [Orbis](https://github.com/icodesign/orbis)                     | 移动远控 · Beta   | 通过 DSH 插件完成设备配对、端到端加密传输和多设备实时更新                                         |
 | [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui)       | Web UI 集合       | 汇总任务看板、Git Graph、移动界面、皮肤、宠物和运行统计等组件                                     |
 | [dsh-web](https://github.com/Tom6814/dsh-web)                   | Docker Web · 早期 | 通过 Docker 部署完整 Web 界面、工作区和插件市场；项目处于高速开发期，需挂载数据卷持久化配置与会话 |
+| [DSH_Mobile](https://github.com/jayantTang/DSH_Mobile)                                       | iOS 客户端 · 中转 | 原生 iOS 客户端加电脑侧连接器与可自建的公网中转；手机在 4G/5G 下连自己电脑上的 DSH 会话，电脑无需公网 IP |
 
 > 项目被收录不代表已经签名、公证、自包含或适合生产环境；请查看各项目 README 和 Releases 中的当前说明。
 

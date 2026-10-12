@@ -179,6 +179,7 @@ The following projects provide standalone user interfaces, distribution formats,
 | [Orbis](https://github.com/icodesign/orbis) | Mobile remote control · Beta | Uses a DSH plugin for device pairing, end-to-end encrypted transport, and real-time multi-device updates |
 | [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | Web UI collection | Collects task boards, Git Graph, mobile UI, skins, pets, runtime statistics, and other components |
 | [dsh-web](https://github.com/Tom6814/dsh-web) | Docker Web · Early | Deploys a complete Web interface, workspace, and plugin market with Docker; development is moving quickly, and a data volume is required to persist configuration and sessions |
+| [DSH_Mobile](https://github.com/jayantTang/DSH_Mobile) | iOS client · Relay | Native iOS client with a host-side connector and a self-hostable WSS relay, so the phone reaches the DSH sessions on your own computer over 4G/5G without a public IP |
 
 > Inclusion does not imply that a project is signed, notarized, self-contained, or production-ready. Check each project's README and Releases for current status.
 
