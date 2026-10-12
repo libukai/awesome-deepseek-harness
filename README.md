@@ -167,6 +167,7 @@ dsh --profile web --dump-config
 | [Oh-DSH](https://github.com/hust-open-atom-club/oh-dsh)   | macOS / Linux / Windows · 社区发行版 | 将 DSH、Node.js 与本地能力打包为 Desktop、Web 和 TUI 三种形态，提供分层安装包与统一的 `ohdsh` 启动器                   |
 | [DSH Desktop](https://github.com/dataelement/dsh-desktop) | macOS / Windows · Electron           | 管理本地 Harness、工作区、随机端口、Profile、插件和会话的跨平台桌面端                                                  |
 | [dsh-launcher](https://github.com/Ruler4396/dsh-launcher) | Windows · WebView2                   | 提供静默启动、独立窗口、便携包和 MSI 的轻量启动器                                                                      |
+| [dsh desktop](https://github.com/MochiNek0/dsh-desktop) | Windows / macOS / Linux · Tauri 2 | 使用系统 WebView，安装包仅几 MB；手机扫码即可经局域网 / Tailscale / Cloudflare 远程使用电脑上的 dsh，与 CLI 共享会话和配置，支持插件与安全模式 |
 
 ### 终端、移动与 Web 体验
 

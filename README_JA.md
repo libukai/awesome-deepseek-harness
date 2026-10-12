@@ -167,6 +167,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 | [Oh-DSH](https://github.com/hust-open-atom-club/oh-dsh) | macOS / Linux / Windows · コミュニティディストリビューション | DSH、Node.js、ローカル機能を Desktop、Web、TUI の 3 形態にパッケージし、段階別インストーラーと統一 `ohdsh` ランチャーを提供 |
 | [DSH Desktop](https://github.com/dataelement/dsh-desktop) | macOS / Windows · Electron | ローカル Harness、ワークスペース、ランダムポート、Profile、プラグイン、Session を管理するクロスプラットフォームデスクトップクライアント |
 | [dsh-launcher](https://github.com/Ruler4396/dsh-launcher) | Windows · WebView2 | サイレント起動、独立ウィンドウ、ポータブルパッケージ、MSI を提供する軽量ランチャー |
+| [dsh desktop](https://github.com/MochiNek0/dsh-desktop) | Windows / macOS / Linux · Tauri 2 | システム WebView を使う数 MB のクライアント。QR コードをスキャンして LAN / Tailscale / Cloudflare 経由でスマホから PC 上の dsh を利用でき、CLI と Session・設定を共有。プラグインとセーフモードに対応 |
 
 ### ターミナル・モバイル・Web 体験
 
