@@ -222,6 +222,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [toolshrink](https://github.com/unclecode/toolshrink)：Test、Diff、JSON、Directory Tree、Log、Install Output の構造を認識して圧縮し、必要に応じて元の出力への参照を保持。MIT `0.1.0`。現在は Source Build と Global `~/.dsh/cordis.patch.yml` の編集が必要で、保存した原文は 24 時間後に削除されるため初期段階。
 - [dsh-tool-squeeze](https://github.com/w2829562572-dev/dsh-tool-squeeze)：Test、Diff、JSON、Directory Tree、Log、Install、HTML の Tool Output を決定論的かつローカル優先で圧縮。MIT `v0.1.0`、DSH / `dsh-tools` `0.1.0-rc.8` に固定対応し、Project は 21 Test と再現可能な Benchmark を報告している。Source Build と Plugin 独自の原文保持が必要な toolshrink と異なり、GitHub Bundle として直接導入でき、追加の Model / Network Call を行わず、完全な原文を公式 Spill Store に委ねる。ただし圧縮は Lossy で、同日初回 Release かつ CI や独立利用の証拠がないため初期段階。
 - [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report)：Session Event Log から日次、週次、月次、年次、任意期間の Report を生成。MIT、Release / npm `0.6.1`、Node.js `^22.19 || >=24`、DSH Peer は `>=0.1.1-rc.2 <0.2.0`。0.6.0 は最初の厳密な Allowlist 付き Apply & Verify を追加し、Bash Timeout が繰り返された Evidence と User の明示承認がある場合だけ `shell.timeoutMs` を 60 秒から 120 秒へ提案・検証・監査・安全に Rollback できる。任意の Setting / Command、Auto-healing、Automatic Rollback は非対応。Release Commit の CI は成功し、Release は 393 Test と実 Package Acceptance を報告する。0.6.1 は過去価格の Effective Date、起動後の新規 Session、Resume Session の集計を修正し、Apply & Verify の境界は不変だが過去の Token / Cost 総額が実質的に変わる場合がある。新しく、制限付きとはいえ Setting 書き込み経路を持つため初期段階。
+- [dsh-theone](https://github.com/YunongDai2005/dsh-theone)：メインチャットはひとつだけ。各メッセージを該当するトピックに振り分け、そのトピック専用のセッションとプロジェクトフォルダで続けます。振り分け違いはワンクリックで移動・取り消しできます。
 
 ### ブラウザ・ビジョン・インターフェース
 
