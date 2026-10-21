@@ -281,6 +281,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 
 ## 開発ツール
 
+- [Android App Preview](https://github.com/skyjjgw/dsh-plugin-android-preview): DSH のネイティブ右サイドバーで Android エミュレーターを操作。APK、パッケージ名、起動 Activity、monorepo のソースディレクトリを設定でき、Flutter デバッグ APK は Dart 保存時のホットリロードに対応。通常の Android APK では Flutter モードを無効化できる。AGPL-3.0-only、Release `v0.2.0`、初期段階。Node.js 22.19.0+、DSH 0.2.1-rc.2+、既存のエミュレーター/APK、Android SDK と scrcpy 3.3.3 が必要で、ホットリロードには対応する Flutter SDK も必要。Windows/macOS/Linux の起動処理を実装し、実エミュレーター検証は Windows。開始時に設定済み APK をインストール・起動し、ADB/scrcpy と任意の Flutter・準備コマンドを実行する。SDK の自動取得や APK ビルドは行わない。
 - [dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check)：Manifest、Patch、ビルド上の落とし穴、ディレクトリ掲載状況を検査。
 - [DShScan](https://github.com/shaoshi20/dshscan)：DSH Plugin に Rule Evidence、Risk Score、Install Advice を生成。Local Content は Offline Scan でき、明示操作で GitHub / npm Source 取得、`npm audit`、外部 LLM 呼び出しも可能。MIT、npm / Release `0.5.0`、DSH 固有 Rule の CI / Test 付きだが DSH `0.1.0-rc.6` 固定で高速に更新されているため初期段階。Low-risk 判定は Security Audit ではない。
 - [DSH Plugin Upgrade Skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill)：DSH Plugin の Upgrade、Migration、Authoring、Testing、Release、Audit、Runtime Debug 向けの 8 Skills、`0.1.2-alpha.4` までの 45 Migration Card、12 General Strategy、29 Harbor Task、複数の Skill 有無比較評価を提供。MIT、`npx skills add oh-my-dsh/dsh-plugin-upgrade-skill` で導入でき、現在 Validation CI は成功。Unified Entry はまず Read-only Health Check を推奨し、Phase ごとに確認を分けるが、個別 Workflow は Source 編集、Dependency 導入、Test / Docker、Package、Publish を実行し得るため対応する承認が必要。2026 年 8 月 30 日作成、Release 未発行で、Migration Card も現行 `0.1.2-rc.1` 未対応のため初期段階。
