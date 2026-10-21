@@ -281,6 +281,7 @@ dsh --profile web --dump-config
 
 ## 开发工具
 
+- [Android App Preview](https://github.com/skyjjgw/dsh-plugin-android-preview)：在 DSH 原生右侧栏操作 Android 模拟器，支持可配置 APK、包名、启动 Activity 与 monorepo 源码目录；Flutter 调试 APK 可在保存 Dart 时热重载，普通 Android APK 可关闭 Flutter 模式。AGPL-3.0-only、Release `v0.2.0`，标注为早期；Node.js 22.19.0+、DSH 0.2.1-rc.2+，需自行准备模拟器、APK、Android SDK 和 scrcpy 3.3.3，热重载另需匹配的 Flutter SDK。实现 Windows/macOS/Linux 启动路径，真实模拟器验证在 Windows；打开预览会安装并启动配置的 APK、运行 ADB/scrcpy 及可选 Flutter/准备命令，不自动下载 SDK 或构建 APK。
 - [dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check)：检查 Manifest、Patch、构建陷阱和目录收录状态。
 - [DShScan](https://github.com/shaoshi20/dshscan)：为 DSH 插件生成规则证据、风险分和安装建议，可离线扫描本地内容，也可显式联网抓取 GitHub / npm 源码、调用 `npm audit` 或外部 LLM；MIT、npm / Release `0.5.0`，CI 和测试已覆盖 DSH 特有规则，但仍固定兼容 DSH `0.1.0-rc.6` 且项目迭代很快，标注为早期。低风险结论不等于安全审计。
 - [DSH Plugin Upgrade Skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill)：为 DSH 插件升级、迁移、编写、测试、发布、审计和运行时调试提供 8 个 Skills，收录截至 `0.1.2-alpha.4` 的 45 张迁移卡与 12 组通用策略，并用 29 个 Harbor 任务和多组有 / 无 Skill 对照验证。MIT，可通过 `npx skills add oh-my-dsh/dsh-plugin-upgrade-skill` 安装，当前验证 CI 通过。统一入口会先建议只读健康检查并分阶段请求确认，但具体工作流可修改源码、安装依赖、运行测试 / Docker、打包乃至发布，必须在对应授权下使用。项目创建于 2026 年 8 月 30 日，尚无 Release，迁移卡也尚未覆盖当前 `0.1.2-rc.1`，故标注为早期。
