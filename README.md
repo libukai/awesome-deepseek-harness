@@ -254,6 +254,7 @@ dsh --profile web --dump-config
 ### 主题与皮肤
 
 - [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)：DSH Web GUI 的鲸鱼娘主题皮肤集合；当前包含可热插拔的 `maid-atelier` Web Client Bundle，可通过 `dsh plugin --profile web add ...` 安装和卸载。项目采用 **CC BY-NC-SA 4.0**，禁止商业性使用。
+- [dsh-ascii-whales](https://github.com/jryang1997/dsh-ascii-whales)：海面正上方俯视的对话背景插件，支持用自定义中英文、Emoji 或 ASCII 组成五种鲸类，提供彩色字格、内容框圆角毛玻璃（WCAG 4.5:1+ 对比度约束）、输入框身体采样避让、独立下潜浮出、随机喷水、尾拍涟漪、风纹与云影；MIT、Release `v0.14.0`，含 214 项测试与 Windows/Linux 双平台 CI。
 
 ## 外部集成
 

@@ -254,6 +254,7 @@ The following projects provide standalone user interfaces, distribution formats,
 ### Themes and Skins
 
 - [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale): whale-girl theme collection for the DSH Web GUI; currently includes the hot-pluggable `maid-atelier` Web Client Bundle, installable and removable with `dsh plugin --profile web add ...`. Licensed under **CC BY-NC-SA 4.0**, which prohibits commercial use.
+- [dsh-ascii-whales](https://github.com/jryang1997/dsh-ascii-whales): overhead conversation background plugin with five whale species formed from custom Chinese/English text, emoji, or ASCII, plus shaded cells, frosted content cards (WCAG 4.5:1+ contrast floor), 5-station input-box avoidance, independent dives, spouts, ripples, wind, and cloud shadows; MIT and Release `v0.14.0`, with 214 tests and Windows/Linux CI.
 
 ## External Integrations
 
