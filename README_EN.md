@@ -243,6 +243,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification): configurable desktop notifications based on task outcomes and keywords.
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja): adds a Japanese DSH Web interface and system Japanese fonts across 29 namespaces and 721 UI strings. It is MIT, npm / Release `0.4.3`, Node.js 22+, and pins `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`; repository tests, dictionary-drift checks, and daily E2E against DSH `next` pass. It mounts only a client localization module, adding no Host route, credential, or external service.
 - [dsh-share](https://github.com/hellodigua/dsh-share): generates and shares DSH conversation content in one click.
+- [dsh-sidebar-tidy](https://github.com/weibaohui/dsh-sidebar-tidy): Sidebar tidy: when plugins pile up, the rows under 'New session' get crowded with panel and plugin entries. This plugin folds them all — global panel rows, plugin-injected entry rows (own and third-party alike), and bottom entries — into a single menu button whose secondary menu triggers each entry exactly as before; keep any entry permanently visible with a name whitelist, and the button turns into an icon when the sidebar collapses to a narrow rail. MIT, npm `@weibaohui/dsh-sidebar-tidy` v0.1.0.
 
 ### Sandboxing and Execution
 

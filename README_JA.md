@@ -243,6 +243,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：タスク結果とキーワードに応じて設定できるデスクトップ通知。
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：29 Namespace、721 件の UI 文字列と System 日本語 Font により DSH Web を日本語化する。MIT、npm / Release `0.4.3`、Node.js 22+、`@deepseek-ai/dsh-client-locale ^0.1.1-rc.2` 固定で、Repository Test、Dictionary Drift Check、毎日の DSH `next` E2E は成功している。Client Localization Module だけを Mount し、Host Route、Credential、外部 Service は追加しない。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：DSH の会話内容をワンクリックで生成・共有。
+- [dsh-sidebar-tidy](https://github.com/weibaohui/dsh-sidebar-tidy)：サイドバー整理：プラグインが増えると「新しいセッション」の下に各プラグインのエントリ行がずらり。グローバルパネル行・プラグイン由来のエントリ行（自家/第三方を横断して識別）・下部エントリをすべて一つのメニューボタンにまとめ、二階層メニューから元の挙動のまま発火。名称ホワイトリストで常時表示のまま残すことも可能。サイドバーが細いレールに折りたたまれるとボタンはアイコン表示に切り替わる。MIT、npm `@weibaohui/dsh-sidebar-tidy` v0.1.0。
 
 ### サンドボックスと実行
 
