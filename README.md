@@ -191,6 +191,7 @@ dsh --profile web --dump-config
 - [dsh-101](https://github.com/bill9109/dsh-101)：在 DSH 中阅读和理解官方文档的学习模式。
 - [dsh-auto-approval](https://github.com/Andy8647/dsh-auto-approval)：使用规则和模型分类工具调用，输出 `allow / deny` 自动审批决策。
 - [mstar-harness](https://github.com/btspoony/mstar-harness)：以 Skill 驱动的 Harness / Loop Engineering 工作流插件。
+- [dsh-delivery-board](https://github.com/jerryxff26-alt/dsh-delivery-board)：仓库内交付看板（阶段流水线、交接审计、软 WIP、周报 Markdown、本地看板 + 日历 Timeline）；也可 `npx github:jerryxff26-alt/dsh-delivery-board` 独立运行。
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams)：为 DSH 提供 Agent Teams 能力。
 - [dsh-automation](https://github.com/titanwings/dsh-automation)：按计划在全新根 Agent 和 Session 中执行独立任务，保留定义修订、运行历史和明确的工作区与权限边界。
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator)：对 Agent 计划逐段批注并提交结构化反馈，提供草稿隔离、版本绑定和过期计划拒绝。

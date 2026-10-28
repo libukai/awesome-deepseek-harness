@@ -191,6 +191,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-101](https://github.com/bill9109/dsh-101): learning mode for reading and understanding the official documentation inside DSH.
 - [dsh-auto-approval](https://github.com/Andy8647/dsh-auto-approval): classifies tool calls with rules and models, then returns `allow / deny` approval decisions.
 - [mstar-harness](https://github.com/btspoony/mstar-harness): Skill-driven Harness / Loop Engineering workflow plugin.
+- [dsh-delivery-board](https://github.com/jerryxff26-alt/dsh-delivery-board): In-repo delivery board (stage pipeline, handoff audit, soft WIP, weekly Markdown report, local kanban + calendar Timeline); also runnable standalone via `npx github:jerryxff26-alt/dsh-delivery-board`.
 - [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams): Agent Teams capabilities for DSH.
 - [dsh-automation](https://github.com/titanwings/dsh-automation): runs scheduled standalone tasks in fresh root Agents and Sessions, preserving definition revisions, run history, and explicit workspace and permission boundaries.
 - [dsh-plannotator](https://github.com/titanwings/dsh-plannotator): annotates Agent plans section by section and submits structured feedback, with draft isolation, version binding, and stale-plan rejection.
