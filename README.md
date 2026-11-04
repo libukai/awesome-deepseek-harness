@@ -223,6 +223,8 @@ dsh --profile web --dump-config
 - [dsh-tool-squeeze](https://github.com/w2829562572-dev/dsh-tool-squeeze)：为测试、Diff、JSON、目录树、日志、安装输出和 HTML 提供确定性、本地优先的工具结果压缩；MIT `v0.1.0`，固定兼容 DSH / `dsh-tools` `0.1.0-rc.8`，项目声明 21 项测试及可复现基准。与需源码构建并自行保留原文的 toolshrink 相比，它可直接安装 GitHub Bundle、无需额外模型或网络调用，并将完整原文交给官方 Spill Store；压缩仍有损，且项目为同日初发、无 CI 或独立使用证据，标注为早期。
 - [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report)：从会话事件日志生成日报、周报、月报、年报和自定义区间报告；MIT、Release / npm `0.6.1`、Node.js `^22.19 || >=24`，Peer 依赖要求 DSH `>=0.1.1-rc.2 <0.2.0`。`0.6.0` 加入首个严格白名单的 Apply & Verify 操作：仅在重复 Bash 超时证据与用户明确批准后，可将 `shell.timeoutMs` 从 60 秒调为 120 秒并验证、审计和安全回滚；不支持任意设置、任意命令、自动修复或自动回滚。当前 Release Commit 的 CI 通过，说明包含 393 项测试与真实包验收；`0.6.1` 修正历史计价生效日期、启动后新会话与恢复会话的统计，可实质改变历史 Token / 成本总额，但未改变 Apply & Verify 边界。项目仍新且已具备受控配置写入能力，故标注为早期。
 
+- [dsh-skills-tools](https://github.com/hxlog/dsh-skills-tools)：在 DSH 设置里从 Git 仓库导入 Agent Skills，按仓库分组管理，逐项启用或停用，并可展开查看 SKILL.md 正文；MIT、npm `1.1.0`、Node.js ≥ 22.13。停用的技能不会注册进模型，仓库以只读快照保存，不修改源仓库。
+
 ### 浏览器、视觉与界面
 
 - [dsh-browser](https://github.com/Lum1104/dsh-browser)：Chrome 侧边栏扩展，让 DSH 直接操作当前浏览器页面。
