@@ -39,6 +39,7 @@
 - [社区资源](#社区资源)
   - [分析教程](#分析教程)
   - [社区讨论](#社区讨论)
+  - [插件导航站](#插件导航站)
 - [第三方客户端](#第三方客户端)
   - [桌面与发行版](#桌面与发行版)
   - [终端、移动与 Web 体验](#终端移动与-web-体验)
@@ -148,6 +149,15 @@ dsh --profile web --dump-config
 | [从 Agent Runtime / Agent OS 视角理解 DSH](https://x.com/anion_ex/status/2087910193783025853)                  | [Anionex](https://x.com/anion_ex)；内测参与者与插件作者                           | 从模型、工具、策略、存储、上下文、界面和 Loop 的可组合性解释 DSH，并讨论 Agent 对运行时的有限观察与自扩展。                                               |
 | [玩了一夜 DeepSeek Harness，我发现它在用《我的世界》的方式干掉 Claude Code](https://www.pingwest.com/a/316436) | 品玩；发布首夜的媒体观察                                                        | 用《我的世界》的原版、Mod、CurseForge 与整合包类比 DSH 本体、插件、目录和发行版，并记录首夜的兼容性与安全争议。                                           |
 | [从源码对照 DSH 与 Codex：声明式插件 vs 可替换 Agent Loop](https://x.com/grapeot/status/2088019011561005382)   | [鸭哥](https://x.com/grapeot)；读完源码后与 Codex 逐行对照。展开文见 [yage.ai](https://yage.ai/share/dsh-deep-analysis-20260813.html) | 将 Codex 的声明式插件与 DSH 的命令式进程内插件对照，认为日常写代码并不需要 Cordis 的复杂度；唯一结构性优势是 Agent Loop 本身可热替换，从而为自进化 Harness 提供物理插槽。 |
+
+### 插件导航站
+
+| 导航站 | 形态 | 说明 |
+| --- | --- | --- |
+| [dshfind](https://dshfind.com/) · [hikariming/dshfind](https://github.com/hikariming/dshfind) | 学习站 + 市场 | 从入门到 Cordis 论文的系统课程，附 GitHub `dsh-plugin` 自动聚合市场、S/A/B/C 评级、开发指南与作者排行榜；DSH 团队负责人 2026-09-28 提名 |
+| [dshmarket](https://dshmarket.com/) · [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | DSH 内置市场 | 唯一可安装进 DSH 设置页的市场：浏览 / 搜索 / 一键安装 / 主题切换，覆盖 4000+ 插件；DSH 团队负责人 2026-09-28 提名 |
+| [awesome-dsh-plugin](https://awesome-dsh-plugin.com/) · [awesome-dsh-plugin/awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | 社区精选目录 | 收录门槛为可通过 `dsh plugin add` 安装，双语分类并持续人工核验；以 npm catalog 提供 format-1 索引供 `dsh` 0.2.1+ 的 Discover 直连；DSH 团队负责人 2026-09-28 提名 |
+| [AgentPlugins](https://agentplugins-2v1.pages.dev/) | 英文自动目录 | 按 GitHub `dsh-plugin` 等主题每日自动采集（2026-11-08 时点 400+ 条，含 stars 与最近更新），另设 Codex 插件区与个人智能体追踪页；数据为自动聚合、无人工审核与安全评估，收录不代表安装可行，标注为早期 |
 
 ## 第三方客户端
 
