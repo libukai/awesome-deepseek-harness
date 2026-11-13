@@ -278,6 +278,7 @@ dsh --profile web --dump-config
 - [Tencent Cloud Agent Observability for DSH](https://github.com/TencentCloud/tencentcloud-agentobs-sdk-dsh)：腾讯云团队维护的 CLS 直传可观测插件，无需 OTLP Collector，把 Session、Agent Loop、模型流和工具生命周期映射为五层 Trace；Apache-2.0、npm / Release `0.0.1`，支持 DSH `>=0.1.0-rc.6 <0.2.0`，项目很新，标注为早期。默认会把 Prompt、Response 和工具参数/结果发送到 CLS，处理敏感仓库前应关闭 `captureContent` 并配置最小权限与保留策略。
 - [Token Monitor](https://github.com/Javis603/token-monitor)：本地优先的跨平台桌面用量工具；当前 Release 为 `v0.47.0`，DSH 的 JSONL / Zstandard 会话读取与按回合 Token、Prompt、工具记录展示自 `v0.46.0` 加入。MIT，macOS 包已签名公证、Windows 包已签名，含 DSH 解析测试与持续集成；默认不向维护者发送遥测，可选多设备同步会向操作者指定的 Hub 发送汇总用量和账号 / 项目元数据，但不发送原始 Prompt、源码或凭据。
 - [dsh-wakatime](https://github.com/dingyi222666/dsh-wakatime)：把 DSH 文件操作、AI 代码行数和项目耗时上报到 WakaTime；MIT、npm `0.1.1`，有测试但项目仍新，标注为早期。需要 WakaTime API Key，会写入 `~/.wakatime/dsh-wakatime/` 并在缺少 CLI 时自动下载或更新 `wakatime-cli`。
+- [dsh-mishu](https://github.com/AIcivilization/dsh-mishu)：把 GitHub 未读通知、只读 IMAP 收件箱和任意关注网址合成一张“要你处理”的看板。通知不是按文字判断，而是回查对象当前状态（PR 已合并、issue 已关闭、同一工作流后来通过、分支已删除、fork 在跑上游定时任务等），已结束的替你关掉；邮件只取发件人、收件人、标题和几个头，不读正文也不标已读。你随口交代的账单、续费、证件到期与生日由模型整理成日期、重复方式和提前量，经 DSH 审批卡片确认后入库，到点进待办。MIT、npm `0.7.5`、Node.js ≥22.18，界面中英双语，macOS / Windows / Linux。GitHub 部分需登录并写入系统钥匙串，邮箱需自行开 IMAP 授权码；无钥匙串的环境（无桌面 Linux）退化为 `secrets.json`（权限 600、不加密，设置页会写明）。
 
 ## 开发工具
 
