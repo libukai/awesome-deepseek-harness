@@ -282,6 +282,7 @@ dsh --profile web --dump-config
 ## 开发工具
 
 - [dsh-plugin-check](https://github.com/omdsh-dev/dsh-plugin-check)：检查 Manifest、Patch、构建陷阱和目录收录状态。
+- [dsh-remote](https://github.com/flymysql/dsh-remote) — DSH 的 SSH 远程工作区：多主机项目并行、文件浏览与编辑、递归搜索、终端、Git 差异，以及 Agent 远程编辑、构建与测试；可选 IDE 布局。 MIT，npm / Release 1.1.2；已验证 DSH Web 0.2.1-rc.5 / 0.2.2-rc.1，需配置 SSH 主机与凭据。
 - [DShScan](https://github.com/shaoshi20/dshscan)：为 DSH 插件生成规则证据、风险分和安装建议，可离线扫描本地内容，也可显式联网抓取 GitHub / npm 源码、调用 `npm audit` 或外部 LLM；MIT、npm / Release `0.5.0`，CI 和测试已覆盖 DSH 特有规则，但仍固定兼容 DSH `0.1.0-rc.6` 且项目迭代很快，标注为早期。低风险结论不等于安全审计。
 - [DSH Plugin Upgrade Skill](https://github.com/oh-my-dsh/dsh-plugin-upgrade-skill)：为 DSH 插件升级、迁移、编写、测试、发布、审计和运行时调试提供 8 个 Skills，收录截至 `0.1.2-alpha.4` 的 45 张迁移卡与 12 组通用策略，并用 29 个 Harbor 任务和多组有 / 无 Skill 对照验证。MIT，可通过 `npx skills add oh-my-dsh/dsh-plugin-upgrade-skill` 安装，当前验证 CI 通过。统一入口会先建议只读健康检查并分阶段请求确认，但具体工作流可修改源码、安装依赖、运行测试 / Docker、打包乃至发布，必须在对应授权下使用。项目创建于 2026 年 8 月 30 日，尚无 Release，迁移卡也尚未覆盖当前 `0.1.2-rc.1`，故标注为早期。
 - [DSH Harbor](https://github.com/ZSeven-W/dsh-harbor)：为已安装插件生成声明与源码检出的 13 类能力账本、`file:line` 证据、运行时工具 / Provider / 路由归属、同 Profile 冲突、跨 Profile 版本漂移与变更快照；MIT、npm `next` / Git Tag `0.1.0-rc.2`，已在 DSH `0.1.1-rc.2` 验证，Node 20 / 24、Ubuntu / Windows CI 与真实打包烟测通过。默认扫描离线只读；快照写入 `~/.config/dsh-harbor/`，只有显式上游检查会读取 npm Registry 配置并联网，错误会脱敏凭据。它不是沙箱、安装门禁或策略引擎，且仍为预发布、无 GitHub Release 或独立使用证据，因此标注为早期。
