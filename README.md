@@ -222,6 +222,7 @@ dsh --profile web --dump-config
 - [toolshrink](https://github.com/unclecode/toolshrink)：按测试、Diff、JSON、目录树、日志和安装输出的结构做内容感知压缩，并在需要时保留原始输出引用；MIT、`0.1.0`，目前需从源码构建并修改全局 `~/.dsh/cordis.patch.yml`，暂存的原始输出会在 24 小时后清理，标注为早期。
 - [dsh-tool-squeeze](https://github.com/w2829562572-dev/dsh-tool-squeeze)：为测试、Diff、JSON、目录树、日志、安装输出和 HTML 提供确定性、本地优先的工具结果压缩；MIT `v0.1.0`，固定兼容 DSH / `dsh-tools` `0.1.0-rc.8`，项目声明 21 项测试及可复现基准。与需源码构建并自行保留原文的 toolshrink 相比，它可直接安装 GitHub Bundle、无需额外模型或网络调用，并将完整原文交给官方 Spill Store；压缩仍有损，且项目为同日初发、无 CI 或独立使用证据，标注为早期。
 - [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report)：从会话事件日志生成日报、周报、月报、年报和自定义区间报告；MIT、Release / npm `0.6.1`、Node.js `^22.19 || >=24`，Peer 依赖要求 DSH `>=0.1.1-rc.2 <0.2.0`。`0.6.0` 加入首个严格白名单的 Apply & Verify 操作：仅在重复 Bash 超时证据与用户明确批准后，可将 `shell.timeoutMs` 从 60 秒调为 120 秒并验证、审计和安全回滚；不支持任意设置、任意命令、自动修复或自动回滚。当前 Release Commit 的 CI 通过，说明包含 393 项测试与真实包验收；`0.6.1` 修正历史计价生效日期、启动后新会话与恢复会话的统计，可实质改变历史 Token / 成本总额，但未改变 Apply & Verify 边界。项目仍新且已具备受控配置写入能力，故标注为早期。
+- [dsh-persona-continuity-bot](https://github.com/shinji00222/dsh-persona-continuity-bot)：为 DeepSeek Harness 的每个人格提供独立的本地 Markdown 跨会话记忆（无需 Git），支持普通会话直选人格、人格工作台管理、凭据自动脱敏、历史会话一键导入与同工作区旧对话召回，并可选打包完整 Bot 模式（私聊工作过程时间轴、微信直觉多人格群聊与全体工作区授权）；MIT，已在 DSH `0.2.2-rc.3` 隔离环境验证（[官网](https://shinji00222.github.io/dsh-persona-continuity-bot/)）。
 
 ### 浏览器、视觉与界面
 
