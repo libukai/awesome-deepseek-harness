@@ -243,6 +243,7 @@ dsh --profile web --dump-config
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：为 DSH Web 增加日本语界面与系统日文字体，覆盖 29 个命名空间、721 条 UI 字符串；MIT、npm / Release `0.4.3`、Node.js 22+，Peer 依赖锁定 `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`，仓库测试、字典漂移检查和每日 `next` DSH E2E 均通过。插件只挂载客户端本地化模块，不新增 Host 路由、凭据或外部服务。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [dsh-xiaomi-tts](https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts)：音色工坊（MIT、npm `5.6.1`、DSH `>=0.2.2`、Node.js `24.9+`），聚合小米 MiMo、豆包、Breeze、DeepSeek 与本地 MOSS-Nano 等 10+ 语音引擎及云端 ASR，支持智能文本过滤流式朗读、实时字幕响应球、自定义全息立绘卡、`/director` 多角色有声剧录音棚，并联动桌宠、小说听书、QQ Bot、移动端 `dsh-Go` 与 AI Passport。
 
 ### 沙箱与执行
 
