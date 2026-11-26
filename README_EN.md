@@ -243,6 +243,7 @@ The following projects provide standalone user interfaces, distribution formats,
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification): configurable desktop notifications based on task outcomes and keywords.
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja): adds a Japanese DSH Web interface and system Japanese fonts across 29 namespaces and 721 UI strings. It is MIT, npm / Release `0.4.3`, Node.js 22+, and pins `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`; repository tests, dictionary-drift checks, and daily E2E against DSH `next` pass. It mounts only a client localization module, adding no Host route, credential, or external service.
 - [dsh-share](https://github.com/hellodigua/dsh-share): generates and shares DSH conversation content in one click.
+- [dsh-xiaomi-tts](https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts): Voice Studio (MIT, npm `5.6.1`, DSH `>=0.2.2`, Node.js `24.9+`), uniting Xiaomi MiMo, Doubao, Breeze, DeepSeek, local MOSS-Nano, and browser speech plus cloud ASR, with smart code/URL filtering, live subtitles and voice orbs, custom holographic portrait cards, `/director` multi-role WAV drama studio, and desktop pet/novel/QQ Bot/`dsh-Go`/AI Passport integrations.
 
 ### Sandboxing and Execution
 
