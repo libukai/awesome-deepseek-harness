@@ -254,6 +254,7 @@ dsh --profile web --dump-config
 ### 主题与皮肤
 
 - [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)：DSH Web GUI 的鲸鱼娘主题皮肤集合；当前包含可热插拔的 `maid-atelier` Web Client Bundle，可通过 `dsh plugin --profile web add ...` 安装和卸载。项目采用 **CC BY-NC-SA 4.0**，禁止商业性使用。
+- [ColaMD-themes](https://github.com/byteuser1977/ColaMD-themes)：DSH 的 Markdown 主题与导出插件，MIT、npm `@bytechain.cn/colamd-themes` `0.8.6`；输入框旁的主题胶囊内置 69 套 ColaMD 契约主题（含 12 套内置），按所选主题就地渲染 `.md`，文稿导出 A4 PDF / Word，幻灯片按 11 种版式导出 16:9 PDF / PPTX，与屏幕使用同一份 CSS。
 
 ## 外部集成
 

@@ -254,6 +254,7 @@ The following projects provide standalone user interfaces, distribution formats,
 ### Themes and Skins
 
 - [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale): whale-girl theme collection for the DSH Web GUI; currently includes the hot-pluggable `maid-atelier` Web Client Bundle, installable and removable with `dsh plugin --profile web add ...`. Licensed under **CC BY-NC-SA 4.0**, which prohibits commercial use.
+- [ColaMD-themes](https://github.com/byteuser1977/ColaMD-themes): Markdown themes and export plugin for DSH, MIT, npm `@bytechain.cn/colamd-themes` `0.8.6`; a theme chip beside the composer offers 69 ColaMD-contract themes (12 built in), renders `.md` in place under the selected theme, exports documents to A4 PDF / Word and 11-layout slide decks to 16:9 PDF / PPTX using the same CSS the screen uses.
 
 ## External Integrations
 
