@@ -254,6 +254,7 @@ Git リポジトリからインストールする場合は、commit を固定し
 ### テーマとスキン
 
 - [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale)：DSH Web GUI 向けクジラ娘テーマ集。現在はホットプラグ対応の `maid-atelier` Web Client Bundle を含み、`dsh plugin --profile web add ...` でインストール・削除できる。ライセンスは **CC BY-NC-SA 4.0** で、商用利用は禁止。
+- [ColaMD-themes](https://github.com/byteuser1977/ColaMD-themes)：DSH 向けの Markdown テーマと書き出しプラグイン。MIT、npm `@bytechain.cn/colamd-themes` `0.8.6`。入力欄の隣のテーマチップから ColaMD 契約の 69 テーマ（うち 12 は内蔵）を選び、`.md` をそのテーマでその場に描画。文書は A4 PDF / Word、スライドは 11 レイアウトで 16:9 PDF / PPTX に書き出し、画面と同じ CSS を使う。
 
 ## 外部連携
 
