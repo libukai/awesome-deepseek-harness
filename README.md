@@ -202,6 +202,7 @@ dsh --profile web --dump-config
 - [dsh-crew](https://github.com/ZSeven-W/dsh-crew)：从 Claude Code 或 Codex 调度真实 DSH Worker，并提供进度、状态分片和分层策略；MIT、Release / npm `next` `0.1.0-rc.4`，声明在 DSH `0.1.1-rc.1` 验证并含 MCP 与发布包烟测。会写入 `~/.config/dsh-crew/status.d/`，外部模型服务可能需要 API Key；仍为预发布且没有独立测试 CI，标注为早期。
 - [dsh-trading](https://github.com/maddogfinance/dsh-trading)：面向交易研究的 DSH 工作台，提供确定性指标、CSV 数据源和交互式图表；MIT、npm `@dsh-trading/bundle@0.1.0`。项目不提供订单执行接口，并以启发式规则拦截资金移动类工具，但该拦截并非完备安全边界，标注为早期。
 - [oh-story-dsh](https://github.com/worldwonderer/oh-story-dsh)：把 13 个小说 Skills、7 个专业 Roles 和短剧生产流程接入 DSH 原生 Session、审批与三栏创作工作台。MIT、npm / Release `0.1.3`、Node.js 24+，Peer 依赖从 DSH `0.1.1-rc.1` 起，Release 声明 34 项自动化测试和 Ubuntu / macOS / Windows CI；本版复用官方 Composer 高度，为消息流增加滚动安全区与锚点几何回归，避免展开任务、流式状态和定位消息被 Composer 遮挡。构建会排除上游登录 / CDP 抓取器和独立 Dashboard；插件不读取模型凭据或另开监听端口，但会在当前 Agent 可见工具范围内读写创作项目文件、调用专业 Role，并在 DSH Web Server 上增加受 Host、Origin、Session、路径 containment 和乐观并发保护的文件路由。项目于 8 月 21 日首次发布，目前只明确验证 DSH rc.1，尚缺长期维护与独立使用证据，因此标注为早期。
+- [signoff-cli](https://github.com/ayuanxx-max/signoff-cli)：把 agent 的「完成」变成可复算的门禁——pre-commit / commit-msg 钩子加 release 预检，输出带事实摘要的判定与凭证（npm `4.8.0`，MCP Registry `io.github.ayuanxx-max/signoff-cli`）。
 
 ### 上下文、会话与输入
 
@@ -222,6 +223,8 @@ dsh --profile web --dump-config
 - [toolshrink](https://github.com/unclecode/toolshrink)：按测试、Diff、JSON、目录树、日志和安装输出的结构做内容感知压缩，并在需要时保留原始输出引用；MIT、`0.1.0`，目前需从源码构建并修改全局 `~/.dsh/cordis.patch.yml`，暂存的原始输出会在 24 小时后清理，标注为早期。
 - [dsh-tool-squeeze](https://github.com/w2829562572-dev/dsh-tool-squeeze)：为测试、Diff、JSON、目录树、日志、安装输出和 HTML 提供确定性、本地优先的工具结果压缩；MIT `v0.1.0`，固定兼容 DSH / `dsh-tools` `0.1.0-rc.8`，项目声明 21 项测试及可复现基准。与需源码构建并自行保留原文的 toolshrink 相比，它可直接安装 GitHub Bundle、无需额外模型或网络调用，并将完整原文交给官方 Spill Store；压缩仍有损，且项目为同日初发、无 CI 或独立使用证据，标注为早期。
 - [dsh-whale-report](https://github.com/SenmuuuuW/dsh-whale-report)：从会话事件日志生成日报、周报、月报、年报和自定义区间报告；MIT、Release / npm `0.6.1`、Node.js `^22.19 || >=24`，Peer 依赖要求 DSH `>=0.1.1-rc.2 <0.2.0`。`0.6.0` 加入首个严格白名单的 Apply & Verify 操作：仅在重复 Bash 超时证据与用户明确批准后，可将 `shell.timeoutMs` 从 60 秒调为 120 秒并验证、审计和安全回滚；不支持任意设置、任意命令、自动修复或自动回滚。当前 Release Commit 的 CI 通过，说明包含 393 项测试与真实包验收；`0.6.1` 修正历史计价生效日期、启动后新会话与恢复会话的统计，可实质改变历史 Token / 成本总额，但未改变 Apply & Verify 边界。项目仍新且已具备受控配置写入能力，故标注为早期。
+- [dsh-session-accordion](https://github.com/ayuanxx-max/dsh-session-accordion)：会话历史折叠，每轮压成一行（时间胶囊 + 提问摘要）、只保留最新一轮展开；3.2.0 起为单一状态渲染与唯一 DOM 写入点，图钉用 CSS 背景图而非注入按钮，带悬停预览与默认关闭的搜索，纯事件驱动、无定时器与动画帧（npm `3.2.0`，MIT，自检 19 场景 / 92 项）。
+- [dsh-session-fork-tree](https://github.com/ayuanxx-max/dsh-session-fork-tree)：会话分叉树排列与侧边栏树视图，分叉默认折叠、点 +/- 展开（npm `0.9.34`）。
 
 ### 浏览器、视觉与界面
 
@@ -243,6 +246,7 @@ dsh --profile web --dump-config
 - [dsh-notification](https://github.com/omdsh-dev/dsh-notification)：按任务结果和关键词配置桌面通知。
 - [dsh-locale-ja](https://github.com/fang2hou/dsh-locale-ja)：为 DSH Web 增加日本语界面与系统日文字体，覆盖 29 个命名空间、721 条 UI 字符串；MIT、npm / Release `0.4.3`、Node.js 22+，Peer 依赖锁定 `@deepseek-ai/dsh-client-locale ^0.1.1-rc.2`，仓库测试、字典漂移检查和每日 `next` DSH E2E 均通过。插件只挂载客户端本地化模块，不新增 Host 路由、凭据或外部服务。
 - [dsh-share](https://github.com/hellodigua/dsh-share)：一键生成并分享 DSH 对话内容。
+- [dsh-smooth](https://github.com/ayuanxx-max/dsh-smooth)：会话界面顺滑包，把压缩阈值、UI 紧凑、轮询间隔等 profile 层配置打包成可分发版本（npm `1.2.0`）。
 
 ### 沙箱与执行
 
